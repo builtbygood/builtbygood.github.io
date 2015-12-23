@@ -98,7 +98,9 @@ section{
 	text-align:center;
 	padding-bottom:250px;
 	img{
-		max-width:800px;
+		display:block;
+		width:100%;
+		max-width:700px;
 		margin:0 auto;
 	}
 	p{
@@ -382,7 +384,7 @@ header{
 	nav{
 		display:none;
 		position:absolute;
-	  right:90px;top:30px;
+	  right:80px;top:30px;
 	  height: 19px;
 	  cursor: pointer;
 	  z-index: 999;
@@ -412,7 +414,7 @@ header{
 	#menu-sandwich {
 	  position:absolute;
 	  display:block;
-	  right:0;top:30px;
+	  right:30px;top:30px;
 	  width: 30px;
 	  height: 19px;
 	  cursor: pointer;

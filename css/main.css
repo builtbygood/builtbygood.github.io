@@ -93,7 +93,9 @@ section {
   text-align: center;
   padding-bottom: 250px; }
   .say-hello img {
-    max-width: 800px;
+    display: block;
+    width: 100%;
+    max-width: 700px;
     margin: 0 auto; }
   .say-hello p {
     font-size: 28px;
@@ -361,7 +363,7 @@ header {
   header nav {
     display: none;
     position: absolute;
-    right: 90px;
+    right: 80px;
     top: 30px;
     height: 19px;
     cursor: pointer;
@@ -402,7 +404,7 @@ header {
   header #menu-sandwich {
     position: absolute;
     display: block;
-    right: 0;
+    right: 30px;
     top: 30px;
     width: 30px;
     height: 19px;
