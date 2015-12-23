@@ -561,12 +561,96 @@ a {
     line-height: 30px;
     padding: 70px 0 50px 0; }
 
+  h3 {
+    display: block;
+    width: 100%;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px; }
+
+  p {
+    font-size: 14px;
+    line-height: 22px; }
+
   .hero {
     position: relative;
     width: 100%;
     height: 250px;
     background: url(../img/hero.jpg) no-repeat center;
     background-size: cover; }
+
+  .info-content {
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    -webkit-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+    .info-content ul {
+      margin-top: 30px;
+      width: 50%;
+      float: left; }
+      .info-content ul li {
+        font-size: 18px;
+        line-height: 36px;
+        font-weight: 300; }
+    .info-content .intro .col-1-2 {
+      width: 100%;
+      float: right; }
+    .info-content .intro strong {
+      display: block;
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 20px; }
+    .info-content .intro img {
+      margin-top: 50px; }
+    .info-content .skills {
+      margin-top: 50px; }
+      .info-content .skills .col-1-2 {
+        width: 100%;
+        float: right; }
+      .info-content .skills img {
+        margin: 30px 0; }
+      .info-content .skills ul {
+        float: none;
+        width: 100%; }
+        .info-content .skills ul li {
+          font-size: 14px;
+          line-height: 24px; }
+    .info-content .people {
+      width: 100%;
+      margin: 50px auto 50px auto;
+      text-align: center; }
+      .info-content .people ul {
+        width: 100%;
+        float: none;
+        margin-top: 30px; }
+        .info-content .people ul:nth-child(2) {
+          margin-top: 30px; }
+        .info-content .people ul li {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 300; }
+          .info-content .people ul li img {
+            max-width: 120px; }
+      .info-content .people ul.socials {
+        width: 100%;
+        margin: 15px auto 0 auto;
+        float: none; }
+
+  .hiring {
+    padding: 100px 30px 60px 30px; }
+    .hiring div p {
+      font-size: 24px;
+      line-height: 24px; }
+    .hiring div a {
+      margin: 30px auto 0 auto;
+      font-size: 16px; }
+      .hiring div a span {
+        padding: 12px 20px; }
 
   footer {
     padding: 50px 0;
