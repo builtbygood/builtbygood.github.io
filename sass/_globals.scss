@@ -503,3 +503,117 @@ li{
 a{
 	text-decoration:none;
 }
+
+
+
+
+
+
+
+@media (max-width : 480px) {	
+	header{
+		padding:10px 0;
+		.logo{
+			img{
+				height:70px;
+				width:auto;
+				padding-top:10px;
+			}
+		}
+		nav{
+		display:block;
+		position:fixed;
+	  right:0;top:0;
+	  height: 100%;
+	  width:100%;
+	  z-index: 999;
+	  background:rgba(255,255,255,0.9);
+	  ul{
+	  	position:absolute;
+	  	width:100%;
+	  	top:50%;
+	  	margin-top:-100px;
+	  }
+	  li{
+	  	display:block;
+	  	width:100%;
+	  	text-align:center;
+	  	font-size:40px;
+	  	line-height:50px;
+	  	display:block;
+	  	float:none;
+	  	margin:0 0 20px 0;
+	  	@include translate(0,-150px);
+	  	@include transition(all 0.8s $easeOutExpo);
+	  	&.active{
+	  		@include translate(0,0);
+	  	}
+	  	a{
+        color:#999;
+        @include transition(color 1s $easeOutExpo);
+        &:hover{
+        	color:black;
+        }
+        &.active{
+        	color:black;
+        }
+	  	}
+	  }
+	}
+	}
+
+	h2{
+		font-weight:300;
+		font-size:30px;
+		line-height:30px;
+		padding:70px 0 50px 0;
+	}
+
+	.hero{
+		position:relative;
+		width:100%;
+		height:250px;
+		background:url(../img/hero.jpg) no-repeat center;
+		background-size:cover;
+	}
+
+	footer{
+		padding:50px 0;
+		background:transparent;
+		ul{
+			float:none;
+			width:100%;
+			text-align:center;
+			li{
+				display:inline;
+				float:none;
+				margin:0 9px;
+				font-size:16px;
+				a{
+					color:white;
+					@include transition(opacity 1s $easeOutExpo);
+			    &:hover{
+			    	@include opacity(0.5);
+			    }
+				}
+				&:first-child{
+		    	display:inline-block;
+		    	width:100%;
+		    	margin-left:-2px;
+		    	margin-bottom:15px;
+		    }
+			}
+		}
+		.copyright{
+			float:none;
+			display:block;
+			width:100%;
+			text-align:center;
+			color:white;
+			font-size:14px;
+			margin-top:50px;
+			@include opacity(0.5);
+		}
+	}
+
+}
