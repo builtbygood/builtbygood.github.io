@@ -239,6 +239,8 @@ h2 {
     margin-top: 0px; }
   .info-content .skills {
     margin-top: 250px; }
+    .info-content .skills .col-1-2 {
+      float: right; }
     .info-content .skills img {
       margin-top: 30px; }
   .info-content .people {
@@ -614,15 +616,18 @@ a {
         float: right; }
       .info-content .skills img {
         margin: 30px 0; }
+      .info-content .skills p {
+        margin-bottom: 30px; }
       .info-content .skills ul {
         float: none;
-        width: 100%; }
+        width: 100%;
+        margin-top: 0; }
         .info-content .skills ul li {
           font-size: 15px;
           line-height: 25px; }
     .info-content .people {
       width: 100%;
-      margin: 50px auto 50px auto;
+      margin: 30px auto 50px auto;
       text-align: center; }
       .info-content .people ul {
         width: 100%;
@@ -644,7 +649,7 @@ a {
   .hiring {
     padding: 100px 30px 60px 30px; }
     .hiring div p {
-      font-size: 24px;
+      font-size: 22px;
       line-height: 24px; }
     .hiring div a {
       margin: 30px auto 0 auto;

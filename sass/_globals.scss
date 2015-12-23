@@ -242,6 +242,9 @@ h2{
 	}
 	.skills{
 		margin-top:250px;
+		.col-1-2{
+			float:right;
+		}
 		img{
 			margin-top:30px;
 		}
@@ -626,9 +629,13 @@ a{
 			img{
 				margin:30px 0;
 			}
+			p{
+				margin-bottom:30px;
+			}
 			ul{
 				float:none;
 				width:100%;
+				margin-top:0;
 				li{
 					font-size:15px;
 					line-height:25px;
@@ -637,7 +644,7 @@ a{
 		}
 		.people{
 			width:100%;
-			margin:50px auto 50px auto;
+			margin:30px auto 50px auto;
 			text-align:center;
 			ul{
 				width:100%;
@@ -667,7 +674,7 @@ a{
 		padding:100px 30px 60px 30px;
 		div{
 	    p{
-	    	font-size:24px;
+	    	font-size:22px;
 	    	line-height:24px;
 	    }
 	    a{
