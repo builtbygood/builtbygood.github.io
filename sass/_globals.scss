@@ -109,6 +109,10 @@ section{
 	}
 	a{
 		color:$yellow;
+		@include transition(color 1s $easeOutExpo);
+    &:hover{
+    	color:$blue;
+    }
 	}
 }
 .lift{
@@ -469,6 +473,10 @@ footer{
 			font-size:18px;
 			a{
 				color:white;
+				@include transition(opacity 1s $easeOutExpo);
+		    &:hover{
+		    	@include opacity(0.5);
+		    }
 			}
 		}
 	}
