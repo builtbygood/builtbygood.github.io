@@ -570,8 +570,8 @@ a {
     margin-bottom: 30px; }
 
   p {
-    font-size: 14px;
-    line-height: 22px; }
+    font-size: 15px;
+    line-height: 25px; }
 
   .hero {
     position: relative;
@@ -618,8 +618,8 @@ a {
         float: none;
         width: 100%; }
         .info-content .skills ul li {
-          font-size: 14px;
-          line-height: 24px; }
+          font-size: 15px;
+          line-height: 25px; }
     .info-content .people {
       width: 100%;
       margin: 50px auto 50px auto;
@@ -627,7 +627,7 @@ a {
       .info-content .people ul {
         width: 100%;
         float: none;
-        margin-top: 30px; }
+        margin-top: 40px; }
         .info-content .people ul:nth-child(2) {
           margin-top: 30px; }
         .info-content .people ul li {
