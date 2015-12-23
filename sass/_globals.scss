@@ -86,9 +86,9 @@ body{
 .container{
 	position:relative;
 	width:100%;
-	max-width:1750px;
+	max-width:1400px;
 	margin:0 auto;
-	padding:0 10%;
+	padding:0 30px;
 }
 
 section{
@@ -350,6 +350,9 @@ p{
 header{
 	width:100%;
 	padding:50px 0 174px 0;
+	.container{
+
+	}
 	.logo{	
 		img{
 			display:block;		
@@ -358,7 +361,7 @@ header{
 	nav{
 		display:none;
 		position:absolute;
-	  right:12.6%;top:30px;
+	  right:90px;top:30px;
 	  height: 19px;
 	  cursor: pointer;
 	  z-index: 999;
@@ -388,7 +391,7 @@ header{
 	#menu-sandwich {
 	  position:absolute;
 	  display:block;
-	  right:10%;top:30px;
+	  right:0;top:30px;
 	  width: 30px;
 	  height: 19px;
 	  cursor: pointer;

@@ -82,9 +82,9 @@ body {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1750px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 10%; }
+  padding: 0 30px; }
 
 section {
   padding: 60px 0 0 0; }
@@ -340,7 +340,7 @@ header {
   header nav {
     display: none;
     position: absolute;
-    right: 12.6%;
+    right: 90px;
     top: 30px;
     height: 19px;
     cursor: pointer;
@@ -381,7 +381,7 @@ header {
   header #menu-sandwich {
     position: absolute;
     display: block;
-    right: 10%;
+    right: 0;
     top: 30px;
     width: 30px;
     height: 19px;
