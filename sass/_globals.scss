@@ -80,6 +80,7 @@ body{
 	top:0;left:0;
 	width:100%;
 	background:white;
+	overflow:hidden;
 }
 
 .container{
@@ -93,16 +94,7 @@ body{
 section{
 	padding:60px 0 0 0;
 }
-.row{
-	@include translate(0,1000px);
-	@include transition(all 1.2s $easeOutExpo);
-	&.active{
-		@include translate(0,0);
-	}
-}
-.col-1-2{
-	width:50%;
-	float:left;
+.lift{
 	@include opacity(0);
 	@include translate(0,400px);
 	@include transition(all 1.2s $easeOutExpo);
@@ -110,6 +102,64 @@ section{
 		@include opacity(1);
 		@include translate(0,0);
 	}
+}
+.role{
+	width:100%;
+	padding:30px 0 10px 0;
+	text-align:center;
+}
+.col-1{
+	width:100%;
+	text-align:center;
+	img{
+		display:block;
+		width:100%;
+		padding:50px 0;
+	}
+	h3{
+		margin-bottom:20px;
+	}
+	p{
+		max-width:850px;
+		margin:0 auto;
+	}
+}
+.project{
+	padding-top:0;
+	padding-bottom:250px;
+}
+.work-btn{
+		display:inline-block;
+		width:100%;
+		max-width:300px;
+		margin:40px auto 0 auto;
+		font-size:16px;
+		color:#d46a6c;
+		background: #9962a6;
+		background: -moz-linear-gradient(-45deg,  #9962a6 0%, $yellow 100%);
+		background: -webkit-linear-gradient(-45deg,  #9962a6 0%,$yellow 100%);
+		background: linear-gradient(135deg,  #9962a6 0%,$yellow 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#9962a6, endColorstr=$yellow,GradientType=1 ); 
+		padding:2px;
+		//@include transition(color 0.8s $easeOutExpo);
+		span{
+			display:block;
+			background:white;
+	    width:100%;
+	    height:100%;
+	    padding:12px 20px;
+	    @include transition(background 0.8s $easeOutExpo);
+		}
+		&:hover{
+			span{
+				background:transparent;
+			}
+			color:white;
+		}
+	}
+.col-1-2{
+	width:50%;
+	float:left;
 	img{
 		display:block;
 		width:100%;
@@ -141,10 +191,8 @@ h2{
 }
 
 .info-content{
-	display:none;
 	position:relative;
 	width:100%;
-	padding-bottom:250px;
 	margin-top:-60px;
 	@include transition(opacity 0.8s $easeOutExpo);
 	ul{
@@ -158,23 +206,38 @@ h2{
 		}
 	}
 	.intro{
+		strong{
+			display:block;
+			font-size:28px;
+			margin-bottom:20px;
+		}
 		img{
 			margin-top:0px;
 		}
 	}
 	.skills{
-		margin-top:150px;
+		margin-top:250px;
 		img{
 			margin-top:30px;
 		}
 	}
 	.people{
 		width:100%;
-		max-width:960px;
-		margin:150px auto 0 auto;
+		max-width:1024px;
+		margin:250px auto 100px auto;
 		text-align:center;
+		p{
+			max-width:900px;
+			margin:0 auto;
+			a{
+				color:#a24d71;
+				@include transition(color 1s $easeOutExpo);
+        &:hover{
+        	color:$blue;
+        }
+			}
+		}
 		ul{
-			margin-top:50px;
 			width:33.33333%;
 			float:left;
 			&:nth-child(2){
@@ -190,13 +253,82 @@ h2{
 				img{
 					//border-radius:50%;
 					width:100%;
-					max-width:280px;
+					max-width:230px;
 					padding-bottom:20px;
+				}
+			}
+		}
+		ul.socials{
+			width:300px;
+			margin:15px auto 0 auto;
+			text-align:center;
+			float:none;
+			li{
+				display:inline;
+				padding:0 12px;
+				font-size:15px;
+				border-right:1px solid #ddd;
+				&:last-child{
+					border:none;
+				}
+				a{
+					color:#999;
+	        @include transition(color 1s $easeOutExpo);
+	        &:hover{
+	        	color:black;
+	        }
+	        &.active{
+	        	color:black;
+	        }
 				}
 			}
 		}
 	}
 }
+
+.hiring{
+		width:100%;
+		max-width:960px;
+		margin:0 auto;
+		padding:100px 0;
+		div{
+			text-align:center;
+	    p{
+	    	text-align:center;
+	    	font-size:30px;
+	    	line-height:30px;
+	    }
+	    a{
+    		display:inline-block;
+    		width:100%;
+    		max-width:450px;
+    		margin:40px auto 0 auto;
+    		font-size:18px;
+    		color:#d46a6c;
+    		background: #9962a6;
+				background: -moz-linear-gradient(-45deg,  #9962a6 0%, $yellow 100%);
+				background: -webkit-linear-gradient(-45deg,  #9962a6 0%,$yellow 100%);
+				background: linear-gradient(135deg,  #9962a6 0%,$yellow 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#9962a6, endColorstr=$yellow,GradientType=1 ); 
+				padding:2px;
+				@include transition(color 0.8s $easeOutExpo);
+				span{
+					display:block;
+					background:white;
+			    width:100%;
+			    height:100%;
+			    padding:15px 20px;
+			    @include transition(background 0.8s $easeOutExpo);
+				}
+				&:hover{
+					span{
+						background:transparent;
+					}
+					color:white;
+				}
+    	}
+		}
+	}
 
 h3{
 	display:block;
@@ -220,6 +352,36 @@ header{
 		img{
 			display:block;		
 		}
+	}
+	nav{
+		display:none;
+		position:absolute;
+	  right:12.6%;top:30px;
+	  height: 19px;
+	  cursor: pointer;
+	  z-index: 999;
+	  li{
+	  	font-size:18px;
+	  	line-height:19px;
+	  	display:block;
+	  	float:left;
+	  	margin:0 20px;
+	  	@include translate(0,-50px);
+	  	@include transition(all 0.8s $easeOutExpo);
+	  	&.active{
+	  		@include translate(0,0);
+	  	}
+	  	a{
+        color:#999;
+        @include transition(color 1s $easeOutExpo);
+        &:hover{
+        	color:black;
+        }
+        &.active{
+        	color:black;
+        }
+	  	}
+	  }
 	}
 	#menu-sandwich {
 	  position:absolute;
@@ -264,6 +426,13 @@ header{
 	  bottom:8px;  	  
 	  @include transform(rotate(45deg));
 	}
+}
+
+
+.contact-us-cta{
+	padding:120px 0;
+	background:#a94c66;
+	color:white;
 }
 
 footer{
