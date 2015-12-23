@@ -89,6 +89,20 @@ body {
 section {
   padding: 60px 0 0 0; }
 
+.say-hello {
+  text-align: center;
+  padding-bottom: 250px; }
+  .say-hello img {
+    max-width: 800px;
+    margin: 0 auto; }
+  .say-hello p {
+    font-size: 28px;
+    line-height: 38px;
+    max-width: 800px;
+    margin: 30px auto 0 auto; }
+  .say-hello a {
+    color: #d7431c; }
+
 .lift {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -221,7 +235,7 @@ h2 {
   .info-content .people {
     width: 100%;
     max-width: 1024px;
-    margin: 250px auto 100px auto;
+    margin: 250px auto 250px auto;
     text-align: center; }
     .info-content .people p {
       max-width: 900px;
@@ -276,9 +290,9 @@ h2 {
 
 .hiring {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
-  padding: 100px 0; }
+  padding: 150px 0;
+  background: #f5f5f5; }
   .hiring div {
     text-align: center; }
     .hiring div p {
