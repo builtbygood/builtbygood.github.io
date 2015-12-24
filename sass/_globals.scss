@@ -72,7 +72,10 @@ body{
 	background: -webkit-linear-gradient(-45deg,  $blue 0%,$yellow 100%);
 	background: linear-gradient(135deg,  $blue 0%,$yellow 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$blue, endColorstr=$yellow,GradientType=1 ); 
-	padding:10px;	
+	padding:10px;
+}
+html{
+	background:white;
 }
 
 #main{

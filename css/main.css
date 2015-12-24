@@ -71,6 +71,9 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$blue, endColorstr=$yellow,GradientType=1 );
   padding: 10px; }
 
+html {
+  background: white; }
+
 #main {
   position: relative;
   top: 0;
