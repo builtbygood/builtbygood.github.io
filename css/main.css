@@ -501,6 +501,9 @@ a {
   text-decoration: none; }
 
 @media (max-width: 480px) {
+  body {
+    padding: 5px; }
+
   header {
     padding: 10px 0; }
     header .logo img {
@@ -578,8 +581,8 @@ a {
   .hero {
     position: relative;
     width: 100%;
-    height: 250px;
-    background: url(../img/hero.jpg) no-repeat center;
+    height: 280px;
+    background: url(../img/hero_mobile.jpg) no-repeat center;
     background-size: cover; }
 
   .info-content {
