@@ -22,9 +22,11 @@ $(function(){
 
 
   $(window).on('load', function(){
-             
-     thumbsUp();      
 
+  	 
+     thumbsUp();      
+  	
+             
 	});
 		
 	$(window).on('resize', function(){
