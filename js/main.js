@@ -1,5 +1,6 @@
 $(function(){
 	
+	var $window = $(window);
 
 	jQuery.fn.reverse = [].reverse;
 	
@@ -9,7 +10,6 @@ $(function(){
 
 			$(this).addClass('active');
 			menuUp();
-
 			
 		} else{
 	
@@ -19,33 +19,30 @@ $(function(){
 		}		
 		
 	});
-
-
-  $(window).on('load', function(){
-
+  $window.on('load', function(){
   	 
-     thumbsUp();      
-  	
-             
+     
+     $('.loader').delay(1000).fadeOut(function(){
+       thumbsUp(); 
+     });      
+  	            
 	});
-		
-	$(window).on('resize', function(){
+	$window.on('resize', function(){
 		 
 		thumbsUp();	
 							
 	});	
-	$(window).on('scroll', function(){
+	$window.on('scroll', function(){
 		
 		thumbsUp();
 		
 	});
-
 	function thumbsUp(){
 		
 		$('.lifter').each(function(){
 
 			var _top = $(this).offset().top;
-			var _vp  = $(window).scrollTop() + $(window).height()-100;
+			var _vp  = $window.scrollTop() + $window.height()-100;
 			
 			if( _vp > _top ){
 
@@ -63,7 +60,6 @@ $(function(){
 		});
 		
 	}
-
 	function menuUp(){
 
 		$('nav').fadeIn();
@@ -89,8 +85,7 @@ $(function(){
 			
 		});
 		
-	}	
-	
+	}		
 	
 });
 
