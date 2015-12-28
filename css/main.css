@@ -131,14 +131,14 @@ section {
     line-height: 38px;
     max-width: 800px;
     margin: 60px auto 0 auto; }
-  .say-hello a {
+  .say-hello .inner-link {
     color: #d7431c;
     -webkit-transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
     -moz-transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
     -ms-transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
     -o-transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
     transition: color 1s cubic-bezier(0.19, 1, 0.22, 1); }
-    .say-hello a:hover {
+    .say-hello .inner-link:hover {
       color: #5c5ce1; }
 
 .lift {
@@ -246,12 +246,7 @@ h2 {
 .info-content {
   position: relative;
   width: 100%;
-  margin-top: -60px;
-  -webkit-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  -moz-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  -ms-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+  margin-top: -60px; }
   .info-content ul {
     margin-top: 30px;
     width: 50%;
@@ -530,7 +525,7 @@ li {
 a {
   text-decoration: none; }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body {
     padding: 5px; }
 
@@ -720,8 +715,8 @@ a {
       max-width: 500px;
       margin: 0 auto; }
     .say-hello p {
-      font-size: 22px;
-      line-height: 32px;
+      font-size: 18px;
+      line-height: 28px;
       max-width: 800px;
       margin: 30px auto 0 auto; }
     .say-hello a {

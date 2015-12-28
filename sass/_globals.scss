@@ -132,7 +132,7 @@ section{
 		max-width:800px;
 		margin:60px auto 0 auto;
 	}
-	a{
+	.inner-link{
 		color:$yellow;
 		@include transition(color 1s $easeOutExpo);
     &:hover{
@@ -242,7 +242,6 @@ h2{
 	position:relative;
 	width:100%;
 	margin-top:-60px;
-	@include transition(opacity 0.8s $easeOutExpo);
 	ul{
 		margin-top:30px;
 		width:50%;
@@ -532,12 +531,7 @@ a{
 }
 
 
-
-
-
-
-
-@media (max-width : 480px) {
+@media (max-width : 768px) {
 	body{
 		padding:5px;	
 	}	
@@ -749,8 +743,8 @@ a{
 			margin:0 auto;
 		}
 		p{
-			font-size: 22px;
-			line-height:32px;
+			font-size: 18px;
+			line-height:28px;
 			max-width:800px;
 			margin:30px auto 0 auto;
 		}

@@ -20,10 +20,8 @@ $(function(){
 		
 	});
   $window.on('load', function(){
-  	 
-     
+  	  
      $('.loader').delay(1000).fadeOut(function(){
-     	 $window.scrollTop($window.scrollTop() + 1);   
        thumbsUp(); 
      });   
   	            
