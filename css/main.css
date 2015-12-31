@@ -203,6 +203,12 @@ section {
   padding-top: 0;
   padding-bottom: 250px; }
 
+.blog img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; }
+
 .blog-link {
   color: #222; }
 
