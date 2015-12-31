@@ -566,7 +566,7 @@ a {
         position: absolute;
         width: 100%;
         top: 50%;
-        margin-top: -100px; }
+        margin-top: -125px; }
       header nav li {
         display: block;
         width: 100%;
@@ -817,7 +817,7 @@ a {
         position: absolute;
         width: 100%;
         top: 50%;
-        margin-top: -100px; }
+        margin-top: -125px; }
       header nav li {
         display: block;
         width: 100%;
@@ -965,9 +965,9 @@ a {
 
   .author {
     width: 100%;
-    padding: 15px 0 20px 0;
+    padding: 0;
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300; }
 
   .col-1 img {
@@ -977,6 +977,9 @@ a {
 
   .project, .blog {
     padding: 60px 0; }
+
+  .blog .col-1 img {
+    padding: 25px 0; }
 
   .work-btn {
     font-size: 14px; }
