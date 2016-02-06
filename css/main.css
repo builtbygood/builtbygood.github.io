@@ -208,6 +208,9 @@ section {
   width: 100%;
   max-width: 800px;
   margin: 0 auto; }
+.blog h3 {
+  max-width: 800px;
+  margin: 0 auto; }
 
 .blog-link {
   color: #222; }
