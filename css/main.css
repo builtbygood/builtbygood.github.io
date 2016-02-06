@@ -181,9 +181,9 @@ section {
 
 .author {
   width: 100%;
-  padding: 10px 0 0 0;
+  padding: 15px 0 0 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300; }
 
 .col-1 {
@@ -721,13 +721,6 @@ a {
     font-size: 22px;
     font-weight: 300; }
 
-  .author {
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 300; }
-
   .col-1 img {
     width: 180%;
     margin-left: -40%;
@@ -970,13 +963,6 @@ a {
     padding: 15px 0 20px 0;
     text-align: center;
     font-size: 22px;
-    font-weight: 300; }
-
-  .author {
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    font-size: 18px;
     font-weight: 300; }
 
   .col-1 img {
