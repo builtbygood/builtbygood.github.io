@@ -731,12 +731,12 @@ footer {
 
   .hero-2 {
     max-height: 480px;
-    background: #f27523;
+    background: #f27523 url(../img/hero/ladder.jpg) no-repeat -150px -100px;
     background-size: cover; }
 
   .hero-3 {
     max-height: 480px;
-    background: #20af64;
+    background: #20af64 url(../img/hero/stairs.jpg) no-repeat right center;
     background-size: cover; }
 
   .align-right {
@@ -744,5 +744,11 @@ footer {
 
   .align-left {
     bottom: 60px; } }
+@media (max-width: 480px) {
+  .hero-2 {
+    background: #f27523; }
+
+  .hero-3 {
+    background: #20af64; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -809,12 +809,12 @@ footer{
   }
   .hero-2{
     max-height:480px;
-    background:$orange ;
+    background:$orange url(../img/hero/ladder.jpg) no-repeat -150px -100px;
     background-size:cover;
   }
   .hero-3{
     max-height:480px;
-    background:$green ;
+    background:$green url(../img/hero/stairs.jpg) no-repeat right center;
     background-size:cover;
   }
   .align-right{
@@ -824,6 +824,16 @@ footer{
     bottom:60px;
   }
  
+}
+
+@media(max-width: 480px){
+  .hero-2{
+    background:$orange;
+  }
+  .hero-3{
+    background:$green;
+  }
+
 }
 
 
