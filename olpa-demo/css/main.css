@@ -355,7 +355,8 @@ HERO
   height: 100%;
   max-height: 980px;
   background: #75abc5 url(../img/hero/baloons-rising.jpg) no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
   .hero .hero-copy {
     margin-top: 80px;
     color: white; }
