@@ -289,7 +289,7 @@ header {
     display: none;
     position: absolute;
     top: 11px;
-    right: 30px;
+    right: 20px;
     font-size: 24px; }
   header.active {
     height: 50px; }
@@ -323,7 +323,7 @@ header {
   overflow: scroll;
   text-align: center;
   z-index: 10000;
-  background: rgba(255, 255, 255, 0.9); }
+  background: white; }
   .mobile-menu.active {
     display: block; }
   .mobile-menu li {
@@ -341,7 +341,7 @@ header {
   .mobile-menu .close-btn {
     position: absolute;
     top: 11px;
-    right: 30px;
+    right: 20px;
     font-size: 24px; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -569,6 +569,8 @@ footer {
 @media (max-width: 950px) {
   header {
     height: 50px; }
+    header .container {
+      padding: 0 20px; }
     header .logo-wrap .logo {
       opacity: 0;
       filter: alpha(opacity=0);
@@ -591,7 +593,7 @@ footer {
       display: block; }
 
   .content {
-    padding: 80px 30px; }
+    padding: 80px 20px; }
     .content .container {
       max-width: 760px; }
     .content h2, .content h3 {
@@ -628,7 +630,7 @@ footer {
         text-transform: uppercase;
         font-weight: 900;
         letter-spacing: 15px;
-        margin-left: 30px; }
+        margin-left: 20px; }
 
   .next-page {
     padding: 50px 0 0 0; }
@@ -637,7 +639,7 @@ footer {
       letter-spacing: 4px; }
 
   .update-sign-up {
-    padding: 60px 30px 110px 30px;
+    padding: 60px 20px 110px 20px;
     background: #ebebeb; }
     .update-sign-up .col-1-2 {
       width: 100%;
@@ -670,7 +672,7 @@ footer {
   footer {
     width: 100%;
     height: auto;
-    padding: 80px 30px;
+    padding: 80px 20px;
     background: #013852; }
     footer .copyright {
       display: block;
@@ -692,12 +694,11 @@ footer {
         margin: 0 20px; }
 
   .hero {
-    padding: 0 30px;
     overflow: hidden; }
     .hero .hero-copy {
       margin-top: 40px;
       left: 0;
-      padding: 0 30px; }
+      padding: 0 20px; }
       .hero .hero-copy h1 {
         font-size: 40px;
         line-height: 40px;
@@ -712,8 +713,8 @@ footer {
           letter-spacing: 4px;
           margin-bottom: 15px; }
       .hero .hero-copy h2 {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 22px;
+        line-height: 26px;
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 6px;
