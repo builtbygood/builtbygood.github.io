@@ -689,6 +689,60 @@ footer {
       footer .social-links li {
         font-size: 24px;
         line-height: 14px;
-        margin: 0 20px; } }
+        margin: 0 20px; }
+
+  .hero {
+    padding: 0 30px;
+    overflow: hidden; }
+    .hero .hero-copy {
+      margin-top: 40px;
+      left: 0;
+      padding: 0 30px; }
+      .hero .hero-copy h1 {
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 15px; }
+        .hero .hero-copy h1 span {
+          display: inline-block;
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 400;
+          letter-spacing: 4px;
+          margin-bottom: 15px; }
+      .hero .hero-copy h2 {
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 6px;
+        margin-bottom: 20px; }
+      .hero .hero-copy p {
+        font-size: 16px;
+        line-height: 22px; }
+      .hero .hero-copy li {
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 20px;
+        margin-bottom: 15px; }
+        .hero .hero-copy li:last-child {
+          margin-bottom: 0; }
+
+  .hero-2 {
+    max-height: 480px;
+    background: #f27523;
+    background-size: cover; }
+
+  .hero-3 {
+    max-height: 480px;
+    background: #20af64;
+    background-size: cover; }
+
+  .align-right {
+    bottom: 60px; }
+
+  .align-left {
+    bottom: 60px; } }
 
 /*# sourceMappingURL=main.css.map */
