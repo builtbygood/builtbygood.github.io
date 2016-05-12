@@ -267,8 +267,6 @@ header {
   header .logo-wrap {
     position: relative;
     height: 100%;
-    width: 200px;
-    overflow: hidden;
     z-index: 44; }
     header .logo-wrap .logo {
       position: absolute;
