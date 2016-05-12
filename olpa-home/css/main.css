@@ -267,6 +267,7 @@ header {
   header .logo-wrap {
     position: relative;
     height: 100%;
+    width: 300px;
     z-index: 44; }
     header .logo-wrap .logo {
       position: absolute;
@@ -294,17 +295,15 @@ header {
       font-size: 16px;
       font-weight: 700;
       color: #013852;
-      opacity: 0.7;
-      filter: alpha(opacity=70);
-      margin: 0 0 0 30px;
-      -webkit-transition: line-height 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-      -moz-transition: line-height 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-      -ms-transition: line-height 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-      -o-transition: line-height 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: line-height 0.4s cubic-bezier(0.19, 1, 0.22, 1); }
+      margin: 0 0 0 30px; }
       header nav li a {
-        color: #76868d;
-        text-decoration: none; }
+        color: #a3b5bd;
+        text-decoration: none;
+        -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
         header nav li a.active {
           color: #f27523; }
       header nav li:hover a {

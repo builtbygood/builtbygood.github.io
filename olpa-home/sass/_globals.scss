@@ -280,6 +280,7 @@ header{
   .logo-wrap{
     position:relative;
     height:100%;
+    width:300px;
     z-index:44;
     .logo{
       position:absolute;
@@ -300,12 +301,11 @@ header{
       font-size:16px;
       font-weight:700;
       color:$primary;
-      @include opacity(0.7);
       margin:0 0 0 30px;
-      @include transition(line-height 0.4s $easeOutExpo);
       a{
-        color:#76868d;
+        color:#a3b5bd;
         text-decoration: none;
+        @include transition(all 0.8s $easeOutExpo);
         &.active{
           color:$orange;
         }
