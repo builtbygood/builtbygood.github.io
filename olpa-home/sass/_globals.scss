@@ -199,6 +199,13 @@ p{
     background:darken($secondary, 15%);
     @include box-shadow(0 2px 0 0 rgba(0,0,0,0.5));
   }
+  &.is__orange__bg{
+    background:$orange;
+    &:hover{
+    background:darken($orange, 8%);
+    @include box-shadow(0 2px 0 0 rgba(0,0,0,0.6));
+  }
+  }
 }
 .chevron{
     position:relative;
