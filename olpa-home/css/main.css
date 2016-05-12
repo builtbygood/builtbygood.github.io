@@ -177,9 +177,20 @@ p {
   font-weight: 700;
   color: white;
   background: #aec2cb;
+  cursor: pointer;
   -webkit-box-shadow: 0 2px 0 0 #809ba8;
   -moz-box-shadow: 0 2px 0 0 #809ba8;
-  box-shadow: 0 2px 0 0 #809ba8; }
+  box-shadow: 0 2px 0 0 #809ba8;
+  -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+  .btn__is__primary:hover {
+    background: #f27523;
+    -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.6); }
 
 .chevron {
   position: relative;
@@ -409,6 +420,14 @@ footer {
       line-height: 200px;
       margin: 0 0 0 40px; }
       footer .social-links li i {
-        color: white; }
+        color: white;
+        -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+      footer .social-links li:hover i {
+        opacity: 0.5;
+        filter: alpha(opacity=50); }
 
 /*# sourceMappingURL=main.css.map */
