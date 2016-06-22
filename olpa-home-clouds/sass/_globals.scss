@@ -402,6 +402,7 @@ HERO
 
 
 #dig-deep{
+  position:relative;
   background:#885e36;
   color:white;
   height:675px;
@@ -411,6 +412,15 @@ HERO
   img{
     max-width:500px;
     margin-top:-330px;
+  }
+  .grass{
+    position:absolute;
+    top:-3px;
+    width:100%;
+    height:4px;
+    background:$green;
+    z-index:20;
+    border-bottom:2px solid rgba(0,0,0,0.35);
   }
 }
 #business-leaders{
