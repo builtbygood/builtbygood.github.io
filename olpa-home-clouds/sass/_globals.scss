@@ -505,6 +505,7 @@ HERO
   left:100;
   width:100%;
   z-index:88;
+  will-change: transform;
   .container{
     max-width:1500px;
   }
@@ -519,6 +520,7 @@ HERO
   left:100;
   width:100%;
   z-index:0;
+  will-change: transform;
   .container{
     max-width:1500px;
   }

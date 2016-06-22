@@ -476,7 +476,8 @@ HERO
   top: 0;
   left: 100;
   width: 100%;
-  z-index: 88; }
+  z-index: 88;
+  will-change: transform; }
   .clouds-top .container {
     max-width: 1500px; }
   .clouds-top img {
@@ -488,7 +489,8 @@ HERO
   top: 0;
   left: 100;
   width: 100%;
-  z-index: 0; }
+  z-index: 0;
+  will-change: transform; }
   .clouds-bottom .container {
     max-width: 1500px; }
   .clouds-bottom img {
