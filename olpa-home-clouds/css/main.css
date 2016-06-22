@@ -398,8 +398,10 @@ HERO
   #dig-deep h2 {
     margin-top: 60px; }
   #dig-deep img {
-    max-width: 500px;
-    margin-top: -330px; }
+    width: 100%;
+    max-width: 960px;
+    min-width: 960px;
+    margin-top: -350px; }
   #dig-deep .grass {
     position: absolute;
     top: -3px;
