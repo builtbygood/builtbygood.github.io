@@ -420,6 +420,11 @@ HERO
     max-width:700px;
     margin:0 auto;
   }
+  img{
+    position:relative;
+    z-index:20;
+    margin-bottom:50px;
+  }
 }
 #personal-income{
   padding:200px 0; 
@@ -448,7 +453,7 @@ HERO
     z-index:20;
   }
   h2{
-    padding-bottom:300px;
+    padding-bottom:250px;
   }
   img{
     position:relative;
