@@ -278,6 +278,9 @@ h3 {
   .next-page.right a {
     float: right; }
 
+img {
+  -webkit-backface-visibility: none; }
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 HEADER
