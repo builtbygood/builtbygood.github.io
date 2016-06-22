@@ -466,7 +466,8 @@ HERO
   .clouds-top .container {
     max-width: 1500px; }
   .clouds-top img {
-    padding: 150px 0; }
+    padding: 150px 0;
+    width: 100%; }
 
 .clouds-bottom {
   position: absolute;
@@ -477,7 +478,8 @@ HERO
   .clouds-bottom .container {
     max-width: 1500px; }
   .clouds-bottom img {
-    padding: 150px 0; }
+    padding: 150px 0;
+    width: 100%; }
 
 .update-sign-up {
   padding: 90px 0;

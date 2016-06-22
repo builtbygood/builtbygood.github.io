@@ -5,6 +5,9 @@ $(function(){
     $window.on('scroll', function(){
         window.requestAnimationFrame(scrollStuff);  
     });
+    $window.on('resize', function(){
+        window.requestAnimationFrame(scrollStuff);  
+    });
 
     var lastScrollTop = 0, delta = 5;
     function scrollStuff(){
@@ -33,11 +36,6 @@ $(function(){
             
         }); 
             
-        
-            
-           
-
-
 
         /*
         if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
@@ -57,6 +55,7 @@ $(function(){
         */
  
     }
+    scrollStuff();
 
     var menu_btn    = $('.menu-btn');
     var close_btn   = $('.close-btn');
