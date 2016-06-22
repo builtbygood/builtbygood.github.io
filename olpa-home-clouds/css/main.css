@@ -395,7 +395,7 @@ HERO
 
 #dig-deep {
   position: relative;
-  background: #885e36;
+  background: #795e44;
   color: white;
   height: 675px; }
   #dig-deep h2 {
@@ -427,7 +427,7 @@ HERO
 
 #personal-income {
   padding: 200px 0;
-  background: #8097a1;
+  background: #b3c0c6;
   color: white; }
   #personal-income img {
     padding: 60px 0 40px 0; }
@@ -458,7 +458,7 @@ HERO
     bottom: 0;
     width: 100%;
     height: 273px;
-    background: #00a651;
+    background: #1d8951;
     z-index: 10; }
 
 #balloon {
