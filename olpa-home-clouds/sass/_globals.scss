@@ -181,7 +181,11 @@ h1,h2{
 p{
   font-size:20px;
   line-height:30px;
-  font-weight:300;
+  font-weight:400;
+  color:$secondary;
+}
+.bold{
+  color:$primary;
 }
 .large-text{
   font-family:'Merriweather', serif;
@@ -257,15 +261,6 @@ p{
 }
 
 
-
-
- h3{
-    font-size:30px;
-    line-height:36px;
-    text-transform:uppercase;
-    font-weight:700;
-    color:$primary;
-  }
 
  .next-page{
   padding:100px 0 0 0;
@@ -535,7 +530,7 @@ HERO
   padding:120px 0;
   background:#f3f6f7;
   .container{
-    max-width:500px;
+    max-width:550px;
   }
   h2{
    font-size:30px;
