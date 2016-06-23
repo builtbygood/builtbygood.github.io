@@ -1,32 +1,33 @@
 $(function(){
 
     var $window = $(window);
-
-    $('.page-loader img').addClass('show');
-
+   
     $window.on('load', function(){
+
+        $('.page-loader img').each(function(i){
+            $(this).delay(50*i).queue( function(next){ 
+                $(this).addClass('active');
+                next(); 
+            });      
+        });
         
         setTimeout(function(){
 
             $('.page-loader img').each(function(i){
-
                 $(this).delay(50*i).queue( function(next){ 
-
                     $(this).addClass('hide');
                     next(); 
-
                 });      
-
             });
             setTimeout(function(){
                 $('.page-loader').hide();
                 $('.home').css({ opacity:'1'});
                 $('header').addClass('show');
                 $('body').css({ overflow:'auto'});
-            },800);
-
+            },600);
 
         }, 3000); 
+
     });
 
     $window.on('scroll', function(){
@@ -44,9 +45,7 @@ $(function(){
         var scrollTop   = $window.scrollTop();
         var $clouds_top = $('.clouds-top');
         var $clouds_bot = $('.clouds-bottom');
-       
-        
-        
+          
         $clouds_top.each(function(){
 
             var offset = $(this).offset().top;
@@ -54,7 +53,6 @@ $(function(){
             $(this).css({transform: 'translateY(' +  -Math.round(offset - scrollTop)*0.2 + 'px)'});
             
         }); 
-
         $clouds_bot.each(function(){
 
             var offset = $(this).offset().top;
@@ -62,24 +60,6 @@ $(function(){
             $(this).css({transform: 'translateY(' +  -Math.round(offset - scrollTop)*0.1 + 'px)'});
             
         }); 
-            
-
-        /*
-        if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
-            if (nowScrollTop > lastScrollTop && nowScrollTop > $window.height()/2){
-             $('header').addClass('active');
-            } else {
-             $('header').removeClass('active');
-            }
-            lastScrollTop = nowScrollTop;
-        }
-
-        if( nowScrollTop > 0 ){
-            $('header').addClass('shadow');
-        } else{
-            $('header').removeClass('shadow');
-        }
-        */
  
     }
     scrollStuff();

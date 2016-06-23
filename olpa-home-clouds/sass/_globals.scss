@@ -193,7 +193,7 @@ section.one-column{
   img{
     position:absolute;
     @include opacity(0);
-    @include transform(translateY(0));
+    @include transform(translateY(500px));
     @include transition(all 1.2s $easeOutExpo); 
     &:first-child{
       z-index:5;
@@ -201,17 +201,19 @@ section.one-column{
     &:last-child{
       z-index:15;
     }
-    &.show{
-      @include opacity(1);
+    &.active{
+      @include transform(translateY(0));
+      @include opacity(1);    
     }
     &.hide{  
-      @include transform(translateY(-800px));     
+      @include transform(translateY(-800px));
+      @include opacity(0);        
     }
   }
   .sun-loader{
     top:50%;
     left:50%;
-    margin:-40px 0 0 -40px;
+    margin:-45px 0 0 -40px;
     z-index:10;
   }
 }
