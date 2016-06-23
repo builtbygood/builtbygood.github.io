@@ -17,7 +17,7 @@ $(function(){
                    
             setTimeout(function(){
                 $('.page-loader').hide();
-                $('.home').css({ opacity:'1'});
+                $('.home').addClass('active');
                 $('header').addClass('show');
                 $('body').css({ overflow:'auto'});
             },250);
@@ -33,10 +33,7 @@ $(function(){
         window.requestAnimationFrame(scrollStuff);  
     });
 
-    var lastScrollTop = 0, delta = 5;
     function scrollStuff(){
-
-        var nowScrollTop = $(this).scrollTop();
 
         var scrollTop   = $window.scrollTop();
         var $clouds_top = $('.clouds-top');

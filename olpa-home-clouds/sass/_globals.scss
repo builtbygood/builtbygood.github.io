@@ -79,6 +79,9 @@ body{
 .home{
   @include opacity(0);
   @include transition(all 3s $easeOutExpo); 
+  &.active{ 
+    @include opacity(1);        
+  }
 }
 .no-js .home{
   @include opacity(1);
