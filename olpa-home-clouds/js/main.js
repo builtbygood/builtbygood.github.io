@@ -13,18 +13,14 @@ $(function(){
         
         setTimeout(function(){
 
-            $('.page-loader img').each(function(i){
-                $(this).delay(50*i).queue( function(next){ 
-                    $(this).addClass('hide');
-                    next(); 
-                });      
-            });
+            $('.page-loader').addClass('hide');
+                   
             setTimeout(function(){
                 $('.page-loader').hide();
                 $('.home').css({ opacity:'1'});
                 $('header').addClass('show');
                 $('body').css({ overflow:'auto'});
-            },600);
+            },250);
 
         }, 3000); 
 

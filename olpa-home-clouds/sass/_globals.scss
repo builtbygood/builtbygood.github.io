@@ -190,6 +190,11 @@ section.one-column{
   left:50%;
   margin:-150px 0 0 -150px;
   z-index:99;
+  @include transition(all 1.2s $easeOutExpo); 
+  &.hide{  
+    @include transform(translateY(-800px));
+    @include opacity(0);        
+  }
   img{
     position:absolute;
     @include opacity(0);
@@ -204,10 +209,6 @@ section.one-column{
     &.active{
       @include transform(translateY(0));
       @include opacity(1);    
-    }
-    &.hide{  
-      @include transform(translateY(-800px));
-      @include opacity(0);        
     }
   }
   .sun-loader{
