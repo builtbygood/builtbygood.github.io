@@ -223,7 +223,7 @@ section.one-column {
   .page-loader .sun-loader {
     top: 50%;
     left: 50%;
-    margin: -45px 0 0 -40px;
+    margin: -40px 0 0 -30px;
     z-index: 10; }
 
 h1, h2 {
@@ -401,7 +401,7 @@ header {
     header nav li {
       display: inline;
       line-height: 90px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       margin: 0 0 0 30px; }
       header nav li a {
@@ -577,12 +577,13 @@ HERO
   padding: 120px 0;
   background: #013852; }
   .update-sign-up .container {
-    max-width: 550px; }
+    max-width: 400px; }
   .update-sign-up h2 {
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 28px;
+    line-height: 42px;
     color: white; }
   .update-sign-up p {
+    font-size: 18px;
     margin-top: 10px;
     color: #7392a1; }
   .update-sign-up form {
