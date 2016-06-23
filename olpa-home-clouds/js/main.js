@@ -2,6 +2,33 @@ $(function(){
 
     var $window = $(window);
 
+    $('.page-loader img').addClass('show');
+
+    $window.on('load', function(){
+        
+        setTimeout(function(){
+
+            $('.page-loader img').each(function(i){
+
+                $(this).delay(50*i).queue( function(next){ 
+
+                    $(this).addClass('hide');
+                    next(); 
+
+                });      
+
+            });
+            setTimeout(function(){
+                $('.page-loader').hide();
+                $('.home').css({ opacity:'1'});
+                $('header').addClass('show');
+                $('body').css({ overflow:'auto'});
+            },800);
+
+
+        }, 3000); 
+    });
+
     $window.on('scroll', function(){
         window.requestAnimationFrame(scrollStuff);  
     });

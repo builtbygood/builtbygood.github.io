@@ -70,6 +70,19 @@ body{
   color:$primary;
   background:#e5ecef;
 }
+body{
+  overflow:hidden;
+}
+.no-js body{
+  overflow:auto;
+}
+.home{
+  @include opacity(0);
+  @include transition(all 3s $easeOutExpo); 
+}
+.no-js .home{
+  @include opacity(1);
+}
 #main{
   width:100%;
   //max-width:1500px;
@@ -167,6 +180,40 @@ section.one-column{
 }
 .float-right{
   float:right;
+}
+
+.page-loader{
+  position:fixed;
+  width:300px;
+  height:300px;
+  top:50%;
+  left:50%;
+  margin:-150px 0 0 -150px;
+  z-index:99;
+  img{
+    position:absolute;
+    @include opacity(0);
+    @include transform(translateY(0));
+    @include transition(all 1.2s $easeOutExpo); 
+    &:first-child{
+      z-index:5;
+    }
+    &:last-child{
+      z-index:15;
+    }
+    &.show{
+      @include opacity(1);
+    }
+    &.hide{  
+      @include transform(translateY(-800px));     
+    }
+  }
+  .sun-loader{
+    top:50%;
+    left:50%;
+    margin:-40px 0 0 -40px;
+    z-index:10;
+  }
 }
 
 
@@ -308,8 +355,11 @@ header{
   height:90px;
   //background:white;
   z-index:999;
-  @include transform(translate3d(0,0,0)); 
-  @include transition(all 0.8s $easeOutExpo);
+  @include transform(translateY(-200px));
+  @include transition(all 1.2s $easeOutExpo);
+  &.show{
+    @include transform(translateY(0));
+  } 
   .logo-wrap{
     position:relative;
     height:100%;
@@ -363,6 +413,10 @@ header{
     right:20px;
     font-size:24px;
   }
+}
+
+.no-js header{
+  @include transform(translateY(0));
 }
 
 
