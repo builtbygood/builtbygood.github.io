@@ -640,9 +640,8 @@ HERO
 footer{
   width:100%;
   background:white;
-  padding:100px 0 60px 0;
+  padding:120px 0 60px 0;
   menu{
-    padding:20px 0;
     li{
       font-size:16px;
       font-weight:400;
@@ -672,7 +671,7 @@ footer{
     @include opacity(0.7);
   }
   .social-links{
-    margin-top:60px;
+    margin-top:40px;
     li{
       display:inline;
       font-size:22px;
