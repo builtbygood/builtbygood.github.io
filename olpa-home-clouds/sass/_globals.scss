@@ -462,6 +462,9 @@ HERO
 SECTIONS
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+img{
+  -webkit-backface-visibility: none;
+}
 #dig-deep{
   position:relative;
   background:#795e44;
