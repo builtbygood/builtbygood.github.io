@@ -642,7 +642,7 @@ footer{
   background:white;
   padding:100px 0 60px 0;
   menu{
-    padding:30px 0;
+    padding:20px 0;
     li{
       font-size:16px;
       font-weight:400;
@@ -668,7 +668,8 @@ footer{
     display:inline-block;
     margin-top:15px;
     font-size:14px;
-    @include opacity(0.5);
+    color:$secondary;
+    @include opacity(0.7);
   }
   .social-links{
     margin-top:60px;
