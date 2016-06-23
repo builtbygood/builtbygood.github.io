@@ -394,12 +394,11 @@ header {
     header nav li {
       display: inline;
       line-height: 90px;
-      font-size: 16px;
-      font-weight: 700;
-      color: #013852;
+      font-size: 18px;
+      font-weight: 400;
       margin: 0 0 0 30px; }
       header nav li a {
-        color: #a3b5bd;
+        color: #7392a1;
         text-decoration: none;
         -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
         -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
@@ -407,9 +406,9 @@ header {
         -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
         transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
         header nav li a.active {
-          color: #f27523; }
+          color: #013852; }
       header nav li:hover a {
-        color: #f27523; }
+        color: #013852; }
   header.active {
     -moz-transform: translateY(-120px);
     -o-transform: translateY(-120px);
@@ -619,11 +618,21 @@ footer {
     padding: 30px 0; }
     footer menu li {
       font-size: 16px;
+      font-weight: 400;
       display: inline;
       margin: 0 15px; }
       footer menu li a {
-        color: #013852;
-        text-decoration: none; }
+        color: #7392a1;
+        text-decoration: none;
+        -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+        footer menu li a.active {
+          color: #013852; }
+      footer menu li:hover a {
+        color: #013852; }
   footer .copyright {
     display: inline-block;
     margin-top: 15px;
