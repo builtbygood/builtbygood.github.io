@@ -222,9 +222,56 @@ section.one-column{
   }
 }
 
+.home_page_section{
+  padding-bottom:280px;
+  p{
+    max-width:700px;
+    margin:15px auto 0 auto;
+  }
+}
+.padding__top-80{
+  padding-top:80px;
+}
+.padding__bottom-120{
+  padding-bottom:120px;
+}
+
+.next-page{
+  padding:100px 0 0 0;
+  text-align:center;
+  a{
+    display:block;
+    font-size:16px;
+    font-weight:700;
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    color:$primary;
+    text-decoration:none;
+    &:nth-child(1){
+      float:left;
+    }
+    &:nth-child(2){
+      float:right;
+    }
+    &:hover{
+      color:$orange;
+    }
+  }
+  &.right{
+    a{
+      float:right;
+    }
+  }
+ }
 
 
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+TYPE
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1,h2{
   font-family:'Merriweather', serif;
   font-size:36px;
@@ -299,55 +346,6 @@ p{
     border-top-color:$primary;/*Match background colour*/
 }
 
-.home_page_section{
-  padding-bottom:280px;
-  p{
-    max-width:700px;
-    margin:15px auto 0 auto;
-  }
-}
-.padding__top-80{
-  padding-top:80px;
-}
-.padding__bottom-120{
-  padding-bottom:120px;
-}
-
-
-
- .next-page{
-  padding:100px 0 0 0;
-  text-align:center;
-  a{
-    display:block;
-    font-size:16px;
-    font-weight:700;
-    text-align:center;
-    text-transform:uppercase;
-    letter-spacing:5px;
-    color:$primary;
-    text-decoration:none;
-    &:nth-child(1){
-      float:left;
-    }
-    &:nth-child(2){
-      float:right;
-    }
-    &:hover{
-      color:$orange;
-    }
-  }
-  &.right{
-    a{
-      float:right;
-    }
-  }
- }
-
-
- img{
-  -webkit-backface-visibility: none;
- } 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 HEADER
@@ -459,7 +457,11 @@ HERO
   }
 }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+SECTIONS
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 #dig-deep{
   position:relative;
   background:#795e44;
@@ -584,7 +586,11 @@ HERO
   }
 }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+SIGN UP FORM
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .update-sign-up{
   padding:120px 0;
   background:$primary;
@@ -640,10 +646,11 @@ HERO
   }
 }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+FOOTER
 
-
-
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer{
   width:100%;
   background:white;

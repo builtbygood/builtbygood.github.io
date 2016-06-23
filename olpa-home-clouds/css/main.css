@@ -234,6 +234,44 @@ section.one-column {
     margin: -40px 0 0 -30px;
     z-index: 10; }
 
+.home_page_section {
+  padding-bottom: 280px; }
+  .home_page_section p {
+    max-width: 700px;
+    margin: 15px auto 0 auto; }
+
+.padding__top-80 {
+  padding-top: 80px; }
+
+.padding__bottom-120 {
+  padding-bottom: 120px; }
+
+.next-page {
+  padding: 100px 0 0 0;
+  text-align: center; }
+  .next-page a {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #013852;
+    text-decoration: none; }
+    .next-page a:nth-child(1) {
+      float: left; }
+    .next-page a:nth-child(2) {
+      float: right; }
+    .next-page a:hover {
+      color: #f27523; }
+  .next-page.right a {
+    float: right; }
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+TYPE
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2 {
   font-family: 'Merriweather', serif;
   font-size: 36px;
@@ -316,42 +354,6 @@ p {
   top: -3px;
   border-top-color: #013852;
   /*Match background colour*/ }
-
-.home_page_section {
-  padding-bottom: 280px; }
-  .home_page_section p {
-    max-width: 700px;
-    margin: 15px auto 0 auto; }
-
-.padding__top-80 {
-  padding-top: 80px; }
-
-.padding__bottom-120 {
-  padding-bottom: 120px; }
-
-.next-page {
-  padding: 100px 0 0 0;
-  text-align: center; }
-  .next-page a {
-    display: block;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #013852;
-    text-decoration: none; }
-    .next-page a:nth-child(1) {
-      float: left; }
-    .next-page a:nth-child(2) {
-      float: right; }
-    .next-page a:hover {
-      color: #f27523; }
-  .next-page.right a {
-    float: right; }
-
-img {
-  -webkit-backface-visibility: none; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -477,6 +479,11 @@ HERO
     left: 50%;
     margin-left: -10px; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+SECTIONS
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 #dig-deep {
   position: relative;
   background: #795e44;
@@ -581,6 +588,11 @@ HERO
     padding: 150px 0;
     width: 100%; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+SIGN UP FORM
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .update-sign-up {
   padding: 120px 0;
   background: #013852; }
@@ -626,6 +638,11 @@ HERO
       .update-sign-up form button:focus {
         outline: none; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+FOOTER
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
   width: 100%;
   background: white;
