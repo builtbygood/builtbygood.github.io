@@ -117,6 +117,9 @@ html {
   background: white;
   overflow: hidden; }
 
+.contact #main {
+  background: transparent; }
+
 .container {
   position: relative;
   width: 100%;
@@ -355,7 +358,7 @@ h2 {
   width: 100%;
   margin: 0 auto;
   padding: 180px 0 140px 0;
-  background: url(../img/gray-brush-bg.png) repeat-x top; }
+  background: #ebebeb url(../img/gray-brush-bg.png) repeat-x top; }
   .hiring div {
     text-align: center; }
     .hiring div p {
@@ -507,6 +510,26 @@ header {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
+
+.contact header nav li a {
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: color 1s cubic-bezier(0.19, 1, 0.22, 1); }
+  .contact header nav li a:hover {
+    color: white; }
+  .contact header nav li a.active {
+    color: white; }
+.contact header #menu-sandwich span {
+  height: 0px;
+  width: 30px;
+  border-top: 3px solid white;
+  -moz-border-image: none;
+  -webkit-border-image: none;
+  border-image: none;
+  border-image-slice: 0; }
 
 .contact-us-cta {
   padding: 120px 0;
@@ -1045,14 +1068,15 @@ a {
   font-size: 40px;
   line-height: 60px;
   font-weight: 300;
+  color: white;
   max-width: 700px;
   margin: 0 auto; }
   #contact .input {
     display: inline-block;
     min-width: 100px;
     text-align: left;
-    border-bottom: 1px solid #bbb;
-    color: #bbb;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.5);
     cursor: text; }
     #contact .input:empty::before {
       content: attr(data-placeholder); }

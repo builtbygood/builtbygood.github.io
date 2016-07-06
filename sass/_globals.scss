@@ -126,8 +126,10 @@ html{
 	top:0;left:0;
 	width:100%;
 	background:white;
-	overflow:hidden;
-	
+	overflow:hidden;	
+}
+.contact #main{
+	background:transparent;
 }
 .container{
 	position:relative;
@@ -385,7 +387,7 @@ h2{
 		width:100%;
 		margin:0 auto;
 		padding:180px 0 140px 0;
-		background:url(../img/gray-brush-bg.png) repeat-x top;
+		background: #ebebeb url(../img/gray-brush-bg.png) repeat-x top;
 		div{
 			text-align:center;
 	    p{
@@ -523,6 +525,35 @@ header{
 	#menu-sandwich.active span:nth-child(3) {
 	  bottom:8px;  	  
 	  @include transform(rotate(45deg));
+	}
+}
+
+
+.contact{
+	header{
+		nav{
+		  li{
+		  	a{
+	        color:rgba(255,255,255,0.5);
+	        @include transition(color 1s $easeOutExpo);
+	        &:hover{
+	        	color:rgba(255,255,255,1);
+	        }
+	        &.active{
+	        	color:rgba(255,255,255,1);
+	        }
+		  	}
+		  }
+		}
+		#menu-sandwich span {
+		  height: 0px;
+		  width: 30px;
+		  border-top: 3px solid white;
+		  -moz-border-image: none;
+          -webkit-border-image: none;
+          border-image: none;
+          border-image-slice: 0;
+		}
 	}
 }
 
@@ -1127,14 +1158,15 @@ a{
 	font-size:40px;
 	line-height:60px;
 	font-weight:300;
+	color:white;
 	max-width:700px;
 	margin:0 auto;
 	.input{
 		display:inline-block;
 		min-width:100px;
 		text-align:left;
-		border-bottom:1px solid #bbb;
-		color:#bbb;
+		border-bottom:1px dashed rgba(255,255,255,0.35);
+		color:rgba(255,255,255,0.5);
 		cursor:text;
 		&:empty::before {
 		    content: attr(data-placeholder);
