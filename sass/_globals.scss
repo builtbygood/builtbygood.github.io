@@ -232,10 +232,10 @@ section{
 	border:none;
 	color:#d46a6c;
 	background: #9962a6;
-	background: -moz-linear-gradient(-45deg,  #9962a6 0%, $yellow 100%);
-	background: -webkit-linear-gradient(-45deg,  #9962a6 0%,$yellow 100%);
-	background: linear-gradient(135deg,  #9962a6 0%,$yellow 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#9962a6, endColorstr=$yellow,GradientType=1 ); 
+	background: -moz-linear-gradient(-45deg,  #9962a6 0%, #a44d6d 100%);
+	background: -webkit-linear-gradient(-45deg,  #9962a6 0%,#a44d6d 100%);
+	background: linear-gradient(135deg,  #9962a6 0%,#a44d6d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#9962a6, endColorstr=#a44d6d,GradientType=1 ); 
 	padding:2px;
 	//@include transition(color 0.8s $easeOutExpo);
 	span{
