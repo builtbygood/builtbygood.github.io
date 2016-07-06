@@ -88,7 +88,14 @@ $(function(){
 			
 		});
 		
-	}		
+	}
+
+    $('.input').on('focus', function(){
+    	var val = $(this).text();
+        //$(this).text('');
+    });
+
+
 	
 });
 
