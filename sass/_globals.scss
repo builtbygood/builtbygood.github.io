@@ -1126,14 +1126,15 @@ a{
 #contact{
 	font-size:40px;
 	line-height:60px;
+	font-weight:300;
 	max-width:700px;
 	margin:0 auto;
 	.input{
 		display:inline-block;
 		min-width:100px;
 		text-align:left;
-		border-bottom:2px solid #ccc;
-		color:#ccc;
+		border-bottom:1px solid #bbb;
+		color:#bbb;
 		cursor:text;
 		&:empty::before {
 		    content: attr(data-placeholder);
