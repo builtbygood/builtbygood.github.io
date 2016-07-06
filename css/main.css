@@ -100,9 +100,8 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Lato',sans-serif;
   background: #5c5ce1;
-  background: -moz-linear-gradient(-45deg, #5c5ce1 0%, #d7431c 100%);
-  background: -webkit-linear-gradient(-45deg, #5c5ce1 0%, #d7431c 100%);
-  background: linear-gradient(135deg, #5c5ce1 0%, #d7431c 100%);
+  background: -moz-linear-gradient(-20deg, #5c5ce1 0%, #d7431c 100%);
+  background: -webkit-linear-gradient(-20deg, #5c5ce1 0%, #d7431c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$blue, endColorstr=$yellow,GradientType=1 );
   padding: 10px; }
 
@@ -225,7 +224,7 @@ section {
   margin: 40px auto 0 auto;
   font-size: 18px;
   border: none;
-  color: #d46a6c;
+  color: #a44d6d;
   background: #9962a6;
   background: -moz-linear-gradient(-45deg, #9962a6 0%, #a44d6d 100%);
   background: -webkit-linear-gradient(-45deg, #9962a6 0%, #a44d6d 100%);
