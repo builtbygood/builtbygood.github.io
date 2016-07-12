@@ -1134,12 +1134,12 @@ a{
 	max-width:800px;
 	margin:0 auto;
 	.input{
+		position:relative;
 		display:inline-block;
 		min-width:100px;
 		text-align:left;
 		border-bottom:1px dashed rgba(255,255,255,0.35);
 		color:rgba(255,255,255,0.5);
-		cursor:text;
 		&:empty::before {
 		    content: attr(data-placeholder);
 		}
@@ -1152,5 +1152,56 @@ a{
 	}
 	.btn_primary{
 		margin-top:60px;
+	}
+	.dropdown{
+		position:absolute;
+		display:none;
+		top:50%;
+		margin-top:-100px;
+		left:50%;
+		&#product-list{
+			margin-left:-200px;
+		    width:400px;
+		}
+		&#date-list{
+			margin-left:-200px;
+		    width:400px;
+		}
+		background:white;
+		color:#222;
+		z-index:999;
+		padding:30px;
+		box-shadow:-10px 30px 30px 0 rgba(0,0,0,0.3);
+		ul{
+			width:100%;
+			margin-top:0;
+		}
+		li{
+			display:block;
+			width:420px;
+			height:80px;
+			line-height:40px;
+			font-size:50px;
+			color:#999;
+			padding:20px 20px;
+			cursor:pointer;
+			@include transition(all 0.8s $easeOutExpo);
+			
+				i{
+					display:none;
+					font-size:40px;
+					margin-left:10px;
+				}
+			
+			&.active{
+				color:#a44d6d;
+				i{
+					display:inline;
+				}
+			}
+			&:hover{
+				color:#a44d6d;
+			}
+		}
 	}
 }
