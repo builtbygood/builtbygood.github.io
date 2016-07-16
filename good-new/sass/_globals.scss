@@ -419,11 +419,17 @@ footer{
         color:#6a6a6a;
     }
     .social-links{
-        color:white;
         float:right;
         li{
             display:inline;
             margin:0 0 0 30px;
+        }
+        a{
+            color:white;
+            @include transition(color 0.6s $easeOutExpo);
+            &:hover{
+                color:#777;
+            }
         }
     }
 	

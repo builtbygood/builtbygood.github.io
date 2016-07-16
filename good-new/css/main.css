@@ -381,11 +381,19 @@ footer {
     float: left;
     color: #6a6a6a; }
   footer .social-links {
-    color: white;
     float: right; }
     footer .social-links li {
       display: inline;
       margin: 0 0 0 30px; }
+    footer .social-links a {
+      color: white;
+      -webkit-transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      -ms-transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+      footer .social-links a:hover {
+        color: #777; }
 
 .modal {
   position: fixed;
