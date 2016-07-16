@@ -34,12 +34,6 @@ $(function(){
 
     });
 
-    $('.dropdown').each(function(){
-
-        $(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
-
-    });
-
     $('.dropdown li').on('click', function(){
 
         $(this).parent().parent().parent().find('.display').html($(this).text());
@@ -66,7 +60,13 @@ $(function(){
     });
 
     $('.hire-us-btn').on('click', function(){
-        $('.modal').fadeIn('fast');
+        $('.modal').fadeIn('fast', function(){
+             $('.dropdown').each(function(){
+
+                $(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
+
+            });
+        });
     });
 
 	
