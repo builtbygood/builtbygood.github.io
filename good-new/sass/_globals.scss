@@ -314,7 +314,7 @@ header{
         color:#888; 
         margin-top:-30px;
         margin-left:70px;
-        @include transition(color 0.8s $easeOutExpo);
+        @include transition(color 0.6s $easeOutExpo);
         &:hover{
             
             color:#222;
@@ -339,13 +339,13 @@ header{
         margin:0 10px;
         border:2px solid #888;
         cursor:pointer;
-        @include transition(all 0.8s $easeOutExpo);  
+        @include transition(all 0.6s $easeOutExpo);  
         span{
             display:block;
             position:absolute;
             background:#222;
             @include opacity(0);
-            @include transition(all 0.8s $easeOutExpo); 
+            @include transition(all 0.6s $easeOutExpo); 
             &:nth-child(1){
                 width:2px;
                 height:0;
@@ -429,7 +429,7 @@ footer{
     top:0;
     width:100%;
     height:100%;
-    background:rgba(0,0,0,0.9);
+    background:rgba(10,10,10,0.95);
     z-index:9999;
     .modal-close-btn{
         position:fixed;
@@ -438,6 +438,18 @@ footer{
         color:white;
         font-size:30px;
         color:white;
+        width:40px;
+        height:40px;
+        cursor:pointer;
+        @include transition(transform 1s $easeOutExpo);
+        img{
+            display:block;
+            width:100%;
+            height:auto;
+        }
+        &:hover{
+            @include transform(scale(1.2));
+        }
     }
 }
 
@@ -480,13 +492,13 @@ footer{
         margin:80px auto 0 auto;
         border:1px solid #888;
         cursor:pointer;
-        @include transition(all 0.8s $easeOutExpo);
+        @include transition(all 0.6s $easeOutExpo);
         span{
             display:block;
             position:absolute;
             background:white;
             @include opacity(1);
-            @include transition(all 0.8s $easeOutExpo); 
+            @include transition(all 0.6s $easeOutExpo); 
             &:nth-child(1){
                 width:1px;
                 height:0;
@@ -565,7 +577,7 @@ footer{
             color:#999;
             padding:20px 20px;
             cursor:pointer;
-            @include transition(all 0.8s $easeOutExpo);
+            @include transition(all 0.6s $easeOutExpo);
             
                 i{
                     display:none;
