@@ -261,6 +261,13 @@ header {
       line-height: 30px;
       color: #222;
       margin-bottom: 5px; }
+.good-people .guy-links {
+  margin-top: 15px; }
+  .good-people .guy-links li {
+    display: inline;
+    margin: 0 10px; }
+    .good-people .guy-links li a {
+      color: #888; }
 
 .good-news ul {
   margin-top: 50px; }
@@ -472,8 +479,8 @@ footer {
       display: block;
       position: absolute;
       background: white;
-      opacity: 1;
-      filter: alpha(opacity=100);
+      opacity: 0;
+      filter: alpha(opacity=0);
       -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
       -moz-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
       -ms-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
