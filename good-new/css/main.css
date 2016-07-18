@@ -558,4 +558,10 @@ footer {
       #contact .dropdown li:hover {
         color: #222; }
 
+@media screen and (max-width: 1500px) {
+  header .container, footer .container {
+    padding: 0 50px; }
+  header .hire-us-btn, footer .hire-us-btn {
+    right: 50px; } }
+
 /*# sourceMappingURL=main.css.map */

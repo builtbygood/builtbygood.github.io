@@ -613,4 +613,17 @@ footer{
 }
 
 
+@media screen and (max-width: 1500px){
+    
+    header, footer{
+        .container{
+            padding:0 50px;
+        }
+        .hire-us-btn{
+            right:50px;
+        }
+    }
+}
+
+
 
