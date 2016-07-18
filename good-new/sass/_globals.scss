@@ -212,13 +212,13 @@ header{
 .hero{
     height:100%;
     min-height:900px;
-    width:1500px;
+    //width:1500px;
     margin:0 auto;
     background:url(../img/hero.gif) no-repeat;
-    background-position: 0 bottom;
-    background-size:100% auto;
+    background-position: bottom center;
+    background-size:125% auto;
     .hero-copy{
-        margin-top:-15%;
+        margin-top:-10%;
         font-size:55px;
         line-height:70px;
         font-weight:300;
@@ -632,6 +632,10 @@ footer{
         .hire-us-btn{
             right:50px;
         }
+    }
+
+    .hero{
+        background-size:160% auto;
     }
 }
 
