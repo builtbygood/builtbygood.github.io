@@ -143,12 +143,11 @@ header{
         box-shadow:0 0 6px 0 rgba(0,0,0,0.3);
     }
     .container{
-        max-width:100%;
+        max-width:1500px;
     }
     .logo{
         position:absolute;
         top:10px; 
-        left:50px;
     }
     nav{
         height:90px;
@@ -187,7 +186,7 @@ header{
     .hire-btn{
         position:absolute;
         top:0;
-        right:50px;
+        right:0;
         li{
             position:relative;
             display:inline;
@@ -213,13 +212,14 @@ header{
 .hero{
     height:100%;
     min-height:900px;
-    //width:1500px;
+    width:100%;
+    max-width:1500px;
     margin:0 auto;
     background:url(../img/hero.gif) no-repeat;
     background-position: bottom center;
-    //background-size:120% auto;
+    background-size:100% auto;
     .hero-copy{
-        margin-top:-200px;
+        margin-top:-15%;
         font-size:55px;
         line-height:70px;
         font-weight:300;
@@ -422,7 +422,6 @@ footer{
     background:#222;
     font-size:20px;
     line-height:200px;
-    padding:0 50px;
     .container{
         max-width:1500px;
     }
@@ -626,11 +625,15 @@ footer{
 
 
 @media screen and (max-width: 1500px){
-
-    .hero{
-        background-size:160% auto;
+    
+    header, footer{
+        .container{
+            padding:0 50px;
+        }
+        .hire-us-btn{
+            right:50px;
+        }
     }
-
 }
 
 
