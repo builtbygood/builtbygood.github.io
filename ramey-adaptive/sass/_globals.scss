@@ -251,7 +251,7 @@ HERI
       width:100%;
       max-width:240px;
       @include transform(translateY(0));
-      @include transition(all 0.8s $easeOutExpo);
+      @include transition(all 0.7s $easeOutExpo);
     }
     p{
       @include opacity(0);
@@ -261,7 +261,7 @@ HERI
       font-family:serif;
       //font-style:italic;
       @include transform(translateY(200px));
-      @include transition(all 0.8s $easeOutExpo);
+      @include transition(all 0.7s $easeOutExpo);
     }
     &:hover{
       img{
