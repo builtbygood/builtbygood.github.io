@@ -859,6 +859,20 @@ MEDIA QUERIES
     right: 20px;
     bottom: 20px; }
     .adaptiveInsights .read-more-link a {
-      font-size: 16px; } }
+      font-size: 16px; }
+
+  .adaptiveQuote {
+    padding: 30px 0 0 0; }
+    .adaptiveQuote .adaptiveQuoteImage {
+      display: none; }
+    .adaptiveQuote .adaptiveQuoteCopy {
+      width: 100%;
+      padding-left: 0;
+      padding-bottom: 30px; }
+      .adaptiveQuote .adaptiveQuoteCopy .desktop-quote {
+        display: none;
+        width: 100%; }
+      .adaptiveQuote .adaptiveQuoteCopy .mobile-quote {
+        display: block; } }
 
 /*# sourceMappingURL=main.css.map */
