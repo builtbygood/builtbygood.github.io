@@ -144,7 +144,7 @@ TYPE
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
-HERI
+HERO
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveHero {
@@ -199,6 +199,11 @@ HERI
     .adaptiveHero .adaptiveHeroImage img {
       display: block; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+DESCRIPTION
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveDecription {
   padding: 90px 0; }
   .adaptiveDecription p {
@@ -209,6 +214,11 @@ HERI
     .adaptiveDecription p:first-child {
       margin-top: 0; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+CLIENTS
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveClients {
   border-bottom: 1px solid white;
   border-top: 1px solid white; }
@@ -271,6 +281,11 @@ HERI
       -webkit-transform: translateY(0);
       transform: translateY(0); }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+CAPABILITIES
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveCapabilties {
   background: #beb79e; }
   .adaptiveCapabilties .grid {
@@ -345,6 +360,11 @@ HERI
       width: 100%;
       height: auto; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+MODAL
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .capabilitiesModal {
   position: absolute;
   left: 0;
@@ -383,6 +403,11 @@ HERI
       opacity: 0.5;
       filter: alpha(opacity=50); }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+INSIGHTS
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveInsights {
   border-bottom: 1px solid white;
   border-top: 1px solid white; }
@@ -426,6 +451,11 @@ HERI
     .adaptiveInsights .read-more-link:focus {
       outline: none; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+QUOTE
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveQuote {
   position: relative;
   padding: 100px 0 0 0;
@@ -444,6 +474,11 @@ HERI
     .adaptiveQuote .adaptiveQuoteCopy img {
       width: 100%; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+TESTIMONIALS
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveTestimonials {
   background: #beb79e; }
   .adaptiveTestimonials .grid {
@@ -480,9 +515,11 @@ HERI
     font-family: serif;
     padding: 0 10px; }
   .adaptiveTestimonials .testimonial-author {
+    display: inline-block;
     font-family: serif;
     font-style: italic;
-    font-size: 30px; }
+    font-size: 24px;
+    padding-bottom: 6px; }
   .adaptiveTestimonials .col-icon {
     position: absolute;
     width: 118px;
@@ -496,6 +533,11 @@ HERI
       border-radius: 100%;
       border: 5px solid #5cc2c8; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+MEDIA QUERIES
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 1200px) {
   .sectionHeading {
     padding-left: 20px;
@@ -660,8 +702,8 @@ HERI
     width: 100%;
     height: 200px; }
   .adaptiveInsights h3 {
-    font-size: 20px;
-    line-height: 30px; }
+    font-size: 18px;
+    line-height: 28px; }
   .adaptiveInsights .read-more-link {
     right: 20px;
     bottom: 20px; }
@@ -685,11 +727,20 @@ HERI
     margin-left: -40px;
     background: white;
     border-radius: 100%; }
+  .adaptiveCapabilties .open-btn {
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px; }
 
   .adaptiveTestimonials .grid {
     margin: 70px auto 5px auto; }
+  .adaptiveTestimonials .col-1-3 {
+    height: auto; }
   .adaptiveTestimonials p {
-    padding: 0; }
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px; }
   .adaptiveTestimonials .col-icon {
     position: absolute;
     width: 90px;
@@ -712,6 +763,32 @@ HERI
       padding-left: 0;
       padding-bottom: 70px; }
       .adaptiveQuote .adaptiveQuoteCopy img {
-        width: 100%; } }
+        width: 100%; }
+
+  .capabilitiesModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 80px 20px 60px 20px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    overflow: scroll;
+    z-index: 10000; }
+    .capabilitiesModal .capabilitiesModalHeading {
+      padding-bottom: 10px;
+      text-align: center; }
+      .capabilitiesModal .capabilitiesModalHeading h3 {
+        padding-bottom: 20px;
+        border-bottom: none;
+        font-size: 28px;
+        line-height: 32px; }
+    .capabilitiesModal p {
+      margin-top: 20px; }
+    .capabilitiesModal .modalClose {
+      top: 20px;
+      right: 20px; }
+    .capabilitiesModal.flex-center-v {
+      display: block; } }
 
 /*# sourceMappingURL=main.css.map */
