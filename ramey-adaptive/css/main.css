@@ -148,6 +148,7 @@ HERO
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveHero {
+  position: relative;
   width: 100%;
   height: 550px;
   background: #5cc2c8; }
@@ -175,6 +176,7 @@ HERO
         font-weight: 400;
         letter-spacing: 0; }
     .adaptiveHero .adaptiveHeroCopy h2 {
+      position: relative;
       display: block;
       text-align: right;
       margin-top: 45px;
@@ -198,6 +200,31 @@ HERO
     width: 30%; }
     .adaptiveHero .adaptiveHeroImage img {
       display: block; }
+  .adaptiveHero .open-bio {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    letter-spacing: 2px;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    text-align: center;
+    background: #63bbc1;
+    -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+    .adaptiveHero .open-bio:hover {
+      background: #4f9ca1; }
+    .adaptiveHero .open-bio img {
+      padding-left: 5px; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -205,7 +232,8 @@ DESCRIPTION
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveDecription {
-  padding: 90px 0; }
+  padding: 90px 0;
+  background: #f6f6f6; }
   .adaptiveDecription p {
     font-size: 18px;
     line-height: 28px;
@@ -402,6 +430,41 @@ MODAL
     .capabilitiesModal .modalClose:hover {
       opacity: 0.5;
       filter: alpha(opacity=50); }
+  .capabilitiesModal.flex-center-v {
+    display: flex; }
+
+.bioModal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 80px;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 20; }
+  .bioModal p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+    color: black;
+    font-family: serif; }
+  .bioModal .container {
+    margin: 0 auto; }
+  .bioModal .modalClose {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+    .bioModal .modalClose:hover {
+      opacity: 0.5;
+      filter: alpha(opacity=50); }
+  .bioModal.flex-center {
+    display: flex; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -473,6 +536,8 @@ QUOTE
     padding-bottom: 80px; }
     .adaptiveQuote .adaptiveQuoteCopy img {
       width: 100%; }
+    .adaptiveQuote .adaptiveQuoteCopy .mobile-quote {
+      display: none; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -812,12 +877,32 @@ MEDIA QUERIES
       top: 20px;
       right: 20px; }
     .capabilitiesModal.flex-center-v {
+      display: block; }
+
+  .bioModal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 80px 20px 60px 20px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    overflow: scroll;
+    z-index: 10000; }
+    .bioModal p {
+      font-size: 18px;
+      line-height: 28px; }
+    .bioModal .modalClose {
+      top: 20px;
+      right: 20px; }
+    .bioModal.flex-center {
       display: block; } }
 @media (max-width: 600px) {
   .adaptiveHero {
-    height: 400px; }
+    height: 420px; }
     .adaptiveHero .adaptiveHeroCopy {
-      height: 400px; }
+      height: 420px;
+      margin-top: -20px; }
       .adaptiveHero .adaptiveHeroCopy h1 {
         font-size: 30px;
         line-height: 40px; }

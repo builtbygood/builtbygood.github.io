@@ -14,6 +14,11 @@ $(function(){
         $(this).parent().parent().find('.capabilitiesModal h3').html(heading);
         $(this).parent().parent().find('.capabilitiesModal').fadeIn('fast');
     });
+
+    $('.open-bio').on('click', function(){
+
+        $(this).parent().find('.bioModal').fadeIn('fast');
+    });
 	
 });
 

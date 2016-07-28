@@ -155,6 +155,7 @@ HERO
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveHero{
+  position:relative;
   width:100%;
   height:550px;
   background:$light_blue;
@@ -185,6 +186,7 @@ HERO
       }
     }
     h2{
+      position:relative;
       display:block;
       text-align:right;
       margin-top:45px;
@@ -213,6 +215,30 @@ HERO
       display:block
     }
   }
+  .open-bio{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:40px;
+    font-size:18px;
+    line-height:40px;
+    color:white;
+    text-transform:uppercase;
+    font-family:'Oswald';
+    letter-spacing:2px;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    text-align:center;
+    background:#63bbc1;
+    @include transition(all 0.8s $easeOutExpo);
+    &:hover{
+      background:#4f9ca1;
+    }
+    img{
+      padding-left:5px;
+    }
+  }
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -222,6 +248,7 @@ DESCRIPTION
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveDecription{
   padding:90px 0;
+  background:#f6f6f6;
   p{
     font-size:18px;
     line-height:28px;
@@ -415,6 +442,44 @@ MODAL
       @include opacity(0.5);
     }
   }
+  &.flex-center-v{
+      display:flex;
+  }
+}
+
+
+.bioModal{
+  position:absolute;
+  left:0;
+  top:0;
+  padding:80px;
+  width:100%;
+  height:100%;
+  background:white;
+  z-index:20;
+  p{
+    font-size:20px;
+    line-height:30px;
+    margin-top:20px;
+    color:black;
+    font-family:serif;
+  }
+  .container{
+    margin:0 auto;
+  }
+  .modalClose{
+    position:absolute;
+    top:30px;
+    right:30px;
+    cursor:pointer;
+     @include transition(all 0.8s $easeOutExpo);
+    &:hover{
+      @include opacity(0.5);
+    }
+  }
+  &.flex-center{
+      display:flex;
+  }
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -494,6 +559,9 @@ QUOTE
     img{
       width:100%;
     }
+    .mobile-quote{
+        display:none;
+      }
   }
 }
 
@@ -981,6 +1049,30 @@ MEDIA QUERIES
     }
   }
 
+  .bioModal{
+    position:fixed;
+    left:0;
+    top:0;
+    padding:80px 20px 60px 20px;
+    width:100%;
+    height:100%;
+    background:white;
+    overflow:scroll;
+    z-index:10000;
+    p{
+      font-size:18px;
+      line-height:28px;
+    }
+    .modalClose{
+      top:20px;
+      right:20px;
+    }
+    &.flex-center{
+      display:block;
+    }
+  }
+
+
 
 
 
@@ -990,9 +1082,10 @@ MEDIA QUERIES
 @media (max-width:600px){
 
   .adaptiveHero{
-    height:400px;
+    height:420px;
     .adaptiveHeroCopy{
-      height:400px;
+      height:420px;
+      margin-top:-20px;
       h1{
         font-size:30px;
         line-height:40px;
