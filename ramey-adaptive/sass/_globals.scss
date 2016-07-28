@@ -813,6 +813,38 @@ MEDIA QUERIES
     font-size:30px;
   }
 
+  .adaptiveHero{
+    height:400px;
+    .adaptiveHeroCopy{
+      height:400px;
+      h1{
+        font-size:40px;
+        line-height:45px;
+        span{
+          font-size:25px;
+          line-height:30px;
+        }
+      }
+      h2{
+        font-size:30px;
+        span{
+          font-size:18px;
+          line-height:22px;
+          max-width:200px;
+        }
+      }
+    }
+    .adaptiveHeroImage{
+      img{
+        display:block;
+        position:absolute;
+        margin-left:-50px;
+        bottom:0;
+        height:100%;
+      }
+    }
+  }
+
   .adaptiveClients{
     .col-1-3{
        width:100%;
@@ -949,6 +981,80 @@ MEDIA QUERIES
     }
   }
 
+
+
+
+}
+
+
+@media (max-width:600px){
+
+  .adaptiveHero{
+    height:400px;
+    .adaptiveHeroCopy{
+      height:400px;
+      h1{
+        font-size:30px;
+        line-height:40px;
+        span{
+          font-size:20px;
+          line-height:25px;
+        }
+      }
+      h2{
+        font-size:20px;
+        margin-top:30px;
+        letter-spacing:3px;
+        span{
+          font-size:16px;
+          line-height:20px;
+          max-width:150px;
+        }
+      }
+    }
+    .adaptiveHeroImage{
+      img{
+        display:block;
+        position:absolute;
+        margin-left:-50px;
+        bottom:0;
+        height:325px;
+      }
+    }
+  }
+
+  .adaptiveDecription{
+    padding:40px 20px;
+    p{
+      font-size:16px;
+      line-height:26px;
+    }
+  }
+
+  .adaptiveCapabilties{
+    p{
+      font-size:16px;
+      line-height:26px;
+    }
+  }
+
+  .adaptiveInsights{
+    .col-1-3{
+      width:100%;
+      height:200px;
+    }
+    h3{
+      font-size:16px;
+      line-height:26px;
+    }
+    .read-more-link{
+      right:20px;
+      bottom:20px;
+      a{
+        font-size:16px;
+      }
+    }
+  }
 
 
 
