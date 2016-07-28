@@ -127,7 +127,6 @@ html,body{
 #main{
   width:100%;
   height:100%;
-  min-width:1200px;
 }
 .sectionHeading{
   background:black;
@@ -295,7 +294,7 @@ HERI
     }
   }
   .col-1-4{
-    position:relative;
+      position:relative;
       width:23%;
       padding:60px 20px;
       height:415px;
@@ -491,7 +490,7 @@ HERI
     position:relative;
       width:31.333333%;
       padding:60px 20px;
-      height:500px;
+      height:550px;
       background:white;
       margin:1%;
       box-shadow:10px 20px 40px 0 rgba(0,0,0,0.2);
@@ -533,5 +532,308 @@ HERI
         border:5px solid $light_blue;
     }
   }
+}
+
+
+
+
+@media (max-width:1200px){
+
+  .sectionHeading{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .adaptiveHero{
+    padding:0 20px;
+    overflow:hidden;
+    .adaptiveHeroCopy{
+      h1{
+        span{
+          margin-top:5px;
+          font-size:36px;
+          line-height:46px;
+        }
+      }
+      h2{
+        text-align:left;
+        margin-left:0;
+      }
+    }
+    .adaptiveHeroImage{
+      width:30%;
+      img{
+        display:block;
+        margin-left:-100px;
+      }
+    }
+  }
+
+  .adaptiveDecription{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .adaptiveClients{
+    .col-1-3{
+       p{
+        font-size:20px;
+        line-height:30px;
+       }   
+    }
+  }
+
+  .adaptiveCapabilties{
+    .grid{
+      max-width:800px;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    .row{
+      margin-top:0;
+    }
+    .col-1-4{
+        position:relative;
+        width:48%;
+        padding:60px 20px;
+        height:415px;
+        background:white;
+        margin:1% 1% 70px 1%;
+        box-shadow:10px 20px 40px 0 rgba(0,0,0,0.2);
+    }
+    .flex-center-h{
+      display:block;
+    }
+  }
+
+  .adaptiveInsights{
+    .col-1-3{
+      padding:30px;
+    }
+    h3{
+      font-size:24px;
+      line-height:34px;
+    }
+    .read-more-link{
+      right:30px;
+      bottom:30px;
+      a{
+        font-size:20px;
+      }
+    }
+  }
+
+  .adaptiveQuote{
+    position:relative;
+    padding:100px 20px 0 20px;
+    background:$orange;
+    .container{
+      max-width:960px;
+    }
+    .adaptiveQuoteImage{
+      width:40%;
+      img{
+        display:block;
+        position:absolute;
+        bottom:0;
+        height:100%;
+      }
+    }
+    .adaptiveQuoteCopy{
+      width:60%;
+      padding-left:40px;
+      padding-bottom:80px;
+      img{
+        width:100%;
+      }
+    }
+  }
+
+
+
+}
+
+
+@media (max-width:1024px){
+
+  .adaptiveHero{
+    height:450px;
+    .adaptiveHeroCopy{
+      height:450px;
+      h1{
+        font-size:50px;
+        line-height:55px;
+        span{
+          font-size:30px;
+          line-height:40px;
+        }
+      }
+      h2{
+        font-size:40px;
+        span{
+          font-size:18px;
+        }
+      }
+    }
+    .adaptiveHeroImage{
+      img{
+        display:block;
+        position:absolute;
+        margin-left:-50px;
+        bottom:0;
+        height:100%;
+      }
+    }
+  }
+
+  .adaptiveClients{
+    .col-1-3{
+       width:50%;
+       p{
+        font-size:20px;
+        line-height:30px;
+       }   
+    }
+  }
+
+}
+
+
+@media (max-width:960px){
+
+  .adaptiveInsights{
+    .col-1-3{
+      padding:20px;
+    }
+    h3{
+      font-size:20px;
+      line-height:30px;
+    }
+    .read-more-link{
+      right:20px;
+      bottom:20px;
+      a{
+        font-size:16px;
+      }
+    }
+  }
+
+  .adaptiveTestimonials{
+    h3{
+      font-size:20px;
+      line-height:24px;
+    }
+    p{
+      font-size:18px;
+      line-height:28px;
+      font-family:serif;
+      padding:0 10px;
+    }
+    .testimonial-author{
+      font-family:serif;
+      font-style:italic;
+      font-size:20px;
+    }
+    .col-icon{
+      position:absolute;
+      width:118px;
+      height:118px;
+      top:-59px;
+      left:50%;
+      margin-left:-59px;
+      img{
+          width:100%;
+          height:auto;
+          border-radius:100%;
+          border:5px solid $light_blue;
+      }
+    }
+  }
+
+  .adaptiveTestimonials{
+    .grid{
+      max-width:500px;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    .flex-center-h{
+      display:block;
+    }
+    .col-1-3{   
+        width:98%;
+        height:450px;
+    }
+  }
+
+
+}
+
+
+@media (max-width:768px){
+
+  .sectionHeading{
+    font-size:30px;
+  }
+
+  .adaptiveClients{
+    .col-1-3{
+       width:100%;
+       height:260px;
+       p{
+        font-size:18px;
+        line-height:28px;
+       }   
+    }
+  }
+
+  .adaptiveInsights{
+    .col-1-3{
+      width:100%;
+      height:200px;
+    }
+    h3{
+      font-size:20px;
+      line-height:30px;
+    }
+    .read-more-link{
+      right:20px;
+      bottom:20px;
+      a{
+        font-size:16px;
+      }
+    }
+  }
+
+  .adaptiveCapabilties{
+    .col-1-4{
+        position:relative;
+        width:98%;
+        padding:60px 20px;
+        height:300px;
+        margin:1% 1% 70px 1%;
+    }
+    .flex-center-h{
+      display:block;
+    }
+  }
+
+
+  .adaptiveQuote{
+    padding:100px 20px 0 20px;
+    .adaptiveQuoteImage{
+      display:none;
+    }
+    .adaptiveQuoteCopy{
+      width:100%;
+      padding-left:0;
+      padding-bottom:80px;
+      img{
+        width:100%;
+      }
+    }
+  }
+
+
+
 }
 
