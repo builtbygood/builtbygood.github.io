@@ -649,6 +649,32 @@ MEDIA QUERIES
   .adaptiveCapabilties .flex-center-h {
     display: block; }
 
+  .capabilitiesModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 80px 20px 60px 20px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    overflow: scroll;
+    z-index: 10000; }
+    .capabilitiesModal .capabilitiesModalHeading {
+      padding-bottom: 10px;
+      text-align: center; }
+      .capabilitiesModal .capabilitiesModalHeading h3 {
+        padding-bottom: 20px;
+        border-bottom: none;
+        font-size: 28px;
+        line-height: 32px; }
+    .capabilitiesModal p {
+      margin-top: 20px; }
+    .capabilitiesModal .modalClose {
+      top: 20px;
+      right: 20px; }
+    .capabilitiesModal.flex-center-v {
+      display: block; }
+
   .adaptiveInsights .col-1-3 {
     padding: 30px; }
   .adaptiveInsights h3 {
@@ -852,32 +878,6 @@ MEDIA QUERIES
       padding-bottom: 70px; }
       .adaptiveQuote .adaptiveQuoteCopy img {
         width: 100%; }
-
-  .capabilitiesModal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 80px 20px 60px 20px;
-    width: 100%;
-    height: 100%;
-    background: white;
-    overflow: scroll;
-    z-index: 10000; }
-    .capabilitiesModal .capabilitiesModalHeading {
-      padding-bottom: 10px;
-      text-align: center; }
-      .capabilitiesModal .capabilitiesModalHeading h3 {
-        padding-bottom: 20px;
-        border-bottom: none;
-        font-size: 28px;
-        line-height: 32px; }
-    .capabilitiesModal p {
-      margin-top: 20px; }
-    .capabilitiesModal .modalClose {
-      top: 20px;
-      right: 20px; }
-    .capabilitiesModal.flex-center-v {
-      display: block; }
 
   .bioModal {
     position: fixed;

@@ -712,6 +712,38 @@ MEDIA QUERIES
     }
   }
 
+  .capabilitiesModal{
+    position:fixed;
+    top:0;
+    left:0;
+    padding:80px 20px 60px 20px;
+    width:100%;
+    height:100%;
+    background:white;
+    overflow:scroll;
+    z-index:10000;
+    .capabilitiesModalHeading{
+        padding-bottom:10px;
+        text-align:center;
+         h3{
+          padding-bottom:20px;
+          border-bottom:none;
+          font-size:28px;
+          line-height:32px;
+        }
+    }
+    p{
+      margin-top:20px;
+    }
+    .modalClose{
+      top:20px;
+      right:20px;
+    }
+    &.flex-center-v{
+      display:block;
+    }
+  }
+
   .adaptiveInsights{
     .col-1-3{
       padding:30px;
@@ -1013,39 +1045,6 @@ MEDIA QUERIES
       img{
         width:100%;
       }
-    }
-  }
-
-
-  .capabilitiesModal{
-    position:fixed;
-    top:0;
-    left:0;
-    padding:80px 20px 60px 20px;
-    width:100%;
-    height:100%;
-    background:white;
-    overflow:scroll;
-    z-index:10000;
-    .capabilitiesModalHeading{
-        padding-bottom:10px;
-        text-align:center;
-         h3{
-          padding-bottom:20px;
-          border-bottom:none;
-          font-size:28px;
-          line-height:32px;
-        }
-    }
-    p{
-      margin-top:20px;
-    }
-    .modalClose{
-      top:20px;
-      right:20px;
-    }
-    &.flex-center-v{
-      display:block;
     }
   }
 

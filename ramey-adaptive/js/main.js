@@ -2,7 +2,7 @@ $(function(){
 
     var $window = $(window);
    
-    $('.capabilitiesModal').hide();
+    $('.capabilitiesModal, .bioModal').hide();
     
     $('.modalClose').on('click', function(){
         $(this).parent().fadeOut('fast');
