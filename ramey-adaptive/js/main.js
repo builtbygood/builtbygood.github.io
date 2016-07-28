@@ -21,6 +21,9 @@ $(function(){
     $('.adaptiveClients .col-1-3').on('mouseleave', function(){
         $(this).removeClass('active');
     });
+    $('.adaptiveClients .col-1-3').on('mousedown', function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
 	
 	
 });
