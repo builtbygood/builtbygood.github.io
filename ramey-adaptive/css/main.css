@@ -338,7 +338,9 @@ HERI
     height: 100px;
     top: -50px;
     left: 50%;
-    margin-left: -50px; }
+    margin-left: -50px;
+    background: white;
+    border-radius: 100%; }
     .adaptiveCapabilties .col-icon img {
       width: 100%;
       height: auto; }
@@ -666,23 +668,49 @@ HERI
     .adaptiveInsights .read-more-link a {
       font-size: 16px; }
 
+  .adaptiveCapabilties .grid {
+    margin: 50px 0 0px 0; }
   .adaptiveCapabilties .col-1-4 {
     position: relative;
     width: 98%;
-    padding: 60px 20px;
-    height: 300px;
-    margin: 1% 1% 70px 1%; }
+    padding: 40px 20px;
+    height: 320px;
+    margin: 1% 1% 1% 1%; }
   .adaptiveCapabilties .flex-center-h {
     display: block; }
+  .adaptiveCapabilties .col-icon {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    margin-left: -40px;
+    background: white;
+    border-radius: 100%; }
+
+  .adaptiveTestimonials .grid {
+    margin: 70px auto 5px auto; }
+  .adaptiveTestimonials p {
+    padding: 0; }
+  .adaptiveTestimonials .col-icon {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: -45px;
+    left: 50%;
+    margin-left: -45px; }
+    .adaptiveTestimonials .col-icon img {
+      width: 100%;
+      height: auto;
+      border-radius: 100%;
+      border: 5px solid #5cc2c8; }
 
   .adaptiveQuote {
-    padding: 100px 20px 0 20px; }
+    padding: 60px 20px 0 20px; }
     .adaptiveQuote .adaptiveQuoteImage {
       display: none; }
     .adaptiveQuote .adaptiveQuoteCopy {
       width: 100%;
       padding-left: 0;
-      padding-bottom: 80px; }
+      padding-bottom: 70px; }
       .adaptiveQuote .adaptiveQuoteCopy img {
         width: 100%; } }
 

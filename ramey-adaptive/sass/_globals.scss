@@ -351,6 +351,8 @@ HERI
     top:-50px;
     left:50%;
     margin-left:-50px;
+    background:white;
+      border-radius:100%;
     img{
         width:100%;
         height:auto;
@@ -805,28 +807,62 @@ HERI
   }
 
   .adaptiveCapabilties{
+    .grid{
+      margin:50px 0 0px 0;
+    }
     .col-1-4{
         position:relative;
         width:98%;
-        padding:60px 20px;
-        height:300px;
-        margin:1% 1% 70px 1%;
+        padding:40px 20px;
+        height:320px;
+        margin:1% 1% 1% 1%;
     }
     .flex-center-h{
       display:block;
+    }
+    .col-icon{
+      width:80px;
+      height:80px;
+      top:-40px;
+      margin-left:-40px;
+      background:white;
+      border-radius:100%;
+    }
+  }
+
+  .adaptiveTestimonials{
+    .grid{
+      margin:70px auto 5px auto;
+    }
+    p{
+        padding:0;
+      }
+    .col-icon{
+      position:absolute;
+      width:90px;
+      height:90px;
+      top:-45px;
+      left:50%;
+      margin-left:-45px;
+      img{
+          width:100%;
+          height:auto;
+          border-radius:100%;
+          border:5px solid $light_blue;
+      }
     }
   }
 
 
   .adaptiveQuote{
-    padding:100px 20px 0 20px;
+    padding:60px 20px 0 20px;
     .adaptiveQuoteImage{
       display:none;
     }
     .adaptiveQuoteCopy{
       width:100%;
       padding-left:0;
-      padding-bottom:80px;
+      padding-bottom:70px;
       img{
         width:100%;
       }
