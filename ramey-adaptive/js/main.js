@@ -17,12 +17,10 @@ $(function(){
 
     $('.adaptiveClients .col-1-3').on('mouseenter', function(){
         $(this).addClass('active');
+        $(this).siblings().removeClass('active');
     });
     $('.adaptiveClients .col-1-3').on('mouseleave', function(){
         $(this).removeClass('active');
-    });
-    $('.adaptiveClients .col-1-3').on('mousedown', function(){
-        $(this).addClass('active').siblings().removeClass('active');
     });
 	
 	
