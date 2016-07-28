@@ -2,7 +2,7 @@ $(function(){
 
     var $window = $(window);
    
-    $('.capabilitiesModal, .bioModal').hide();
+    $('.capabilitiesModal').hide();
     
     $('.modalClose').on('click', function(){
         $(this).parent().fadeOut('fast');
@@ -17,7 +17,13 @@ $(function(){
 
     $('.open-bio').on('click', function(){
 
-        $(this).parent().find('.bioModal').fadeIn('fast');
+        if( $window.width() <= 768 ){
+            $(this).parent().find('.bioModal').css({ display:'block' }).fadeIn('fast');
+        } else{
+            $(this).parent().find('.bioModal').css({ display:'flex' }).fadeIn('fast');
+        }
+
+
     });
 	
 });
