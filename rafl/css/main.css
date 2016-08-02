@@ -645,7 +645,9 @@ MEDIA QUERIES
     .follow-rafl .follow-rafl-username {
       color: #999;
       font-size: 16px;
-      line-height: 20px; }
+      line-height: 20px;
+      width: 200px;
+      margin: 0 auto; }
       .follow-rafl .follow-rafl-username span {
         display: inline-block;
         font-size: 28px;
