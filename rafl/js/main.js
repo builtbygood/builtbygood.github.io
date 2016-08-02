@@ -20,8 +20,9 @@ $(function(){
     scrollStuff();
 
 
-    $('header').on('click', function(){
+    $('#mobile-nav-btn').on('click', function(){
         $('#main, .mobile-nav').toggleClass('open');
+        $(this).toggleClass('active');
     });
 
 });
