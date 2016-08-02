@@ -706,7 +706,7 @@ form{
     border:2px solid transparent;
     font-size:18px;
     border-radius:5px;
-    -webkit-styling:none;
+    -webkit-appearance:none;
     @include transition(border 0.8s $easeOutExpo);
     &:focus{
       outline:none;
@@ -750,7 +750,7 @@ form{
     max-width:300px;
     font-size:18px;
     margin:60px auto 0 auto;
-    -webkit-styling:none;
+    -webkit-appearance:none;
   }
   
 }
