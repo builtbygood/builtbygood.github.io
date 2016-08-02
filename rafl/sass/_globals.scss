@@ -1,0 +1,476 @@
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+RESETS
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+HELPERS
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+.clear{
+	clear:both;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container{
+  position:relative;
+  padding:0;
+  width:100%;
+  max-width:1200px;
+  height:100%;
+  margin:0 auto;
+}
+.col-1-2{
+  position:relative;
+  width:50%;
+  float:left;
+  img{
+    width:100%;
+    max-width:500px;
+  }
+}
+.col-1-3{
+  position:relative;
+  width:33.333333%;
+  float:left;
+}
+.col-1-4{
+  position:relative;
+  width:25%;
+  float:left;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-center-v{
+  display: flex;
+  align-items: center;
+}
+.flex-center-h{
+  display: flex;
+  justify-content: center;
+}
+.align-center{
+  text-align:center;
+}
+.float-left{
+  float:left;
+}
+.float-right{
+  float:right;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+GLOBALS
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+html,body{
+	height:100%;
+  font-family:"Lato";
+	-webkit-font-smoothing: antialiased;
+  color:#333;
+}
+#main{
+  width:100%;
+  height:100%;
+}
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100px;
+  background:transparent;
+  z-index:10000;
+  @include transition(all 1.2s $easeOutExpo);
+  .logo{
+    position:absolute;
+    top:30px;
+    left:60px;
+    @include transition(all 0.6s $easeOutExpo);
+  }
+  nav{
+    position:absolute;
+    top:0;
+    right:60px;
+    height:100px;
+    li{
+      display:block;
+      float:left;
+      margin-left:50px;
+      height:100%;
+      a{
+        font-size:18px;
+        line-height:100px;
+        color:rgba(255,255,255,0.6);
+        @include transition(all 0.6s $easeOutExpo);
+      }
+      .fa{
+        font-size:24px;
+        line-height:102px;
+        color:white;
+        @include transition(all 0.6s $easeOutExpo);
+      }
+      &:hover{
+        a{
+          color:rgba(255,255,255,1);
+        }
+      }
+      &.active{
+        a{
+          color:white;
+        }
+      }
+    }
+  }
+  &.active{
+    height:70px;
+    background:rgba(30,30,30,0.9);
+    .logo{
+      top:15px;
+    }
+    nav{
+      height:70px;
+      li{
+        height:70px;
+        a{
+          line-height:70px;
+        }
+        .fa{
+          line-height:72px;
+        }
+      }
+    }
+  }
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+TYPE
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1{
+  font-weight:100;
+  font-size:40px;
+  line-height:50px;
+  text-transform:uppercase;
+}
+h1,h2{
+  
+}
+p{
+  
+}
+a{
+  text-decoration:none;
+}
+li{
+  list-style:none;
+}
+.blue{
+  color:$blue;
+}
+.light_blue{
+  color:$light_blue;
+}
+.light_purple{
+  color:$light_purple;
+}
+.dark_purple{
+  color:$dark_purple;
+}
+
+.btn_primary{
+  display:inline-block;
+  text-align:center;
+  padding:15px 30px;
+  min-width:250px;
+  background:$purple;
+  color:white;
+  font-size:20px;
+  border-radius:30px;
+  border:2px solid transparent;
+  @include transition(all 0.8s $easeOutExpo);
+  &:hover{
+    border-color:rgba(255,255,255,0.6);
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+HERO
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero{
+  width:100%;
+  height:100%;
+  background:url(../img/hero_blue.jpg) no-repeat center;
+  background-size:cover;
+  .hero-copy{
+    text-align:center;
+    max-width:1280px;
+    padding:0 30px;
+    h1{
+      font-size:120px;
+      line-height:110px;
+      color:white;
+      .superscript{
+        font-size:60px;
+        vertical-align:super;
+      }
+    }
+    h2{
+      font-size:32px;
+      line-height:36px;
+      color:rgba(255,255,255,0.8);
+      font-weight:300;
+      margin-top:10px;
+    }
+    .btn_primary{
+      margin-top:60px;
+    }
+  }
+}
+
+
+.page-hero{
+  width:100%;
+  height:400px;
+  .hero-copy{
+    text-align:center;
+    max-width:1280px;
+    padding:0 30px;
+    h1{
+      font-size:80px;
+      line-height:70px;
+      color:white;
+      sup{
+        font-size:40px;
+        vertical-align:super;
+      }
+    }
+  }
+  &.how-it-works-hero{
+     padding-top:100px;
+     background:$purple;
+     .hero-copy{
+      h1{
+        line-height:80px;
+        color:white;
+      }
+    }
+  }
+  &.this-months-giveaway-hero{
+    background:$blue;
+    padding-top:100px;  
+  }
+}
+
+.how-it-works{
+  padding:0 0 120px 0;
+  background:$purple;
+  .container{
+    max-width:850px;
+  }
+  img{
+    width:100%;
+    padding-right:100px;
+  }
+  h2{
+    color:white;
+    font-size:32px;
+    line-height:37px;
+    font-weight:300;
+    a{
+      font-weight:400;
+      color:white;
+    }
+  }
+  p{
+    font-size:18px;
+    line-height:28px;
+    color:rgba(255,255,255,0.6);
+    margin-top:15px;
+  }
+  strong{
+    display:block;
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    background:$dark_purple;
+    text-align:center;
+    font-size:30px;
+    line-height:58px;
+    font-weight:400;
+    margin-bottom:30px;
+    margin-top:-60px;
+  }
+  .row{
+    margin:60px 0;
+    &:first-child{
+      margin-top:0;
+    }
+  }
+}
+
+
+.business-grid{
+  padding:120px 0 120px 0;
+  border-bottom:1px solid #ddd;
+  h3{
+    display:block;
+    font-size:20px;
+    text-align:center;
+    color:#999;
+    margin-top:80px;
+    a{
+      color:#333;
+      @include transition(all 0.8s $easeOutExpo);
+      &:hover{
+        color:$purple;
+      }
+    }
+  }
+  .row{
+    border-bottom:1px dashed #ccc;
+    &:last-child{
+      border:none;
+    }
+  }
+  .col-1-4{
+    text-align:center;
+    padding:60px;
+    border-right:1px dashed #ccc;
+    &:last-child{
+      border-right:none;
+    }
+    img{
+      display:block;
+      width:100%;
+      max-width:170px;
+      margin:0 auto;
+    }
+  }
+}
+
+
+.home-cta{
+  padding:120px 0;
+  text-align:center;
+}
+.follow-rafl{
+  margin:40px 0 0 0;
+  i{
+    font-size:60px;
+    color:#999;
+  }
+  .follow-rafl-username{
+    color:#999;
+    font-size:20px;
+    line-height:30px;
+    span{
+      display:inline-block;
+       font-size:36px;
+       color:#333;
+       margin-top:15px;
+    }
+  }
+  a{
+    color:#333;
+    @include transition(all 0.8s $easeOutExpo);
+    &:hover{
+      color:$purple;
+    }
+  }
+}
+
+
+footer{
+  padding:80px 0;
+  background:#f6f6f6;
+  .logo{
+    float:left;
+    .copyright{
+      display:block;
+      font-size:14px;
+      color:#999;
+      margin-top:10px;
+    }
+  }
+  .footer-nav{
+    float:right;
+    ul{
+      float:left;
+      margin-left:100px;
+      li{
+        line-height:24px;
+        a{
+          color:#999;
+          @include transition(all 0.8s $easeOutExpo);
+          &:hover{
+            color:#333;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+MEDIA QUERIES
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width:1200px){
+
+ 
+
+
+}
+
+
