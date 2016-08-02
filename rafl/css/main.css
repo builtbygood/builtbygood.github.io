@@ -763,15 +763,16 @@ MEDIA QUERIES
       max-width: 1280px;
       padding: 0 30px; }
       .hero .hero-copy h1 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 35px;
+        line-height: 35px;
         color: white; }
         .hero .hero-copy h1 .superscript {
-          font-size: 20px;
+          font-size: 18px;
+          font-weight: 400;
           vertical-align: super; }
       .hero .hero-copy h2 {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 22px;
         color: white;
         font-weight: 300;
         margin-top: 10px; }
