@@ -675,7 +675,7 @@ MEDIA QUERIES
     .how-it-works img {
       display: block;
       width: 100%;
-      max-width: 200px;
+      max-width: 250px;
       margin: 0 auto 20px auto;
       padding-right: 0; }
     .how-it-works strong {
