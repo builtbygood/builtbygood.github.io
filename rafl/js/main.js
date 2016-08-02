@@ -21,7 +21,7 @@ $(function(){
 
 
     $('#mobile-nav-btn').on('click', function(){
-        $('#main, .mobile-nav').toggleClass('open');
+        $('#main, .mobile-nav, header').toggleClass('open');
         $(this).toggleClass('active');
     });
 
