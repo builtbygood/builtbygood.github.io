@@ -675,7 +675,7 @@ MEDIA QUERIES
 @media (max-width:768px){
 
   .page-hero{
-    height:250px;
+    height:300px;
     .hero-copy{
       h1{
         font-size:60px;
@@ -784,7 +784,7 @@ MEDIA QUERIES
 @media (max-width:600px){
 
     .page-hero{
-      height:200px;
+      height:250px;
       .hero-copy{
         h1{
           font-size:50px;
@@ -866,6 +866,7 @@ MEDIA QUERIES
       }
       img{
         max-width:225px;
+        margin:30px auto 0 auto;
       }
     }
 

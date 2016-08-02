@@ -626,7 +626,7 @@ MEDIA QUERIES
         margin-top: 15px; } }
 @media (max-width: 768px) {
   .page-hero {
-    height: 250px; }
+    height: 300px; }
     .page-hero .hero-copy h1 {
       font-size: 60px;
       line-height: 60px; }
@@ -700,7 +700,7 @@ MEDIA QUERIES
           line-height: 26px; } }
 @media (max-width: 600px) {
   .page-hero {
-    height: 200px; }
+    height: 250px; }
     .page-hero .hero-copy h1 {
       font-size: 50px;
       line-height: 50px; }
@@ -749,6 +749,7 @@ MEDIA QUERIES
       font-size: 28px;
       line-height: 33px; }
     .how-it-works img {
-      max-width: 225px; } }
+      max-width: 225px;
+      margin: 30px auto 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */
