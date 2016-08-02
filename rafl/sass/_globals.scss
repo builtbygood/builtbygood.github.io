@@ -453,7 +453,11 @@ HOW IT WORKS
   }
 }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+THIS MONTH'S GIVEAWAY
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .business-grid{
   padding:120px 0 120px 0;
   border-bottom:1px solid #ddd;
@@ -618,7 +622,6 @@ MEDIA QUERIES
       }
     }
 
-
 }
 
 
@@ -667,6 +670,53 @@ MEDIA QUERIES
         }
       }
     }
+
+
+    .business-grid{
+      padding:80px 0 80px 0;
+      border-bottom:1px solid #ddd;
+      h3{
+        display:block;
+        font-size:20px;
+        text-align:center;
+        color:#999;
+        margin-top:80px;
+        a{
+          color:#333;
+          @include transition(all 0.8s $easeOutExpo);
+          &:hover{
+            color:$purple;
+          }
+        }
+      }
+      .row{
+        border-bottom:none;
+        &:last-child{
+          border:none;
+          .col-1-4:last-child{
+            border-right:1px dashed #ccc;
+            border-bottom:none;
+          }
+        }
+      }
+      .col-1-4{
+        text-align:center;
+        padding:60px;
+        border-right:1px dashed #ccc;
+        width:50%;
+        border-bottom:1px dashed #ccc;
+        &:last-child{
+          border-right:none;
+        }
+        img{
+          display:block;
+          width:100%;
+          max-width:170px;
+          margin:0 auto;
+        }
+      }
+    }
+
 
 
 }
@@ -827,6 +877,49 @@ MEDIA QUERIES
       }
     }
 
+
+    .business-grid{
+      padding:0px 0 0px 0;
+      border-bottom:1px solid #ddd;
+      h3{
+        display:block;
+        font-size:20px;
+        text-align:center;
+        color:#999;
+        margin-top:80px;
+        a{
+          color:#333;
+          @include transition(all 0.8s $easeOutExpo);
+          &:hover{
+            color:$purple;
+          }
+        }
+      }
+      .row{
+        border-bottom:none;
+        &:last-child{
+          border:none;
+        }
+      }
+      .col-1-4{
+        text-align:center;
+        padding:40px;
+        border-right:1px dashed #ccc;
+        width:100%;
+        border-bottom:1px dashed #ccc;
+        &:last-child{
+          border-right:none;
+        }
+        img{
+          display:block;
+          width:100%;
+          max-width:170px;
+          margin:0 auto;
+        }
+      }
+    }
+
+
 }
 
 
@@ -874,30 +967,21 @@ MEDIA QUERIES
 
 
     .hero{
-      width:100%;
-      height:100%;
       background:url(../img/hero_blue_480.jpg) no-repeat center;
       background-size:cover;
       .hero-copy{
-        text-align:center;
-        max-width:1280px;
-        padding:0 30px;
         h1{
           font-size:35px;
           line-height:35px;
-          color:white;
           .superscript{
             font-size:18px;
             font-weight:400;
-            vertical-align:super;
           }
         }
         h2{
           font-size:18px;
           line-height:22px;
           color:rgba(255,255,255,1);
-          font-weight:300;
-          margin-top:10px;
         }
         .btn_primary{
           margin-top:30px;
