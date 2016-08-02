@@ -634,8 +634,8 @@ MEDIA QUERIES
       line-height: 50px; }
 
   .home-cta h1 {
-    font-size: 24px;
-    line-height: 30px; }
+    font-size: 22px;
+    line-height: 28px; }
 
   .follow-rafl {
     margin: 30px 0 0 0; }
@@ -655,15 +655,15 @@ MEDIA QUERIES
   .page-hero {
     height: 250px; }
     .page-hero .hero-copy h1 {
-      font-size: 40px;
-      line-height: 40px; }
+      font-size: 35px;
+      line-height: 35px; }
       .page-hero .hero-copy h1 sup {
-        font-size: 40px;
+        font-size: 35px;
         vertical-align: super; }
     .page-hero.how-it-works-hero {
       padding-top: 70px; }
       .page-hero.how-it-works-hero .hero-copy h1 {
-        line-height: 40px; }
+        line-height: 35px; }
 
   .how-it-works {
     padding-bottom: 0px; }
