@@ -396,16 +396,16 @@ HERO
     padding: 0 30px; }
     .page-hero .hero-copy h1 {
       font-size: 80px;
-      line-height: 70px;
+      line-height: 80px;
       color: white; }
       .page-hero .hero-copy h1 sup {
         font-size: 40px;
+        line-height: 40px;
         vertical-align: super; }
   .page-hero.how-it-works-hero {
     padding-top: 100px;
     background: #7c6dc0; }
     .page-hero.how-it-works-hero .hero-copy h1 {
-      line-height: 80px;
       color: white; }
   .page-hero.this-months-giveaway-hero {
     background: #0072bc;
@@ -675,10 +675,14 @@ MEDIA QUERIES
       font-size: 60px;
       line-height: 60px; }
       .page-hero .hero-copy h1 sup {
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 30px;
         vertical-align: super; }
     .page-hero.how-it-works-hero .hero-copy h1 {
       line-height: 60px; }
+    .page-hero.this-months-giveaway-hero {
+      height: 350px;
+      padding-top: 60px; }
 
   .how-it-works {
     padding: 0 20px 120px 20px; }
@@ -745,7 +749,9 @@ MEDIA QUERIES
       font-size: 50px;
       line-height: 50px; }
       .page-hero .hero-copy h1 sup {
-        font-size: 50px;
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: 400;
         vertical-align: super; }
     .page-hero.how-it-works-hero .hero-copy h1 {
       line-height: 50px; }
@@ -811,12 +817,17 @@ MEDIA QUERIES
     font-size: 35px;
     line-height: 35px; }
     .page-hero .hero-copy h1 sup {
-      font-size: 35px;
-      vertical-align: super; }
+      font-size: 18px;
+      line-height: 18px;
+      vertical-align: super;
+      font-weight: 400; }
   .page-hero.how-it-works-hero {
     padding-top: 70px; }
     .page-hero.how-it-works-hero .hero-copy h1 {
       line-height: 35px; }
+  .page-hero.this-months-giveaway-hero {
+    height: 250px;
+    padding-top: 60px; }
 
   .how-it-works {
     padding-bottom: 60px;

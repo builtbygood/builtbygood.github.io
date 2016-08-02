@@ -373,10 +373,11 @@ HERO
     padding:0 30px;
     h1{
       font-size:80px;
-      line-height:70px;
+      line-height:80px;
       color:white;
       sup{
         font-size:40px;
+        line-height:40px;
         vertical-align:super;
       }
     }
@@ -386,7 +387,6 @@ HERO
      background:$purple;
      .hero-copy{
       h1{
-        line-height:80px;
         color:white;
       }
     }
@@ -731,7 +731,8 @@ MEDIA QUERIES
         font-size:60px;
         line-height:60px;
         sup{
-          font-size:40px;
+          font-size:30px;
+          line-height:30px;
           vertical-align:super;
         }
       }
@@ -742,6 +743,10 @@ MEDIA QUERIES
           line-height:60px;
         }
       }
+    }
+    &.this-months-giveaway-hero{
+        height:350px;
+        padding-top:60px;
     }
   }
 
@@ -836,7 +841,9 @@ MEDIA QUERIES
           font-size:50px;
           line-height:50px;
           sup{
-            font-size:50px;
+            font-size:25px;
+            line-height:25px;
+            font-weight:400;
             vertical-align:super;
           }
         }
@@ -931,8 +938,10 @@ MEDIA QUERIES
           font-size:35px;
           line-height:35px;
           sup{
-            font-size:35px;
+            font-size:18px;
+            line-height:18px;
             vertical-align:super;
+            font-weight:400;
           }
         }
       }
@@ -943,6 +952,10 @@ MEDIA QUERIES
             line-height:35px;
           }
         }
+      }
+      &.this-months-giveaway-hero{
+          height:250px;
+          padding-top:60px;
       }
     }
 
