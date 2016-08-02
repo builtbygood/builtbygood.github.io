@@ -257,9 +257,9 @@ header {
   position: fixed;
   display: none;
   right: 20px;
-  top: 27px;
+  top: 28px;
   width: 30px;
-  height: 19px;
+  height: 18px;
   cursor: pointer;
   z-index: 30000; }
 
@@ -570,7 +570,6 @@ MEDIA QUERIES
   header nav {
     right: 20px; }
   header .logo {
-    top: 20px;
     left: 20px; }
 
   footer {
@@ -596,14 +595,22 @@ MEDIA QUERIES
         display: inline-block;
         font-size: 36px;
         color: #333;
-        margin-top: 15px; } }
+        margin-top: 15px; }
+
+  .hero .hero-copy h1 {
+    font-size: 110px;
+    line-height: 100px; }
+    .hero .hero-copy h1 .superscript {
+      font-size: 55px; } }
 @media (max-width: 1024px) {
   header {
     height: 70px; }
     header nav {
       display: none; }
-    header .logo img {
-      height: 30px; }
+    header .logo {
+      top: 20px; }
+      header .logo img {
+        height: 30px; }
 
   #mobile-nav-btn {
     display: block; }
@@ -667,7 +674,16 @@ MEDIA QUERIES
         display: block;
         width: 100%;
         max-width: 170px;
-        margin: 0 auto; } }
+        margin: 0 auto; }
+
+  .hero {
+    background: url(../img/hero_blue_480.jpg) no-repeat center;
+    background-size: cover; }
+    .hero .hero-copy h1 {
+      font-size: 75px;
+      line-height: 75px; }
+      .hero .hero-copy h1 .superscript {
+        font-size: 35px; } }
 @media (max-width: 768px) {
   .page-hero {
     height: 300px; }
@@ -741,7 +757,23 @@ MEDIA QUERIES
         margin-left: 0;
         margin-bottom: 30px; }
         footer .footer-nav ul li {
-          line-height: 26px; } }
+          line-height: 26px; }
+
+  .hero {
+    background: url(../img/hero_blue_480.jpg) no-repeat center;
+    background-size: cover; }
+    .hero .hero-copy h1 {
+      font-size: 60px;
+      line-height: 60px; }
+      .hero .hero-copy h1 .superscript {
+        font-size: 30px; }
+    .hero .hero-copy h2 {
+      font-size: 24px;
+      line-height: 28px;
+      color: rgba(255, 255, 255, 0.7); }
+    .hero .hero-copy .btn_primary {
+      margin-top: 60px;
+      font-size: 18px; } }
 @media (max-width: 600px) {
   .page-hero {
     height: 250px; }
@@ -811,7 +843,26 @@ MEDIA QUERIES
         display: block;
         width: 100%;
         max-width: 170px;
-        margin: 0 auto; } }
+        margin: 0 auto; }
+
+  .hero {
+    background: url(../img/hero_blue_480.jpg) no-repeat center;
+    background-size: cover; }
+    .hero .hero-copy h1 {
+      font-size: 45px;
+      line-height: 45px; }
+      .hero .hero-copy h1 .superscript {
+        font-size: 22px;
+        font-weight: 400; }
+    .hero .hero-copy h2 {
+      font-size: 20px;
+      line-height: 24px;
+      color: white; }
+    .hero .hero-copy .btn_primary {
+      margin-top: 30px;
+      font-size: 16px;
+      padding: 10px 20px;
+      min-width: 180px; } }
 @media (max-width: 480px) {
   .page-hero .hero-copy h1 {
     font-size: 35px;
