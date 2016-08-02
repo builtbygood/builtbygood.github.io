@@ -668,6 +668,7 @@ form {
     border: 2px solid transparent;
     font-size: 18px;
     border-radius: 5px;
+    -webkit-styling: none;
     -webkit-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     -moz-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     -ms-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
@@ -706,7 +707,8 @@ form {
     background: #333;
     max-width: 300px;
     font-size: 18px;
-    margin: 60px auto 0 auto; }
+    margin: 60px auto 0 auto;
+    -webkit-styling: none; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
