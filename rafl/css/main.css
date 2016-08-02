@@ -713,7 +713,8 @@ form {
     max-width: 300px;
     font-size: 18px;
     margin: 60px auto 0 auto;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    cursor: pointer; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
