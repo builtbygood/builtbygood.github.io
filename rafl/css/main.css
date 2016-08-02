@@ -488,23 +488,13 @@ THIS MONTH'S GIVEAWAY
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .business-grid {
-  padding: 120px 0 120px 0;
+  padding: 80px 0 120px 0;
   border-bottom: 1px solid #ddd; }
   .business-grid h3 {
     display: block;
     font-size: 20px;
-    text-align: center;
     color: #999;
-    margin-top: 80px; }
-    .business-grid h3 a {
-      color: #333;
-      -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-      -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-      -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-      -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-      transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
-      .business-grid h3 a:hover {
-        color: #7c6dc0; }
+    margin-bottom: 50px; }
   .business-grid .row {
     border-bottom: 1px dashed #ccc; }
     .business-grid .row:last-child {
@@ -826,21 +816,6 @@ MEDIA QUERIES
   .business-grid {
     padding: 80px 0 80px 0;
     border-bottom: 1px solid #ddd; }
-    .business-grid h3 {
-      display: block;
-      font-size: 20px;
-      text-align: center;
-      color: #999;
-      margin-top: 80px; }
-      .business-grid h3 a {
-        color: #333;
-        -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
-        .business-grid h3 a:hover {
-          color: #7c6dc0; }
     .business-grid .row {
       border-bottom: none; }
       .business-grid .row:last-child {
@@ -1053,23 +1028,11 @@ MEDIA QUERIES
         margin-top: 15px; }
 
   .business-grid {
-    padding: 0px 0 0px 0;
+    padding: 40px 0 0px 0;
     border-bottom: 1px solid #ddd; }
     .business-grid h3 {
-      display: block;
-      font-size: 20px;
-      text-align: center;
-      color: #999;
-      margin-top: 80px; }
-      .business-grid h3 a {
-        color: #333;
-        -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
-        .business-grid h3 a:hover {
-          color: #7c6dc0; }
+      font-size: 16px;
+      margin-bottom: 0; }
     .business-grid .row {
       border-bottom: none; }
       .business-grid .row:last-child {
@@ -1194,11 +1157,11 @@ MEDIA QUERIES
   form {
     margin: 40px auto 0 auto; }
     form .col-1 {
-      width: 98%;
-      margin: 0 1%; }
+      width: 100%;
+      margin: 0 0; }
     form .col-1-2 {
-      width: 98%;
-      margin: 0 1% 2% 1%; }
+      width: 100%;
+      margin: 0 0 2% 0; }
       form .col-1-2:last-child {
         margin-bottom: 0; }
     form input {

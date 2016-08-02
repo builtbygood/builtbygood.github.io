@@ -487,21 +487,13 @@ THIS MONTH'S GIVEAWAY
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .business-grid{
-  padding:120px 0 120px 0;
+  padding:80px 0 120px 0;
   border-bottom:1px solid #ddd;
   h3{
     display:block;
     font-size:20px;
-    text-align:center;
     color:#999;
-    margin-top:80px;
-    a{
-      color:#333;
-      @include transition(all 0.8s $easeOutExpo);
-      &:hover{
-        color:$purple;
-      }
-    }
+    margin-bottom:50px;
   }
   .row{
     border-bottom:1px dashed #ccc;
@@ -918,20 +910,6 @@ MEDIA QUERIES
     .business-grid{
       padding:80px 0 80px 0;
       border-bottom:1px solid #ddd;  
-      h3{
-        display:block;
-        font-size:20px;
-        text-align:center;
-        color:#999;
-        margin-top:80px;
-        a{
-          color:#333;
-          @include transition(all 0.8s $easeOutExpo);
-          &:hover{
-            color:$purple;
-          }
-        }
-      }
       .row{
         border-bottom:none;
         &:last-child{
@@ -1247,21 +1225,11 @@ MEDIA QUERIES
 
 
     .business-grid{
-      padding:0px 0 0px 0;
+      padding:40px 0 0px 0;
       border-bottom:1px solid #ddd;
       h3{
-        display:block;
-        font-size:20px;
-        text-align:center;
-        color:#999;
-        margin-top:80px;
-        a{
-          color:#333;
-          @include transition(all 0.8s $easeOutExpo);
-          &:hover{
-            color:$purple;
-          }
-        }
+        font-size:16px;
+        margin-bottom:0;
       }
       .row{
         border-bottom:none;
@@ -1446,12 +1414,12 @@ MEDIA QUERIES
     form{
       margin:40px auto 0 auto;
       .col-1{
-        width:98%;
-        margin:0 1%;
+        width:100%;
+        margin:0 0;
       }
       .col-1-2{
-        width:98%;
-        margin:0 1% 2% 1%;
+        width:100%;
+        margin:0 0 2% 0;
         &:last-child{
           margin-bottom:0;
         }
