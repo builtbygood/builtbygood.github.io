@@ -647,22 +647,18 @@ MEDIA QUERIES
       margin: 50px auto 0 auto;
       padding-right: 0; }
     .how-it-works strong {
-      display: block;
-      width: 40px;
-      height: 40px;
-      border-radius: 100%;
-      background: #574c88;
-      text-align: center;
-      font-size: 20px;
-      line-height: 38px;
-      font-weight: 400;
-      margin-bottom: 10px; }
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 48px;
+      margin: 40px auto 10px auto; }
     .how-it-works .row {
       margin: 30px 0;
       display: block; }
       .how-it-works .row .col-1-2 {
         width: 100%;
-        float: none; }
+        float: none;
+        text-align: center; }
 
   .home-cta h1 {
     font-size: 24px;
@@ -748,6 +744,11 @@ MEDIA QUERIES
     .how-it-works h2 {
       font-size: 28px;
       line-height: 33px; }
+    .how-it-works strong {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      line-height: 38px; }
     .how-it-works img {
       max-width: 225px;
       margin: 30px auto 0 auto; } }

@@ -709,16 +709,11 @@ MEDIA QUERIES
         padding-right:0;
       }
       strong{
-        display:block;
-        width:40px;
-        height:40px;
-        border-radius:100%;
-        background:$dark_purple;
-        text-align:center;
-        font-size:20px;
-        line-height:38px;
-        font-weight:400;
-        margin-bottom:10px;
+        width:50px;
+        height:50px;
+        font-size:24px;
+        line-height:48px;
+        margin:40px auto 10px auto;
       }
       .row{
         margin:30px 0;
@@ -726,6 +721,7 @@ MEDIA QUERIES
         .col-1-2{
           width:100%;
           float:none;
+          text-align:center;
         }
       }
     }
@@ -863,6 +859,12 @@ MEDIA QUERIES
       h2{
         font-size:28px;
         line-height:33px;
+      }
+      strong{
+        width:40px;
+        height:40px;
+        font-size:20px;
+        line-height:38px;
       }
       img{
         max-width:225px;
