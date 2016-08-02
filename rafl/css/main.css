@@ -756,7 +756,7 @@ MEDIA QUERIES
   .hero {
     width: 100%;
     height: 100%;
-    background: url(../img/hero_blue.jpg) no-repeat center;
+    background: url(../img/hero_blue_480.jpg) no-repeat center;
     background-size: cover; }
     .hero .hero-copy {
       text-align: center;
@@ -777,7 +777,7 @@ MEDIA QUERIES
         font-weight: 300;
         margin-top: 10px; }
       .hero .hero-copy .btn_primary {
-        margin-top: 40px;
+        margin-top: 30px;
         font-size: 16px;
         padding: 10px 20px;
         min-width: 180px; } }
