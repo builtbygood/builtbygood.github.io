@@ -665,35 +665,7 @@ MEDIA QUERIES
       line-height: 23px; }
     .rules h4 {
       font-size: 18px;
-      line-height: 23px;
-      font-weight: 400;
-      color: #999;
-      margin-top: 40px; }
-    .rules p {
-      font-size: 18px;
-      line-height: 28px;
-      color: #999;
-      margin-bottom: 15px; }
-      .rules p:last-child {
-        margin-bottom: 0; }
-      .rules p strong {
-        font-weight: 400;
-        color: #333; }
-    .rules strong {
-      font-size: 18px;
-      line-height: 23px;
-      font-weight: 400;
-      color: #333; }
-    .rules li {
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 400;
-      color: #999;
-      margin-top: 15px;
-      list-style: disc;
-      margin-left: 20px; }
-    .rules section {
-      padding: 40px 0 0 0; } }
+      line-height: 23px; } }
 @media (max-width: 1024px) {
   header {
     height: 70px; }
@@ -862,33 +834,16 @@ MEDIA QUERIES
       line-height: 21px; }
     .rules h4 {
       font-size: 16px;
-      line-height: 21px;
-      font-weight: 400;
-      color: #999;
-      margin-top: 40px; }
+      line-height: 21px; }
     .rules p {
       font-size: 16px;
-      line-height: 26px;
-      color: #999;
-      margin-bottom: 15px; }
-      .rules p:last-child {
-        margin-bottom: 0; }
-      .rules p strong {
-        font-weight: 400;
-        color: #333; }
+      line-height: 24px; }
     .rules strong {
       font-size: 16px;
-      line-height: 21px;
-      font-weight: 400;
-      color: #333; }
+      line-height: 21px; }
     .rules li {
       font-size: 16px;
-      line-height: 28px;
-      font-weight: 400;
-      color: #999;
-      margin-top: 15px;
-      list-style: disc;
-      margin-left: 20px; }
+      line-height: 24px; }
     .rules section {
       padding: 40px 0 0 0; }
 
@@ -1004,6 +959,9 @@ MEDIA QUERIES
     .how-it-works h2 {
       font-size: 28px;
       line-height: 33px; }
+    .how-it-works p {
+      font-size: 16px;
+      line-height: 20px; }
     .how-it-works strong {
       width: 40px;
       height: 40px;
