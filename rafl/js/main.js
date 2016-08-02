@@ -18,6 +18,12 @@ $(function(){
         }
     }
     scrollStuff();
+
+
+    $('header').on('click', function(){
+        $('#main, .mobile-nav').toggleClass('open');
+    });
+
 });
 
 
