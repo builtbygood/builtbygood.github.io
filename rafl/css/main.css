@@ -1106,10 +1106,10 @@ MEDIA QUERIES
       margin: 0 1%; }
     form input {
       padding: 0 20px;
-      font-size: 18px; }
+      font-size: 16px; }
     form textarea {
       padding: 20px;
-      font-size: 18px; }
+      font-size: 16px; }
     form .btn_primary {
       max-width: 300px;
       font-size: 18px;
@@ -1180,7 +1180,7 @@ MEDIA QUERIES
       line-height: 22px; }
     .form-layout .page-heading {
       font-size: 26px;
-      line-height: 26px;
+      line-height: 28px;
       margin-bottom: 20px; }
 
   form {
@@ -1194,9 +1194,9 @@ MEDIA QUERIES
       form .col-1-2:last-child {
         margin-bottom: 0; }
     form input {
-      font-size: 16px; }
+      font-size: 15px; }
     form textarea {
-      font-size: 16px; }
+      font-size: 15px; }
     form .btn_primary {
       max-width: 250px;
       font-size: 16px;
