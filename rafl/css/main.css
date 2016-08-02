@@ -65,6 +65,10 @@ HELPERS
   height: 100%;
   margin: 0 auto; }
 
+.col-1 {
+  position: relative;
+  width: 100%; }
+
 .col-1-2 {
   position: relative;
   width: 50%;
@@ -170,7 +174,7 @@ header {
       margin-left: 50px;
       height: 100%; }
       header nav li a {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 100px;
         color: rgba(255, 255, 255, 0.6);
         -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -428,6 +432,9 @@ HERO
   .page-hero.rules-hero {
     background: #0072bc;
     padding-top: 100px; }
+  .page-hero.im-a-business-hero {
+    padding-top: 100px;
+    background: #7c6dc0; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -465,7 +472,7 @@ HOW IT WORKS
     font-size: 30px;
     line-height: 58px;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 40px; }
   .how-it-works .row {
     margin: 60px 0; }
@@ -542,34 +549,36 @@ THIS MONTH'S GIVEAWAY
     .follow-rafl a:hover {
       color: #7c6dc0; }
 
-.rules {
-  padding: 120px 0;
+.static-page-layout {
+  padding: 80px 0 120px 0;
   border-bottom: 1px solid #ddd; }
-  .rules h3 {
-    font-size: 18px;
-    line-height: 23px; }
-  .rules h4 {
+  .static-page-layout .container {
+    max-width: 1024px; }
+  .static-page-layout h3 {
     font-size: 18px;
     line-height: 23px;
+    margin-bottom: 40px; }
+  .static-page-layout h4 {
+    font-size: 18px;
+    line-height: 28px;
     font-weight: 400;
-    color: #999;
-    margin-top: 40px; }
-  .rules p {
+    color: #999; }
+  .static-page-layout p {
     font-size: 18px;
     line-height: 28px;
     color: #999;
     margin-bottom: 15px; }
-    .rules p:last-child {
+    .static-page-layout p:last-child {
       margin-bottom: 0; }
-    .rules p strong {
+    .static-page-layout p strong {
       font-weight: 400;
       color: #333; }
-  .rules strong {
+  .static-page-layout strong {
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
     color: #333; }
-  .rules li {
+  .static-page-layout li {
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
@@ -577,7 +586,16 @@ THIS MONTH'S GIVEAWAY
     margin-top: 15px;
     list-style: disc;
     margin-left: 20px; }
-  .rules section {
+  .static-page-layout a {
+    color: #333;
+    -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+    .static-page-layout a:hover {
+      color: #7c6dc0; }
+  .static-page-layout section {
     padding: 40px 0 0 0; }
 
 footer {
@@ -608,6 +626,87 @@ footer {
             color: #333; }
         footer .footer-nav ul li.active a {
           color: #333; }
+
+.form-layout {
+  padding-top: 170px;
+  background: #0072bc; }
+  .form-layout.business-form-layout {
+    background: #7c6dc0; }
+  .form-layout .container {
+    max-width: 960px; }
+  .form-layout h2 {
+    color: white; }
+  .form-layout h4 {
+    max-width: 750px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    line-height: 28px; }
+  .form-layout .page-heading {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px; }
+
+form {
+  width: 100%;
+  margin: 60px auto 0 auto; }
+  form .col-1 {
+    width: 98%;
+    margin: 0 1%; }
+  form .col-1-2 {
+    width: 48%;
+    margin: 0 1%; }
+  form .field {
+    margin-top: 2%; }
+    form .field:first-child {
+      margin: 0; }
+  form input {
+    display: block;
+    width: 100%;
+    padding: 0 30px;
+    height: 60px;
+    border: 2px solid transparent;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+    form input:focus {
+      outline: none;
+      border-color: #54b1ec; }
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    height: 200px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    resize: none;
+    -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+    form textarea:focus {
+      outline: none;
+      border-color: #54b1ec; }
+  form.contact-form input:focus {
+    outline: none;
+    border-color: #bd93eb; }
+  form.contact-form textarea:focus {
+    outline: none;
+    border-color: #bd93eb; }
+  form .btn_primary {
+    display: block;
+    height: auto;
+    background: #333;
+    max-width: 300px;
+    font-size: 18px;
+    margin: 60px auto 0 auto; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -657,15 +756,35 @@ MEDIA QUERIES
     .hero .hero-copy h1 .superscript {
       font-size: 55px; }
 
-  .rules {
-    padding: 120px 20px;
+  .static-page-layout {
+    padding: 80px 20px 120px 20px;
     border-bottom: 1px solid #ddd; }
-    .rules h3 {
+    .static-page-layout h3 {
       font-size: 18px;
       line-height: 23px; }
-    .rules h4 {
+    .static-page-layout h4 {
       font-size: 18px;
-      line-height: 23px; } }
+      line-height: 26px; }
+
+  .form-layout {
+    padding-top: 170px;
+    background: #0072bc; }
+    .form-layout.business-form-layout {
+      background: #7c6dc0; }
+    .form-layout .container {
+      max-width: 960px; }
+    .form-layout h2 {
+      color: white; }
+    .form-layout h4 {
+      max-width: 750px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 20px;
+      line-height: 28px; }
+    .form-layout .page-heading {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 20px; } }
 @media (max-width: 1024px) {
   header {
     height: 70px; }
@@ -742,7 +861,27 @@ MEDIA QUERIES
       font-size: 75px;
       line-height: 75px; }
       .hero .hero-copy h1 .superscript {
-        font-size: 35px; } }
+        font-size: 35px; }
+
+  .form-layout {
+    padding-top: 170px;
+    background: #0072bc; }
+    .form-layout.business-form-layout {
+      background: #7c6dc0; }
+    .form-layout .container {
+      max-width: 960px; }
+    .form-layout h2 {
+      color: white; }
+    .form-layout h4 {
+      max-width: 750px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 20px;
+      line-height: 28px; }
+    .form-layout .page-heading {
+      font-size: 50px;
+      line-height: 50px;
+      margin-bottom: 20px; } }
 @media (max-width: 768px) {
   .page-hero {
     height: 300px; }
@@ -827,30 +966,50 @@ MEDIA QUERIES
     margin-top: 60px;
     font-size: 18px; }
 
-  .rules {
+  .static-page-layout {
     padding: 80px 20px; }
-    .rules h3 {
+    .static-page-layout h3 {
       font-size: 16px;
       line-height: 21px; }
-    .rules h4 {
+    .static-page-layout h4 {
       font-size: 16px;
       line-height: 21px; }
-    .rules p {
+    .static-page-layout p {
       font-size: 16px;
       line-height: 24px; }
-    .rules strong {
+    .static-page-layout strong {
       font-size: 16px;
       line-height: 21px; }
-    .rules li {
+    .static-page-layout li {
       font-size: 16px;
       line-height: 24px; }
-    .rules section {
+    .static-page-layout section {
       padding: 40px 0 0 0; }
 
   .page-heading {
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .form-layout {
+    padding-top: 130px;
+    background: #0072bc; }
+    .form-layout.business-form-layout {
+      background: #7c6dc0; }
+    .form-layout .container {
+      max-width: 960px; }
+    .form-layout h2 {
+      color: white; }
+    .form-layout h4 {
+      max-width: 750px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 18px;
+      line-height: 26px; }
+    .form-layout .page-heading {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 20px; } }
 @media (max-width: 600px) {
   .page-hero {
     height: 250px; }
@@ -935,7 +1094,26 @@ MEDIA QUERIES
     margin-top: 30px;
     font-size: 16px;
     padding: 10px 20px;
-    min-width: 180px; } }
+    min-width: 180px; }
+
+  form {
+    margin: 40px auto 0 auto; }
+    form .col-1 {
+      width: 98%;
+      margin: 0 1%; }
+    form .col-1-2 {
+      width: 48%;
+      margin: 0 1%; }
+    form input {
+      padding: 0 20px;
+      font-size: 18px; }
+    form textarea {
+      padding: 20px;
+      font-size: 18px; }
+    form .btn_primary {
+      max-width: 300px;
+      font-size: 18px;
+      margin: 40px auto 0 auto; } }
 @media (max-width: 480px) {
   .page-hero .hero-copy h1 {
     font-size: 35px;
@@ -987,12 +1165,41 @@ MEDIA QUERIES
     padding: 10px 20px;
     min-width: 180px; }
 
-  .rules {
+  .static-page-layout {
     padding: 40px 20px 60px 20px; }
 
   .page-heading {
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .form-layout {
+    padding-top: 120px; }
+    .form-layout h4 {
+      font-size: 16px;
+      line-height: 22px; }
+    .form-layout .page-heading {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 20px; }
+
+  form {
+    margin: 40px auto 0 auto; }
+    form .col-1 {
+      width: 98%;
+      margin: 0 1%; }
+    form .col-1-2 {
+      width: 98%;
+      margin: 0 1% 2% 1%; }
+      form .col-1-2:last-child {
+        margin-bottom: 0; }
+    form input {
+      font-size: 16px; }
+    form textarea {
+      font-size: 16px; }
+    form .btn_primary {
+      max-width: 250px;
+      font-size: 16px;
+      margin: 40px auto 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */
