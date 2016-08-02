@@ -425,6 +425,9 @@ HERO
   .page-hero.this-months-giveaway-hero {
     background: #0072bc;
     padding-top: 100px; }
+  .page-hero.rules-hero {
+    background: #0072bc;
+    padding-top: 100px; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -652,7 +655,45 @@ MEDIA QUERIES
     font-size: 110px;
     line-height: 100px; }
     .hero .hero-copy h1 .superscript {
-      font-size: 55px; } }
+      font-size: 55px; }
+
+  .rules {
+    padding: 120px 20px;
+    border-bottom: 1px solid #ddd; }
+    .rules h3 {
+      font-size: 18px;
+      line-height: 23px; }
+    .rules h4 {
+      font-size: 18px;
+      line-height: 23px;
+      font-weight: 400;
+      color: #999;
+      margin-top: 40px; }
+    .rules p {
+      font-size: 18px;
+      line-height: 28px;
+      color: #999;
+      margin-bottom: 15px; }
+      .rules p:last-child {
+        margin-bottom: 0; }
+      .rules p strong {
+        font-weight: 400;
+        color: #333; }
+    .rules strong {
+      font-size: 18px;
+      line-height: 23px;
+      font-weight: 400;
+      color: #333; }
+    .rules li {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 400;
+      color: #999;
+      margin-top: 15px;
+      list-style: disc;
+      margin-left: 20px; }
+    .rules section {
+      padding: 40px 0 0 0; } }
 @media (max-width: 1024px) {
   header {
     height: 70px; }
@@ -812,7 +853,49 @@ MEDIA QUERIES
     color: rgba(255, 255, 255, 0.7); }
   .hero .hero-copy .btn_primary {
     margin-top: 60px;
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .rules {
+    padding: 80px 20px; }
+    .rules h3 {
+      font-size: 16px;
+      line-height: 21px; }
+    .rules h4 {
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 400;
+      color: #999;
+      margin-top: 40px; }
+    .rules p {
+      font-size: 16px;
+      line-height: 26px;
+      color: #999;
+      margin-bottom: 15px; }
+      .rules p:last-child {
+        margin-bottom: 0; }
+      .rules p strong {
+        font-weight: 400;
+        color: #333; }
+    .rules strong {
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 400;
+      color: #333; }
+    .rules li {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 400;
+      color: #999;
+      margin-top: 15px;
+      list-style: disc;
+      margin-left: 20px; }
+    .rules section {
+      padding: 40px 0 0 0; }
+
+  .page-heading {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px; } }
 @media (max-width: 600px) {
   .page-hero {
     height: 250px; }
@@ -826,6 +909,9 @@ MEDIA QUERIES
         vertical-align: super; }
     .page-hero.how-it-works-hero .hero-copy h1 {
       line-height: 50px; }
+    .page-hero.rules-hero {
+      padding-top: 80px;
+      height: 200px; }
 
   .home-cta h1 {
     font-size: 20px;
@@ -941,6 +1027,14 @@ MEDIA QUERIES
     margin-top: 30px;
     font-size: 16px;
     padding: 10px 20px;
-    min-width: 180px; } }
+    min-width: 180px; }
+
+  .rules {
+    padding: 60px 20px; }
+
+  .page-heading {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=main.css.map */

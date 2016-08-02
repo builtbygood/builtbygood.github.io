@@ -411,6 +411,10 @@ HERO
     background:$blue;
     padding-top:100px;  
   }
+  &.rules-hero{
+     background:$blue;
+    padding-top:100px;  
+  }
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -698,6 +702,54 @@ MEDIA QUERIES
       }
     }
 
+    .rules{
+      padding:120px 20px;
+      border-bottom:1px solid #ddd;
+      h3{
+        font-size:18px;
+        line-height:23px;
+      }
+      h4{
+        font-size:18px;
+        line-height:23px;
+        font-weight:400;
+        color:#999;
+        margin-top:40px;
+      }
+      p{
+        font-size:18px;
+        line-height:28px;
+        color:#999;
+        margin-bottom:15px;
+        &:last-child{
+          margin-bottom:0;
+        }
+        strong{
+          font-weight:400;
+          color:#333;
+        }
+      }
+      strong{
+          font-size:18px;
+          line-height:23px;
+          font-weight:400;
+          color:#333;
+        }
+      li{
+        font-size:18px;
+        line-height:28px;
+        font-weight:400;
+        color:#999;
+        margin-top:15px;
+        list-style:disc; 
+        margin-left:20px;
+      }
+      section{
+        padding:40px 0 0 0;
+      }
+    }
+
+
 }
 
 
@@ -932,6 +984,58 @@ MEDIA QUERIES
       }
     }
 
+    .rules{
+      padding:80px 20px;
+      h3{
+        font-size:16px;
+        line-height:21px;
+      }
+      h4{
+        font-size:16px;
+        line-height:21px;
+        font-weight:400;
+        color:#999;
+        margin-top:40px;
+      }
+      p{
+        font-size:16px;
+        line-height:26px;
+        color:#999;
+        margin-bottom:15px;
+        &:last-child{
+          margin-bottom:0;
+        }
+        strong{
+          font-weight:400;
+          color:#333;
+        }
+      }
+      strong{
+          font-size:16px;
+          line-height:21px;
+          font-weight:400;
+          color:#333;
+        }
+      li{
+        font-size:16px;
+        line-height:28px;
+        font-weight:400;
+        color:#999;
+        margin-top:15px;
+        list-style:disc; 
+        margin-left:20px;
+      }
+      section{
+        padding:40px 0 0 0;
+      }
+    }
+
+    .page-heading{
+      font-size:30px;
+      line-height:30px;
+      margin-bottom:30px;
+    }
+
 
 }
 
@@ -958,6 +1062,10 @@ MEDIA QUERIES
             line-height:50px;
           }
         }
+      }
+      &.rules-hero{
+        padding-top:80px; 
+        height:200px; 
       }
     }
 
@@ -1125,6 +1233,17 @@ MEDIA QUERIES
           min-width:180px;
         }
       }
+    }
+
+    .rules{
+      padding:60px 20px;
+    }
+
+
+    .page-heading{
+      font-size:24px;
+      line-height:24px;
+      margin-bottom:30px;
     }
 
 }
