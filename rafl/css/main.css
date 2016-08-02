@@ -411,6 +411,11 @@ HERO
     background: #0072bc;
     padding-top: 100px; }
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+HOW IT WORKS
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .how-it-works {
   padding: 0 0 120px 0;
   background: #7c6dc0; }
@@ -442,7 +447,8 @@ HERO
     font-size: 30px;
     line-height: 58px;
     font-weight: 400;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    margin-top: 40px; }
   .how-it-works .row {
     margin: 60px 0; }
     .how-it-works .row:first-child {
@@ -619,14 +625,16 @@ MEDIA QUERIES
         color: #333;
         margin-top: 15px; } }
 @media (max-width: 768px) {
-  .page-hero .hero-copy h1 {
-    font-size: 60px;
-    line-height: 60px; }
-    .page-hero .hero-copy h1 sup {
-      font-size: 40px;
-      vertical-align: super; }
-  .page-hero.how-it-works-hero .hero-copy h1 {
-    line-height: 60px; }
+  .page-hero {
+    height: 250px; }
+    .page-hero .hero-copy h1 {
+      font-size: 60px;
+      line-height: 60px; }
+      .page-hero .hero-copy h1 sup {
+        font-size: 40px;
+        vertical-align: super; }
+    .page-hero.how-it-works-hero .hero-copy h1 {
+      line-height: 60px; }
 
   .how-it-works {
     padding: 0 20px 120px 20px; }
@@ -636,7 +644,7 @@ MEDIA QUERIES
       display: block;
       width: 100%;
       max-width: 300px;
-      margin: 0 auto 20px auto;
+      margin: 50px auto 0 auto;
       padding-right: 0; }
     .how-it-works strong {
       display: block;
@@ -650,7 +658,7 @@ MEDIA QUERIES
       font-weight: 400;
       margin-bottom: 10px; }
     .how-it-works .row {
-      margin: 80px 0;
+      margin: 30px 0;
       display: block; }
       .how-it-works .row .col-1-2 {
         width: 100%;
@@ -692,7 +700,7 @@ MEDIA QUERIES
           line-height: 26px; } }
 @media (max-width: 600px) {
   .page-hero {
-    height: 350px; }
+    height: 200px; }
     .page-hero .hero-copy h1 {
       font-size: 50px;
       line-height: 50px; }
@@ -723,21 +731,20 @@ MEDIA QUERIES
         color: #333;
         margin-top: 15px; } }
 @media (max-width: 480px) {
-  .page-hero {
-    height: 250px; }
-    .page-hero .hero-copy h1 {
+  .page-hero .hero-copy h1 {
+    font-size: 35px;
+    line-height: 35px; }
+    .page-hero .hero-copy h1 sup {
       font-size: 35px;
+      vertical-align: super; }
+  .page-hero.how-it-works-hero {
+    padding-top: 70px; }
+    .page-hero.how-it-works-hero .hero-copy h1 {
       line-height: 35px; }
-      .page-hero .hero-copy h1 sup {
-        font-size: 35px;
-        vertical-align: super; }
-    .page-hero.how-it-works-hero {
-      padding-top: 70px; }
-      .page-hero.how-it-works-hero .hero-copy h1 {
-        line-height: 35px; }
 
   .how-it-works {
-    padding-bottom: 0px; }
+    padding-bottom: 60px;
+    margin-top: -30px; }
     .how-it-works h2 {
       font-size: 28px;
       line-height: 33px; }
