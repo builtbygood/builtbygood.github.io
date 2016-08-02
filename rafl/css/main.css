@@ -671,6 +671,14 @@ MEDIA QUERIES
     padding-bottom: 0px; }
     .how-it-works h2 {
       font-size: 28px;
-      line-height: 33px; } }
+      line-height: 33px; }
+    .how-it-works img {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto 20px auto;
+      padding-right: 0; }
+    .how-it-works strong {
+      margin-top: -40px; } }
 
 /*# sourceMappingURL=main.css.map */

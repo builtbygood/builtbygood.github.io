@@ -804,6 +804,16 @@ MEDIA QUERIES
         font-size:28px;
         line-height:33px;
       }
+      img{
+        display:block;
+        width:100%;
+        max-width:200px;
+        margin:0 auto 20px auto;
+        padding-right:0;
+      }
+      strong{
+        margin-top:-40px;
+      }
     }
 
 }
