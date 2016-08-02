@@ -152,7 +152,7 @@ header{
       margin-left:50px;
       height:100%;
       a{
-        font-size:16px;
+        font-size:18px;
         line-height:100px;
         color:rgba(255,255,255,0.6);
         @include transition(all 0.6s $easeOutExpo);
@@ -300,6 +300,19 @@ a{
 }
 li{
   list-style:none;
+}
+.page-heading{
+  display:block;
+  text-align:center;
+  font-weight:300;
+  font-size:40px;
+  line-height:50px;
+  margin-bottom:40px;
+  text-transform:uppercase;
+}
+.center-text{
+  display:block;
+  text-align:center;
 }
 .blue{
   color:$blue;
@@ -532,6 +545,54 @@ THIS MONTH'S GIVEAWAY
 }
 
 
+.rules{
+  padding:120px 0;
+  border-bottom:1px solid #ddd;
+  h3{
+    font-size:18px;
+    line-height:23px;
+  }
+  h4{
+    font-size:18px;
+    line-height:23px;
+    font-weight:400;
+    color:#999;
+    margin-top:40px;
+  }
+  p{
+    font-size:18px;
+    line-height:28px;
+    color:#999;
+    margin-bottom:15px;
+    &:last-child{
+      margin-bottom:0;
+    }
+    strong{
+      font-weight:400;
+      color:#333;
+    }
+  }
+  strong{
+      font-size:18px;
+      line-height:23px;
+      font-weight:400;
+      color:#333;
+    }
+  li{
+    font-size:18px;
+    line-height:28px;
+    font-weight:400;
+    color:#999;
+    margin-top:15px;
+    list-style:disc; 
+    margin-left:20px;
+  }
+  section{
+    padding:40px 0 0 0;
+  }
+}
+
+
 footer{
   padding:80px 0;
   background:#f6f6f6;
@@ -555,6 +616,11 @@ footer{
           color:#999;
           @include transition(all 0.8s $easeOutExpo);
           &:hover{
+            color:#333;
+          }
+        }
+        &.active{
+          a{
             color:#333;
           }
         }
@@ -599,7 +665,6 @@ MEDIA QUERIES
 
     .home-cta{
       padding:120px 20px;
-      text-align:center;
       h1{
         font-size:35px;
         line-height:40px;
@@ -612,13 +677,10 @@ MEDIA QUERIES
         color:#999;
       }
       .follow-rafl-username{
-        color:#999;
         font-size:20px;
         line-height:30px;
         span{
-          display:inline-block;
            font-size:36px;
-           color:#333;
            margin-top:15px;
         }
       }
@@ -661,7 +723,6 @@ MEDIA QUERIES
 
   .home-cta{
       padding:80px 20px;
-      text-align:center;
       h1{
         font-size:30px;
         line-height:35px;
@@ -671,16 +732,12 @@ MEDIA QUERIES
       margin:40px 0 0 0;
       i{
         font-size:50px;
-        color:#999;
       }
       .follow-rafl-username{
-        color:#999;
         font-size:20px;
         line-height:30px;
         span{
-          display:inline-block;
            font-size:30px;
-           color:#333;
            margin-top:15px;
         }
       }
@@ -821,16 +878,12 @@ MEDIA QUERIES
       margin:30px 0 0 0;
       i{
         font-size:40px;
-        color:#999;
       }
       .follow-rafl-username{
-        color:#999;
         font-size:18px;
         line-height:28px;
         span{
-          display:inline-block;
            font-size:28px;
-           color:#333;
            margin-top:10px;
         }
       }
@@ -859,8 +912,6 @@ MEDIA QUERIES
     }
 
      .hero{
-      background:url(../img/hero_blue_480.jpg) no-repeat center;
-      background-size:cover;
       .hero-copy{
         h1{
           font-size:60px;
@@ -920,18 +971,14 @@ MEDIA QUERIES
       margin:30px 0 0 0;
       i{
         font-size:40px;
-        color:#999;
       }
       .follow-rafl-username{
-        color:#999;
         font-size:16px;
         line-height:20px;
         width:200px;
         margin:0 auto;
         span{
-          display:inline-block;
            font-size:28px;
-           color:#333;
            margin-top:15px;
         }
       }
@@ -980,8 +1027,6 @@ MEDIA QUERIES
     }
 
     .hero{
-      background:url(../img/hero_blue_480.jpg) no-repeat center;
-      background-size:cover;
       .hero-copy{
         h1{
           font-size:45px;
@@ -1059,8 +1104,6 @@ MEDIA QUERIES
 
 
     .hero{
-      background:url(../img/hero_blue_480.jpg) no-repeat center;
-      background-size:cover;
       .hero-copy{
         h1{
           font-size:35px;

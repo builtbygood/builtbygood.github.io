@@ -170,7 +170,7 @@ header {
       margin-left: 50px;
       height: 100%; }
       header nav li a {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 100px;
         color: rgba(255, 255, 255, 0.6);
         -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -328,6 +328,19 @@ a {
 
 li {
   list-style: none; }
+
+.page-heading {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 40px;
+  text-transform: uppercase; }
+
+.center-text {
+  display: block;
+  text-align: center; }
 
 .blue {
   color: #0072bc; }
@@ -526,6 +539,44 @@ THIS MONTH'S GIVEAWAY
     .follow-rafl a:hover {
       color: #7c6dc0; }
 
+.rules {
+  padding: 120px 0;
+  border-bottom: 1px solid #ddd; }
+  .rules h3 {
+    font-size: 18px;
+    line-height: 23px; }
+  .rules h4 {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #999;
+    margin-top: 40px; }
+  .rules p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #999;
+    margin-bottom: 15px; }
+    .rules p:last-child {
+      margin-bottom: 0; }
+    .rules p strong {
+      font-weight: 400;
+      color: #333; }
+  .rules strong {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #333; }
+  .rules li {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #999;
+    margin-top: 15px;
+    list-style: disc;
+    margin-left: 20px; }
+  .rules section {
+    padding: 40px 0 0 0; }
+
 footer {
   padding: 80px 0;
   background: #f6f6f6; }
@@ -552,6 +603,8 @@ footer {
           transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
           footer .footer-nav ul li a:hover {
             color: #333; }
+        footer .footer-nav ul li.active a {
+          color: #333; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -578,8 +631,7 @@ MEDIA QUERIES
     padding: 80px 20px; }
 
   .home-cta {
-    padding: 120px 20px;
-    text-align: center; }
+    padding: 120px 20px; }
     .home-cta h1 {
       font-size: 35px;
       line-height: 40px; }
@@ -590,13 +642,10 @@ MEDIA QUERIES
       font-size: 60px;
       color: #999; }
     .follow-rafl .follow-rafl-username {
-      color: #999;
       font-size: 20px;
       line-height: 30px; }
       .follow-rafl .follow-rafl-username span {
-        display: inline-block;
         font-size: 36px;
-        color: #333;
         margin-top: 15px; }
 
   .hero .hero-copy h1 {
@@ -618,8 +667,7 @@ MEDIA QUERIES
     display: block; }
 
   .home-cta {
-    padding: 80px 20px;
-    text-align: center; }
+    padding: 80px 20px; }
     .home-cta h1 {
       font-size: 30px;
       line-height: 35px; }
@@ -627,16 +675,12 @@ MEDIA QUERIES
   .follow-rafl {
     margin: 40px 0 0 0; }
     .follow-rafl i {
-      font-size: 50px;
-      color: #999; }
+      font-size: 50px; }
     .follow-rafl .follow-rafl-username {
-      color: #999;
       font-size: 20px;
       line-height: 30px; }
       .follow-rafl .follow-rafl-username span {
-        display: inline-block;
         font-size: 30px;
-        color: #333;
         margin-top: 15px; }
 
   .business-grid {
@@ -733,16 +777,12 @@ MEDIA QUERIES
   .follow-rafl {
     margin: 30px 0 0 0; }
     .follow-rafl i {
-      font-size: 40px;
-      color: #999; }
+      font-size: 40px; }
     .follow-rafl .follow-rafl-username {
-      color: #999;
       font-size: 18px;
       line-height: 28px; }
       .follow-rafl .follow-rafl-username span {
-        display: inline-block;
         font-size: 28px;
-        color: #333;
         margin-top: 10px; }
 
   footer {
@@ -761,21 +801,18 @@ MEDIA QUERIES
         footer .footer-nav ul li {
           line-height: 26px; }
 
-  .hero {
-    background: url(../img/hero_blue_480.jpg) no-repeat center;
-    background-size: cover; }
-    .hero .hero-copy h1 {
-      font-size: 60px;
-      line-height: 60px; }
-      .hero .hero-copy h1 .superscript {
-        font-size: 30px; }
-    .hero .hero-copy h2 {
-      font-size: 24px;
-      line-height: 28px;
-      color: rgba(255, 255, 255, 0.7); }
-    .hero .hero-copy .btn_primary {
-      margin-top: 60px;
-      font-size: 18px; } }
+  .hero .hero-copy h1 {
+    font-size: 60px;
+    line-height: 60px; }
+    .hero .hero-copy h1 .superscript {
+      font-size: 30px; }
+  .hero .hero-copy h2 {
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7); }
+  .hero .hero-copy .btn_primary {
+    margin-top: 60px;
+    font-size: 18px; } }
 @media (max-width: 600px) {
   .page-hero {
     height: 250px; }
@@ -797,18 +834,14 @@ MEDIA QUERIES
   .follow-rafl {
     margin: 30px 0 0 0; }
     .follow-rafl i {
-      font-size: 40px;
-      color: #999; }
+      font-size: 40px; }
     .follow-rafl .follow-rafl-username {
-      color: #999;
       font-size: 16px;
       line-height: 20px;
       width: 200px;
       margin: 0 auto; }
       .follow-rafl .follow-rafl-username span {
-        display: inline-block;
         font-size: 28px;
-        color: #333;
         margin-top: 15px; }
 
   .business-grid {
@@ -847,24 +880,21 @@ MEDIA QUERIES
         max-width: 170px;
         margin: 0 auto; }
 
-  .hero {
-    background: url(../img/hero_blue_480.jpg) no-repeat center;
-    background-size: cover; }
-    .hero .hero-copy h1 {
-      font-size: 45px;
-      line-height: 45px; }
-      .hero .hero-copy h1 .superscript {
-        font-size: 22px;
-        font-weight: 400; }
-    .hero .hero-copy h2 {
-      font-size: 20px;
-      line-height: 24px;
-      color: white; }
-    .hero .hero-copy .btn_primary {
-      margin-top: 30px;
-      font-size: 16px;
-      padding: 10px 20px;
-      min-width: 180px; } }
+  .hero .hero-copy h1 {
+    font-size: 45px;
+    line-height: 45px; }
+    .hero .hero-copy h1 .superscript {
+      font-size: 22px;
+      font-weight: 400; }
+  .hero .hero-copy h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: white; }
+  .hero .hero-copy .btn_primary {
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    min-width: 180px; } }
 @media (max-width: 480px) {
   .page-hero .hero-copy h1 {
     font-size: 35px;
@@ -897,23 +927,20 @@ MEDIA QUERIES
       max-width: 225px;
       margin: 30px auto 0 auto; }
 
-  .hero {
-    background: url(../img/hero_blue_480.jpg) no-repeat center;
-    background-size: cover; }
-    .hero .hero-copy h1 {
-      font-size: 35px;
-      line-height: 35px; }
-      .hero .hero-copy h1 .superscript {
-        font-size: 18px;
-        font-weight: 400; }
-    .hero .hero-copy h2 {
+  .hero .hero-copy h1 {
+    font-size: 35px;
+    line-height: 35px; }
+    .hero .hero-copy h1 .superscript {
       font-size: 18px;
-      line-height: 22px;
-      color: white; }
-    .hero .hero-copy .btn_primary {
-      margin-top: 30px;
-      font-size: 16px;
-      padding: 10px 20px;
-      min-width: 180px; } }
+      font-weight: 400; }
+  .hero .hero-copy h2 {
+    font-size: 18px;
+    line-height: 22px;
+    color: white; }
+  .hero .hero-copy .btn_primary {
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    min-width: 180px; } }
 
 /*# sourceMappingURL=main.css.map */
