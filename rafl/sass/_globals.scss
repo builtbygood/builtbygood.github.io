@@ -362,26 +362,21 @@ HERO
     max-width:1280px;
     padding:0 30px;
     h1{
-      font-size:120px;
-      line-height:110px;
-      color:white;
-      .superscript{
-        font-size:60px;
-        vertical-align:super;
-      }
-    }
-    h2{
-      font-size:32px;
-      line-height:36px;
-      color:rgba(255,255,255,0.8);
-      font-weight:300;
-      margin-top:10px;
-      strong{
-        font-weight:400;
+      font-size:100px;
+      line-height:95px;
+      color:rgba(255,255,255,1);
+       span{
+        display:block;
+        margin-top:15px;
+         font-size:60px;
+         line-height:60px;
+         color:rgba(255,255,255,0.7);
+         text-transform:none;
       }
       sup{
-        font-size:16px;
-        line-height:16px;
+        font-size:30px;
+        line-height:30px;
+        font-weight:400;
         vertical-align:super;
       }
     }
@@ -821,10 +816,17 @@ MEDIA QUERIES
     .hero{
       .hero-copy{
         h1{
-          font-size:110px;
-          line-height:100px;
-          .superscript{
-            font-size:55px;
+          font-size:80px;
+          line-height:80px;
+           span{
+             font-size:50px;
+             line-height:50px;
+          }
+          sup{
+            font-size:25px;
+            line-height:25px;
+            font-weight:400;
+            vertical-align:super;
           }
         }
       }
@@ -949,10 +951,17 @@ MEDIA QUERIES
      .hero{
       .hero-copy{
         h1{
-          font-size:75px;
-          line-height:75px;
-          .superscript{
-            font-size:35px;
+          font-size:70px;
+          line-height:70px;
+           span{
+             font-size:40px;
+             line-height:40px;
+          }
+          sup{
+            font-size:20px;
+            line-height:20px;
+            font-weight:400;
+            vertical-align:super;
           }
         }
       }
@@ -1097,25 +1106,9 @@ MEDIA QUERIES
         h1{
           font-size:60px;
           line-height:60px;
-          .superscript{
-            font-size:30px;
-          }
-        }
-         h2{
-          font-size:24px;
-          line-height:28px;
-          margin-top:10px;
-          color:rgba(255,255,255,1);
-          strong{
-            font-weight:400;
-          }
-          sup{
-            font-size:12px;
-            line-height:12px;
-          }
         }
         .btn_primary{
-          margin-top:60px;
+          margin-top:40px;
           font-size:18px;
         }
       }
@@ -1274,24 +1267,17 @@ MEDIA QUERIES
       background-size:cover;
       .hero-copy{
         h1{
-          font-size:45px;
-          line-height:45px;
-          .superscript{
-            font-size:22px;
-            font-weight:400;
-          }
-        }
-        h2{
-          font-size:20px;
-          line-height:24px;
-          margin-top:10px;
-          color:rgba(255,255,255,1);
-          strong{
-            font-weight:400;
+          font-size:50px;
+          line-height:50px;
+           span{
+             font-size:40px;
+             line-height:40px;
           }
           sup{
-            font-size:12px;
-            line-height:12px;
+            font-size:20px;
+            line-height:20px;
+            font-weight:400;
+            vertical-align:super;
           }
         }
         .btn_primary{
@@ -1389,25 +1375,16 @@ MEDIA QUERIES
     .hero{
       .hero-copy{
         h1{
-          font-size:34px;
-          line-height:37px;
-          .superscript{
-            font-size:18px;
-            font-weight:400;
-          }
-        }
-        h2{
-          font-size:18px;
-          line-height:22px;
-          font-weight:400;
-          margin-top:10px;
-          color:rgba(255,255,255,0.7);
-          strong{
-            font-weight:700;
+          font-size:40px;
+          line-height:40px;
+           span{
+             font-size:30px;
+             line-height:30px;
           }
           sup{
-            font-size:10px;
-            line-height:10px;
+            font-size:15px;
+            line-height:15px;
+            font-weight:400;
             vertical-align:super;
           }
         }
