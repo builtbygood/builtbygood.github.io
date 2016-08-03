@@ -25,6 +25,8 @@ $(function(){
         $(this).toggleClass('active');
     });
 
+    $('a').address();  
+
 });
 
 
