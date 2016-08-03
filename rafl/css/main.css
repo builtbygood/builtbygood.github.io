@@ -403,6 +403,12 @@ HERO
       color: rgba(255, 255, 255, 0.8);
       font-weight: 300;
       margin-top: 10px; }
+      .hero .hero-copy h2 strong {
+        font-weight: 400; }
+      .hero .hero-copy h2 sup {
+        font-size: 16px;
+        line-height: 16px;
+        vertical-align: super; }
     .hero .hero-copy .btn_primary {
       margin-top: 60px; }
 
@@ -941,7 +947,13 @@ MEDIA QUERIES
   .hero .hero-copy h2 {
     font-size: 24px;
     line-height: 28px;
-    color: rgba(255, 255, 255, 0.7); }
+    margin-top: 10px;
+    color: white; }
+    .hero .hero-copy h2 strong {
+      font-weight: 400; }
+    .hero .hero-copy h2 sup {
+      font-size: 12px;
+      line-height: 12px; }
   .hero .hero-copy .btn_primary {
     margin-top: 60px;
     font-size: 18px; }
@@ -1060,7 +1072,13 @@ MEDIA QUERIES
     .hero .hero-copy h2 {
       font-size: 20px;
       line-height: 24px;
+      margin-top: 10px;
       color: white; }
+      .hero .hero-copy h2 strong {
+        font-weight: 400; }
+      .hero .hero-copy h2 sup {
+        font-size: 12px;
+        line-height: 12px; }
     .hero .hero-copy .btn_primary {
       margin-top: 30px;
       font-size: 16px;
@@ -1122,8 +1140,7 @@ MEDIA QUERIES
 
   .hero .hero-copy h1 {
     font-size: 35px;
-    line-height: 37px;
-    font-weight: 400; }
+    line-height: 37px; }
     .hero .hero-copy h1 .superscript {
       font-size: 18px;
       font-weight: 400; }
@@ -1131,7 +1148,14 @@ MEDIA QUERIES
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
+    margin-top: 10px;
     color: rgba(255, 255, 255, 0.7); }
+    .hero .hero-copy h2 strong {
+      font-weight: 700; }
+    .hero .hero-copy h2 sup {
+      font-size: 10px;
+      line-height: 10px;
+      vertical-align: super; }
   .hero .hero-copy .btn_primary {
     margin-top: 30px;
     font-size: 16px;

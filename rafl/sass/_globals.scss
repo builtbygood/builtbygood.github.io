@@ -376,6 +376,14 @@ HERO
       color:rgba(255,255,255,0.8);
       font-weight:300;
       margin-top:10px;
+      strong{
+        font-weight:400;
+      }
+      sup{
+        font-size:16px;
+        line-height:16px;
+        vertical-align:super;
+      }
     }
     .btn_primary{
       margin-top:60px;
@@ -1093,10 +1101,18 @@ MEDIA QUERIES
             font-size:30px;
           }
         }
-        h2{
+         h2{
           font-size:24px;
           line-height:28px;
-          color:rgba(255,255,255,0.7);
+          margin-top:10px;
+          color:rgba(255,255,255,1);
+          strong{
+            font-weight:400;
+          }
+          sup{
+            font-size:12px;
+            line-height:12px;
+          }
         }
         .btn_primary{
           margin-top:60px;
@@ -1268,7 +1284,15 @@ MEDIA QUERIES
         h2{
           font-size:20px;
           line-height:24px;
+          margin-top:10px;
           color:rgba(255,255,255,1);
+          strong{
+            font-weight:400;
+          }
+          sup{
+            font-size:12px;
+            line-height:12px;
+          }
         }
         .btn_primary{
           margin-top:30px;
@@ -1367,7 +1391,6 @@ MEDIA QUERIES
         h1{
           font-size:35px;
           line-height:37px;
-          font-weight:400;
           .superscript{
             font-size:18px;
             font-weight:400;
@@ -1377,7 +1400,16 @@ MEDIA QUERIES
           font-size:18px;
           line-height:22px;
           font-weight:400;
+          margin-top:10px;
           color:rgba(255,255,255,0.7);
+          strong{
+            font-weight:700;
+          }
+          sup{
+            font-size:10px;
+            line-height:10px;
+            vertical-align:super;
+          }
         }
         .btn_primary{
           margin-top:30px;
