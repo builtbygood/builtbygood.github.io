@@ -27,7 +27,11 @@ $(function(){
 
     if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
       
-      alert("Mobile Detected");
+      $('.app-link').on('click', function(e){
+
+        e.preventDefault();
+
+      });
      
     }
 
