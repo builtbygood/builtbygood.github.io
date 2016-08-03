@@ -25,17 +25,11 @@ $(function(){
         $(this).toggleClass('active');
     });
 
-    if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
-      
-      $('.app-link').on('click', function(e){
-
-        e.preventDefault();
-
-        window.location = $(this).attr('data-app');
-
-      });
-     
-    }
+    $('a[data-applink]').applink({
+        desktop: false, 
+        data: 'applink' 
+        timeout: 1500 
+    });
 
 });
 
