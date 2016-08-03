@@ -954,13 +954,15 @@ MEDIA QUERIES
         h1{
           font-size:70px;
           line-height:70px;
-           span{
-             font-size:40px;
-             line-height:40px;
-          }
+        }
+        h2{
+          display:block;
+          margin-top:10px;
+          font-size:50px;
+          line-height:50px;
           sup{
-            font-size:20px;
-            line-height:20px;
+            font-size:25px;
+            line-height:25px;
             font-weight:400;
             vertical-align:super;
           }
@@ -1107,6 +1109,18 @@ MEDIA QUERIES
         h1{
           font-size:60px;
           line-height:60px;
+        }
+        h2{
+          display:block;
+          margin-top:10px;
+          font-size:40px;
+          line-height:40px;
+          sup{
+            font-size:20px;
+            line-height:20px;
+            font-weight:400;
+            vertical-align:super;
+          }
         }
         .btn_primary{
           margin-top:40px;
@@ -1270,10 +1284,12 @@ MEDIA QUERIES
         h1{
           font-size:50px;
           line-height:50px;
-           span{
-             font-size:40px;
-             line-height:40px;
-          }
+        }
+        h2{
+          display:block;
+          margin-top:15px;
+          font-size:40px;
+          line-height:40px;
           sup{
             font-size:20px;
             line-height:20px;
@@ -1382,11 +1398,11 @@ MEDIA QUERIES
         h2{
           display:block;
           margin-top:10px;
-          font-size:24px;
-          line-height:24px;
+          font-size:26px;
+          line-height:26px;
           sup{
-            font-size:12px;
-            line-height:12px;
+            font-size:13px;
+            line-height:13px;
             font-weight:400;
             vertical-align:super;
           }
