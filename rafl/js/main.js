@@ -25,6 +25,12 @@ $(function(){
         $(this).toggleClass('active');
     });
 
+    if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
+      
+      alert("Mobile Detected");
+     
+    }
+
 });
 
 
