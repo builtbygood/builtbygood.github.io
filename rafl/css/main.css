@@ -1232,7 +1232,8 @@ MEDIA QUERIES
     form input {
       font-size: 15px; }
     form textarea {
-      font-size: 15px; }
+      font-size: 15px;
+      min-width: 100%; }
     form .btn_primary {
       max-width: 250px;
       font-size: 16px;
