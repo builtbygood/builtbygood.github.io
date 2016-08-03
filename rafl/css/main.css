@@ -1122,14 +1122,16 @@ MEDIA QUERIES
 
   .hero .hero-copy h1 {
     font-size: 35px;
-    line-height: 35px; }
+    line-height: 37px;
+    font-weight: 400; }
     .hero .hero-copy h1 .superscript {
       font-size: 18px;
       font-weight: 400; }
   .hero .hero-copy h2 {
     font-size: 18px;
     line-height: 22px;
-    color: white; }
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7); }
   .hero .hero-copy .btn_primary {
     margin-top: 30px;
     font-size: 16px;

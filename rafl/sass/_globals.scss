@@ -1366,7 +1366,8 @@ MEDIA QUERIES
       .hero-copy{
         h1{
           font-size:35px;
-          line-height:35px;
+          line-height:37px;
+          font-weight:400;
           .superscript{
             font-size:18px;
             font-weight:400;
@@ -1375,7 +1376,8 @@ MEDIA QUERIES
         h2{
           font-size:18px;
           line-height:22px;
-          color:rgba(255,255,255,1);
+          font-weight:400;
+          color:rgba(255,255,255,0.7);
         }
         .btn_primary{
           margin-top:30px;
