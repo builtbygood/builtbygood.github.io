@@ -24,17 +24,21 @@ $(function(){
         $('#main, .mobile-nav, header').toggleClass('open');
         $(this).toggleClass('active');
     });
+    
 
     if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
       
       $('.app-link').on('click', function(e){
 
-        e.preventDefault();
+        var app_link = $(this).attr('data-app');
+        var site_link = $(this).attr('href');
 
         setTimeout(function(){
-            window.location = 'https://instagram.com/rafljxn';
+            window.location = site_link;
         },1000);
-        window.location = $(this).attr('data-app');
+        window.location = app_link;
+
+         e.preventDefault();
 
       });
      
