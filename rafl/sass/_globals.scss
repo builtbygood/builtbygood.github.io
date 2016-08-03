@@ -459,6 +459,10 @@ HOW IT WORKS
     a{
       font-weight:400;
       color:white;
+      @include transition(color 0.8s $easeOutExpo);
+      &:hover{
+        color:$light_purple;
+      }
     }
   }
   p{

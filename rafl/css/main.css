@@ -354,7 +354,7 @@ li {
   color: #54b1ec; }
 
 .light_purple {
-  color: #bd93eb; }
+  color: #c6bafc; }
 
 .dark_purple {
   color: #574c88; }
@@ -466,7 +466,14 @@ HOW IT WORKS
     font-weight: 300; }
     .how-it-works h2 a {
       font-weight: 400;
-      color: white; }
+      color: white;
+      -webkit-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      -ms-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+      .how-it-works h2 a:hover {
+        color: #c6bafc; }
   .how-it-works p {
     font-size: 18px;
     line-height: 28px;
@@ -705,10 +712,10 @@ form {
       border-color: #54b1ec; }
   form.contact-form input:focus {
     outline: none;
-    border-color: #bd93eb; }
+    border-color: #c6bafc; }
   form.contact-form textarea:focus {
     outline: none;
-    border-color: #bd93eb; }
+    border-color: #c6bafc; }
   form .btn_primary {
     display: block;
     height: auto;
