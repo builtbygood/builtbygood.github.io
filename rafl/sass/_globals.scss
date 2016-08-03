@@ -348,14 +348,14 @@ li{
   }
 }
 
-.mobile-app-links{
+.mobile-app-link{
   display:none;
   margin-top:20px;
   .btn_primary{
     display:inline-block;
     text-align:center;
     padding:8px 15px;
-    min-width:136px;
+    min-width:150px;
     background:$purple;
     color:white;
     font-size:13px;
@@ -367,19 +367,12 @@ li{
   }
 }
 .how-it-works{
-  .mobile-app-links{
+  .mobile-app-link{
     margin-top:20px;
     .btn_primary{
       background:$dark_purple;
     }
   }
-}
-
-.mobile-show{
-  display:none !important;
-}
-.mobile-hide{
-  display:inline-block !important;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––

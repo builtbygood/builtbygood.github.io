@@ -377,32 +377,26 @@ li {
   .btn_primary:hover {
     border-color: rgba(255, 255, 255, 0.6); }
 
-.mobile-app-links {
+.mobile-app-link {
   display: none;
   margin-top: 20px; }
-  .mobile-app-links .btn_primary {
+  .mobile-app-link .btn_primary {
     display: inline-block;
     text-align: center;
     padding: 8px 15px;
-    min-width: 136px;
+    min-width: 150px;
     background: #7c6dc0;
     color: white;
     font-size: 13px;
     border-radius: 30px;
     margin: 2px; }
-    .mobile-app-links .btn_primary:hover {
+    .mobile-app-link .btn_primary:hover {
       color: white; }
 
-.how-it-works .mobile-app-links {
+.how-it-works .mobile-app-link {
   margin-top: 20px; }
-  .how-it-works .mobile-app-links .btn_primary {
+  .how-it-works .mobile-app-link .btn_primary {
     background: #574c88; }
-
-.mobile-show {
-  display: none !important; }
-
-.mobile-hide {
-  display: inline-block !important; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
