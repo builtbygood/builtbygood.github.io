@@ -31,10 +31,15 @@ $(function(){
 
         e.preventDefault();
 
-        window.location = $(this).attr('data-app');
-        setTimeout(function(){
-            window.location = $(this).attr('href');
-        },1000)
+        var app_url = $(this).attr('data-app');
+
+        $.get(app_url).done(function () {
+          alert("success");
+        }).fail(function () {
+           alert("failed.");
+        });
+
+        //window.location = $(this).attr('data-app');
 
       });
      
