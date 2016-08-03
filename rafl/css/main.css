@@ -1131,14 +1131,14 @@ MEDIA QUERIES
       margin: 30px auto 0 auto; }
 
   .hero .hero-copy h1 {
-    font-size: 40px;
-    line-height: 40px; }
+    font-size: 35px;
+    line-height: 35px; }
     .hero .hero-copy h1 span {
-      font-size: 30px;
-      line-height: 30px; }
+      font-size: 24px;
+      line-height: 24px; }
     .hero .hero-copy h1 sup {
-      font-size: 15px;
-      line-height: 15px;
+      font-size: 12px;
+      line-height: 12px;
       font-weight: 400;
       vertical-align: super; }
   .hero .hero-copy .btn_primary {
