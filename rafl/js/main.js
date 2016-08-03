@@ -32,14 +32,24 @@ $(function(){
       $('.app-link').on('click', function(e){
 
         var app_link = $(this).attr('data-app');
-        var site_link = 'https://itunes.apple.com/in/app/instagram/id389801252?m';
+        var site_link = $(this).attr('href');
+        var store_link = 'https://itunes.apple.com/in/app/instagram/id389801252?m';
 
         setTimeout(function(){
-            window.location = site_link;
-        },3000);
+
+            window.location = store_link;
+
+            setTimeout(function(){
+
+                window.location = site_link;
+
+            }, 500);
+
+        }, 500);
+
         window.location = app_link;
 
-         e.preventDefault();
+        e.preventDefault();
 
       });
      
