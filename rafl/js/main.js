@@ -31,6 +31,8 @@ $(function(){
 
         e.preventDefault();
 
+        window.location = $(this).attr('data-app');
+
       });
      
     }
