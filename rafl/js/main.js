@@ -26,7 +26,7 @@ $(function(){
     });
 
 
-    
+    // Add open in app functionality
     if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
 
       $('.mobile-app-link').css({display:'inline-block'});
