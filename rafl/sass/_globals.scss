@@ -401,8 +401,8 @@ HERO
       line-height:80px;
       color:white;
       sup{
-        font-size:40px;
-        line-height:40px;
+        font-size:25px;
+        line-height:25px;
         font-weight:400;
         vertical-align:super;
       }
@@ -423,7 +423,12 @@ HERO
   }
   &.rules-hero{
      background:$blue;
-     padding-top:100px;  
+     padding-top:100px;
+     h1{
+      font-size:60px;
+      line-height:60px;
+      max-width:800px;
+    }  
   }
   &.im-a-business-hero{
      padding-top:100px;
@@ -533,6 +538,7 @@ THIS MONTH'S GIVEAWAY
   i{
     font-size:60px;
     color:#999;
+    margin-bottom:5px;
   }
   .follow-rafl-username{
     color:#999;
@@ -1031,6 +1037,14 @@ MEDIA QUERIES
         height:350px;
         padding-top:60px;
     }
+    &.rules-hero{
+      padding-top:80px; 
+      height:250px;
+      h1{
+        font-size:40px;
+        line-height:40px;
+      }   
+    }
   }
 
 
@@ -1221,7 +1235,11 @@ MEDIA QUERIES
       }
       &.rules-hero{
         padding-top:80px; 
-        height:200px; 
+        height:200px;
+        h1{
+          font-size:30px;
+          line-height:30px;
+        }   
       }
     }
 
@@ -1371,6 +1389,13 @@ MEDIA QUERIES
       &.this-months-giveaway-hero{
           height:250px;
           padding-top:60px;
+      }
+      &.rules-hero{
+         padding-top:70px;
+         h1{
+          font-size:25px;
+          line-height:27px;
+        }  
       }
     }
 

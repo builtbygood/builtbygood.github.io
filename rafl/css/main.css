@@ -423,8 +423,8 @@ HERO
       line-height: 80px;
       color: white; }
       .page-hero .hero-copy h1 sup {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 25px;
+        line-height: 25px;
         font-weight: 400;
         vertical-align: super; }
   .page-hero.how-it-works-hero {
@@ -438,6 +438,10 @@ HERO
   .page-hero.rules-hero {
     background: #0072bc;
     padding-top: 100px; }
+    .page-hero.rules-hero h1 {
+      font-size: 60px;
+      line-height: 60px;
+      max-width: 800px; }
   .page-hero.im-a-business-hero {
     padding-top: 100px;
     background: #7c6dc0; }
@@ -525,7 +529,8 @@ THIS MONTH'S GIVEAWAY
   margin: 40px 0 0 0; }
   .follow-rafl i {
     font-size: 60px;
-    color: #999; }
+    color: #999;
+    margin-bottom: 5px; }
   .follow-rafl .follow-rafl-username {
     color: #999;
     font-size: 18px;
@@ -898,6 +903,12 @@ MEDIA QUERIES
     .page-hero.this-months-giveaway-hero {
       height: 350px;
       padding-top: 60px; }
+    .page-hero.rules-hero {
+      padding-top: 80px;
+      height: 250px; }
+      .page-hero.rules-hero h1 {
+        font-size: 40px;
+        line-height: 40px; }
 
   .how-it-works {
     padding: 0 20px 120px 20px; }
@@ -1031,6 +1042,9 @@ MEDIA QUERIES
     .page-hero.rules-hero {
       padding-top: 80px;
       height: 200px; }
+      .page-hero.rules-hero h1 {
+        font-size: 30px;
+        line-height: 30px; }
 
   .home-cta {
     padding: 60px 20px; }
@@ -1135,6 +1149,11 @@ MEDIA QUERIES
   .page-hero.this-months-giveaway-hero {
     height: 250px;
     padding-top: 60px; }
+  .page-hero.rules-hero {
+    padding-top: 70px; }
+    .page-hero.rules-hero h1 {
+      font-size: 25px;
+      line-height: 27px; }
 
   .how-it-works {
     padding-bottom: 60px;
