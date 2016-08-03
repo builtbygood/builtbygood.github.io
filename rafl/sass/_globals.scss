@@ -763,6 +763,7 @@ form{
     margin:60px auto 0 auto;
     -webkit-appearance:none;
     cursor:pointer;
+    font-family:'Raleway', sans-serif;
   }
   
 }
@@ -1021,8 +1022,8 @@ MEDIA QUERIES
         font-size:60px;
         line-height:60px;
         sup{
-          font-size:30px;
-          line-height:30px;
+          font-size:18px;
+          line-height:18px;
           vertical-align:super;
         }
       }
@@ -1220,8 +1221,8 @@ MEDIA QUERIES
           font-size:50px;
           line-height:50px;
           sup{
-            font-size:25px;
-            line-height:25px;
+            font-size:16px;
+            line-height:16px;
             font-weight:400;
             vertical-align:super;
           }
@@ -1372,8 +1373,8 @@ MEDIA QUERIES
           font-size:35px;
           line-height:35px;
           sup{
-            font-size:18px;
-            line-height:18px;
+            font-size:12px;
+            line-height:12px;
             vertical-align:super;
             font-weight:400;
           }
