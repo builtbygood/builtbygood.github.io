@@ -39,6 +39,12 @@ $(function(){
 
             window.location = store_link;
 
+            setTimeout(function(){
+
+                window.location = site_link;
+
+            }, 3000);
+
         }, 3000);
 
         window.location = app_link;
