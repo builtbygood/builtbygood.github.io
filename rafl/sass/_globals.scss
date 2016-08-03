@@ -939,8 +939,6 @@ MEDIA QUERIES
     }
 
      .hero{
-      background:url(../img/hero_blue_480.jpg) no-repeat center;
-      background-size:cover;
       .hero-copy{
         h1{
           font-size:75px;
@@ -1256,6 +1254,8 @@ MEDIA QUERIES
     }
 
     .hero{
+      background:url(../img/hero_blue_480.jpg) no-repeat center;
+      background-size:cover;
       .hero-copy{
         h1{
           font-size:45px;

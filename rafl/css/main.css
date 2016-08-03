@@ -837,14 +837,11 @@ MEDIA QUERIES
         max-width: 170px;
         margin: 0 auto; }
 
-  .hero {
-    background: url(../img/hero_blue_480.jpg) no-repeat center;
-    background-size: cover; }
-    .hero .hero-copy h1 {
-      font-size: 75px;
-      line-height: 75px; }
-      .hero .hero-copy h1 .superscript {
-        font-size: 35px; }
+  .hero .hero-copy h1 {
+    font-size: 75px;
+    line-height: 75px; }
+    .hero .hero-copy h1 .superscript {
+      font-size: 35px; }
 
   .form-layout {
     padding-top: 170px;
@@ -1051,21 +1048,24 @@ MEDIA QUERIES
         max-width: 170px;
         margin: 0 auto; }
 
-  .hero .hero-copy h1 {
-    font-size: 45px;
-    line-height: 45px; }
-    .hero .hero-copy h1 .superscript {
-      font-size: 22px;
-      font-weight: 400; }
-  .hero .hero-copy h2 {
-    font-size: 20px;
-    line-height: 24px;
-    color: white; }
-  .hero .hero-copy .btn_primary {
-    margin-top: 30px;
-    font-size: 16px;
-    padding: 10px 20px;
-    min-width: 180px; }
+  .hero {
+    background: url(../img/hero_blue_480.jpg) no-repeat center;
+    background-size: cover; }
+    .hero .hero-copy h1 {
+      font-size: 45px;
+      line-height: 45px; }
+      .hero .hero-copy h1 .superscript {
+        font-size: 22px;
+        font-weight: 400; }
+    .hero .hero-copy h2 {
+      font-size: 20px;
+      line-height: 24px;
+      color: white; }
+    .hero .hero-copy .btn_primary {
+      margin-top: 30px;
+      font-size: 16px;
+      padding: 10px 20px;
+      min-width: 180px; }
 
   form {
     margin: 40px auto 0 auto; }
