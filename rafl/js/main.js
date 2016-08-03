@@ -28,18 +28,20 @@ $(function(){
 
     
     if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
-      
-      $('.app-link').on('click', function(e){
 
-        var app_link   = $(this).attr('data-app');
-        var site_link  = $(this).attr('href');
+      $('.mobile-app-links, .mobile-hide').css({display:'block'});
+      $('.mobile-show').css({dusplay:'none'});
+      
+      $('.data-app').on('click', function(e){
+
+        var app_link  = $(this).attr('href');
         var store_link = 'https://itunes.apple.com/in/app/instagram/id389801252?m';
 
         setTimeout(function(){
 
-            window.location = site_link;
+            window.location = store_link;
 
-        }, 5000);
+        }, 2000);
 
         window.location = app_link;
 
