@@ -25,12 +25,6 @@ $(function(){
         $(this).toggleClass('active');
     });
 
-    $('a[data-applink]').applink({
-        desktop: false, 
-        data: 'applink', 
-        timeout: 1500 
-    });
-
 });
 
 
