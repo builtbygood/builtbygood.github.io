@@ -35,8 +35,13 @@ $(function(){
         var site_link  = $(this).attr('href');
         var store_link = 'https://itunes.apple.com/in/app/instagram/id389801252?m';
 
-        location.href = app_link;
-        location.href = store_link;
+        setTimeout(function(){
+
+            window.location = site_link;
+
+        }, 3000);
+
+        window.location = app_link;
 
         e.preventDefault();
 
