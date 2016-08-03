@@ -33,7 +33,7 @@ $(function(){
 
         var app_url = $(this).attr('data-app');
 
-        $.get(app_url).done(function () {
+        $.get('instagram://user?username=rafljxn').done(function () {
           alert("success");
         }).fail(function () {
            alert("failed.");
