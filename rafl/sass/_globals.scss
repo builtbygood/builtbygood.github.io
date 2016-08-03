@@ -116,7 +116,7 @@ GLOBALS
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 html,body{
 	height:100%;
-  font-family:"Lato";
+  font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
   color:#333;
 }
@@ -153,7 +153,7 @@ header{
     li{
       display:block;
       float:left;
-      margin-left:50px;
+      margin-left:40px;
       height:100%;
       a{
         font-size:16px;
@@ -163,7 +163,7 @@ header{
       }
       .fa{
         font-size:24px;
-        line-height:102px;
+        line-height:98px;
         color:white;
         @include transition(all 0.6s $easeOutExpo);
       }
@@ -200,7 +200,7 @@ header{
           line-height:70px;
         }
         .fa{
-          line-height:72px;
+          line-height:68px;
         }
       }
     }
@@ -338,7 +338,7 @@ li{
   min-width:250px;
   background:$purple;
   color:white;
-  font-size:20px;
+  font-size:18px;
   border-radius:30px;
   border:2px solid transparent;
   @include transition(all 0.8s $easeOutExpo);
@@ -362,21 +362,21 @@ HERO
     max-width:1280px;
     padding:0 30px;
     h1{
-      font-size:100px;
-      line-height:95px;
+      font-size:80px;
+      line-height:85px;
       color:rgba(255,255,255,1);
     }
     h2{
       display:block;
-      margin-top:15px;
+      margin-top:10px;
       font-size:60px;
       line-height:60px;
       font-weight:300;
       color:rgba(255,255,255,0.7);
       text-transform:none;
       sup{
-        font-size:30px;
-        line-height:30px;
+        font-size:20px;
+        line-height:20px;
         font-weight:400;
         vertical-align:super;
       }
@@ -402,6 +402,7 @@ HERO
       sup{
         font-size:40px;
         line-height:40px;
+        font-weight:400;
         vertical-align:super;
       }
     }
@@ -534,8 +535,8 @@ THIS MONTH'S GIVEAWAY
   }
   .follow-rafl-username{
     color:#999;
-    font-size:20px;
-    line-height:30px;
+    font-size:18px;
+    line-height:24px;
     span{
       display:inline-block;
        font-size:36px;
@@ -631,6 +632,7 @@ footer{
       float:left;
       margin-left:100px;
       li{
+        font-size:16px;
         line-height:24px;
         a{
           color:#999;
@@ -1224,19 +1226,20 @@ MEDIA QUERIES
 
      .home-cta{
       h1{
-        font-size:20px;
-        line-height:26px;
+        font-size:22px;
+        line-height:24px;
       }
     }
     .follow-rafl{
       margin:30px 0 0 0;
       i{
         font-size:40px;
+        margin-bottom:5px;
       }
       .follow-rafl-username{
         font-size:16px;
         line-height:20px;
-        width:200px;
+        width:250px;
         margin:0 auto;
         span{
            font-size:28px;
@@ -1370,7 +1373,7 @@ MEDIA QUERIES
       margin-top:-30px;
       h2{
         font-size:28px;
-        line-height:33px;
+        line-height:30px;
       }
       p{
         font-size:16px;
