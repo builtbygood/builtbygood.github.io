@@ -24,8 +24,9 @@ $(function(){
         $('#main, .mobile-nav, header').toggleClass('open');
         $(this).toggleClass('active');
     });
-    
 
+
+    /*
     if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
       
       $('.app-link').on('click', function(e){
@@ -43,6 +44,7 @@ $(function(){
       });
      
     }
+    */
 
 });
 
