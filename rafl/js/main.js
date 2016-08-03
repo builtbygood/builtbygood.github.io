@@ -27,7 +27,7 @@ $(function(){
 
     if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
       
-      $('.app-link').on('click', function(e){
+      $('a[data-app]').on('click', function(e){
 
         e.preventDefault();
 
