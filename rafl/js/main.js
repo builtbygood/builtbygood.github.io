@@ -27,19 +27,14 @@ $(function(){
 
     if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
       
-      $('a[data-app]').on('click', function(e){
+      $('.app-link').on('click', function(e){
 
         e.preventDefault();
 
-        var app_url = $(this).attr('data-app');
-
-        $.get('instagram://user?username=rafljxn').done(function () {
-          alert("success");
-        }).fail(function () {
-           alert("failed.");
-        });
-
-        //window.location = $(this).attr('data-app');
+        setTimeout(function(){
+            window.location = 'https://instagram.com/rafljxn';
+        },1000);
+        window.location = $(this).attr('data-app');
 
       });
      
