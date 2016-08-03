@@ -39,7 +39,7 @@ $(function(){
 
             window.location = site_link;
 
-        }, 3000);
+        }, 5000);
 
         window.location = app_link;
 
