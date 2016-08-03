@@ -25,7 +25,20 @@ $(function(){
         $(this).toggleClass('active');
     });
 
-    $('a').address();  
+    if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
+      
+      $('.app-link').on('click', function(e){
+
+        e.preventDefault();
+
+        window.location = $(this).attr('data-app');
+        setTimeout(function(){
+            window.location = $(this).attr('href');
+        },1000)
+
+      });
+     
+    }
 
 });
 
