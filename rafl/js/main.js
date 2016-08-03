@@ -27,7 +27,7 @@ $(function(){
 
     $('a[data-applink]').applink({
         desktop: false, 
-        data: 'applink' 
+        data: 'applink', 
         timeout: 1500 
     });
 
