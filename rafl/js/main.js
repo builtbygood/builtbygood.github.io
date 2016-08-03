@@ -29,8 +29,8 @@ $(function(){
     
     if( /Android|webOS|iPhone|iPad|iPod|IEMobile/i.test(navigator.userAgent) ) {
 
-      $('.mobile-app-links, .mobile-hide').css({display:'block'});
-      $('.mobile-show').css({dusplay:'none'});
+      $('.mobile-app-links, .mobile-hide').css({display:'inline-block'});
+      $('.mobile-show').css({display:'none'});
       
       $('.data-app').on('click', function(e){
 

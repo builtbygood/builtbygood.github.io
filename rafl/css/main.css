@@ -402,7 +402,7 @@ li {
   display: none !important; }
 
 .mobile-hide {
-  display: block !important; }
+  display: inline-block !important; }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
