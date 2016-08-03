@@ -1135,9 +1135,9 @@ MEDIA QUERIES
     line-height: 35px; }
     .hero .hero-copy h1 span {
       display: block;
+      margin-top: 10px;
       font-size: 24px;
-      line-height: 24px;
-      margin-top: 0; }
+      line-height: 24px; }
     .hero .hero-copy h1 sup {
       font-size: 12px;
       line-height: 12px;
