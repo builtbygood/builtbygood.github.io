@@ -25,18 +25,6 @@ $(function(){
         $(this).toggleClass('active');
     });
 
-    $('.open-instagram').on('click', function(e){
-
-        e.preventDefault();
-
-
-        window.location = 'instgram://user?username=rafljxn';
-        setTimeout("window.location = 'https://www.instagram.com/rafljxn/';", 2000);
-
-    
-
-    });
-
 });
 
 
