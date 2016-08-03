@@ -616,7 +616,7 @@ footer {
       margin-left: 100px; }
       footer .footer-nav ul li {
         font-size: 16px;
-        line-height: 24px; }
+        line-height: 26px; }
         footer .footer-nav ul li a {
           color: #999;
           -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
@@ -687,18 +687,19 @@ form {
   form textarea {
     display: block;
     width: 100%;
+    max-width: 98%;
+    min-width: 98%;
     padding: 30px;
     height: 200px;
     border: 2px solid transparent;
     border-radius: 5px;
     font-size: 18px;
     line-height: 24px;
-    resize: none;
-    -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-    -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-    -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-    -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+    -webkit-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
     form textarea:focus {
       outline: none;
       border-color: #54b1ec; }

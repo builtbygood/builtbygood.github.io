@@ -640,7 +640,7 @@ footer{
       margin-left:100px;
       li{
         font-size:16px;
-        line-height:24px;
+        line-height:26px;
         a{
           color:#999;
           @include transition(all 0.8s $easeOutExpo);
@@ -726,14 +726,15 @@ form{
   textarea{
     display:block;
     width:100%;
+    max-width:98%;
+    min-width:98%;
     padding:30px;
     height:200px;
     border:2px solid transparent;
     border-radius:5px;
     font-size:18px;
     line-height:24px;
-    resize:none;
-    @include transition(all 0.8s $easeOutExpo);
+    @include transition(border 0.8s $easeOutExpo);
     &:focus{
       outline:none;
       border-color:$light_blue;
