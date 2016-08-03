@@ -1032,9 +1032,11 @@ MEDIA QUERIES
       padding-top: 80px;
       height: 200px; }
 
-  .home-cta h1 {
-    font-size: 20px;
-    line-height: 24px; }
+  .home-cta {
+    padding: 60px 20px; }
+    .home-cta h1 {
+      font-size: 20px;
+      line-height: 24px; }
 
   .follow-rafl {
     margin: 30px 0 0 0; }
@@ -1113,7 +1115,10 @@ MEDIA QUERIES
     form .btn_primary {
       max-width: 300px;
       font-size: 18px;
-      margin: 40px auto 0 auto; } }
+      margin: 40px auto 0 auto; }
+
+  footer {
+    padding: 60px 20px; } }
 @media (max-width: 480px) {
   .page-hero .hero-copy h1 {
     font-size: 35px;
