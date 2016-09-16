@@ -23,9 +23,28 @@ $(function(){
             $(this).parent().find('.bioModal').css({ display:'flex' }).fadeIn('fast');
         }
 
+    });
+
+    if( $window.width() <= 480 ){
+
+        $('.adaptiveClients .col-1-3').on('mouseenter', function(){
+            $(this).addClass('active');
+        });
+        $('.adaptiveClients .col-1-3').on('mouseleave', function(){
+            $(this).removeClass('active');
+        });
+    
+
+    }
+
+    $('.adaptive_email_capture input[type="email"]').attr("placeholder", "Your email...");
+
+    $('.contact-eddie-btn').on('click', function(){
+
+        $('.adaptive_email_capture').fadeIn('fast');
 
     });
-	
+
 });
 
 

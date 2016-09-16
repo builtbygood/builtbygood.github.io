@@ -165,6 +165,9 @@ HERO
   .adaptiveHeroCopy{
     height:550px;
     width:70%;
+    >div{
+      position:relative;
+    }
     h1{
       display:block;
       width:100%;
@@ -241,6 +244,112 @@ HERO
   }
 }
 
+
+.contact-eddie-btn{
+  border:none;
+  display:inline-block;
+  -webkit-appearance: none;
+  background:#44959a;
+  color:white;
+  @include box-shadow(0 3px 0 0 rgba(0,0,0,0.5));
+  padding:14px 30px 10px 30px;
+  border-radius:5px;
+  font-family:serif;
+  font-size:14px;
+  line-height:14px;
+  text-transform:uppercase;
+  cursor:pointer;
+  @include transition(all 0.8s $easeOutExpo);
+  &:hover{
+    background:#388489;
+  }
+  &:focus{
+    outline:none;
+  }
+}
+// Adaptive Email Capture
+.adaptive_email_capture{
+  display:none;
+  position:absolute;
+  width:100%;
+  max-width:580px;
+  top:0;right:0;
+  padding:40px 80px;
+  background:rgba(66,145,150,0.85);
+  border:1px solid white;
+  text-align:center;
+  z-index:888;
+  margin-bottom:50px;
+  .modalClose{
+    position:absolute;
+    top:12px;
+    right:12px;
+    width:25px;
+    cursor:pointer;
+    img{
+      width:100%;
+    }
+  }
+    .e2ma_signup_message, .e2ma_signup_form_label, .e2ma_signup_form_required_footnote, #e2ma_signup_reset_button{
+        display:none;
+    }
+    input[type="email"]:before{
+      content:'replacement string'; 
+    }
+    input[type="submit"]{
+      cursor:pointer;
+      background:#d2511d;
+      float:right;
+      margin-top:17px;
+      @include box-shadow(0 3px 0 0 rgba(185,51,36,1));
+      color:white;
+      font-size:15px;
+      padding-top:2px;
+      text-transform:uppercase;
+      max-width:140px;
+      @include transition(all 0.8s $easeOutExpo);
+      &:hover{
+        background:#bf4819;
+      }
+    }
+    input{
+      display:inline-block;
+      width:100%;
+      height:30px;
+      border:none;
+      font-family:serif;
+      font-weight:bold;
+      font-size:14px;
+      padding:0 20px;
+      color:#222;
+      background:white;
+      border-radius:5px;
+      font-family:sans-serif;
+      font-weight:normal;
+      &:focus{
+        outline:none;
+      }
+    }
+    p{
+      font-size:30px;
+      line-height:34px;
+      margin-bottom:30px;
+      font-family:'Oswald';
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #999;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #999;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #999;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #999;
+    }
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 DESCRIPTION
@@ -307,6 +416,16 @@ CLIENTS
         @include transform(translateY(0));
       }
     }
+    &.active{
+      img{
+        @include opacity(0);
+        @include transform(translateY(0));
+      }
+      p{
+        @include opacity(1);
+        @include transform(translateY(0));
+      }
+    }
   }
 }
 
@@ -316,7 +435,8 @@ CAPABILITIES
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveCapabilties{
-  background:$tan;
+  background:$tan url(../images/capabilities-bg.jpg) no-repeat center;
+  background-size:cover;
   .grid{
     margin:70px 0 120px 0;
   }
@@ -455,13 +575,13 @@ MODAL
   padding:80px;
   width:100%;
   height:100%;
-  background:white;
+  background:rgba(255,255,255,0.95);
   z-index:20;
   p{
     font-size:20px;
     line-height:30px;
     margin-top:20px;
-    color:black;
+    //color:white;
     font-family:serif;
   }
   .container{
@@ -571,7 +691,8 @@ TESTIMONIALS
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .adaptiveTestimonials{
-  background:$tan;
+  background:$tan url(../images/testimonials-bg.jpg) no-repeat center;
+  background-size:cover;
   .grid{
     margin:70px 0 120px 0;
   }
@@ -839,6 +960,12 @@ MEDIA QUERIES
 
 @media (max-width:960px){
 
+  // Adaptive Email Capture
+  .adaptive_email_capture{
+    top:20px;
+    margin-bottom:30px;
+  }
+
   .adaptiveInsights{
     .col-1-3{
       padding:20px;
@@ -914,9 +1041,9 @@ MEDIA QUERIES
   }
 
   .adaptiveHero{
-    height:400px;
+    height:480px;
     .adaptiveHeroCopy{
-      height:400px;
+      height:480px;
       h1{
         font-size:40px;
         line-height:45px;
@@ -944,14 +1071,19 @@ MEDIA QUERIES
       }
     }
   }
+  // Adaptive Email Capture
+  .adaptive_email_capture{
+    top:20px;
+    margin-bottom:20px;
+  }
 
   .adaptiveClients{
     .col-1-3{
        width:100%;
        height:260px;
        p{
-        font-size:18px;
-        line-height:28px;
+        font-size:16px;
+        line-height:26px;
        }   
     }
   }
@@ -1075,10 +1207,10 @@ MEDIA QUERIES
 @media (max-width:600px){
 
   .adaptiveHero{
-    height:420px;
+    height:480px;
     .adaptiveHeroCopy{
-      height:420px;
-      margin-top:-20px;
+      height:480px;
+      margin-top:30px;
       h1{
         font-size:30px;
         line-height:40px;
@@ -1107,6 +1239,25 @@ MEDIA QUERIES
         height:325px;
       }
     }
+  }
+  // Adaptive Email Capture
+  .adaptive_email_capture{
+    top:15px;
+    width:100%;
+    margin-bottom:35px;
+      input[type="email"]{
+        width:75%;
+      }
+      input[type="submit"]{
+        width:25%;
+      }
+      p{
+        width:100%;
+        border:none;
+        margin-bottom:-6px;
+        padding:0;
+        margin-left:0;
+      }
   }
 
   .adaptiveDecription{
@@ -1160,6 +1311,7 @@ MEDIA QUERIES
       }
     }
   }
+
 
 
 
