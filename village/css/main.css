@@ -432,7 +432,7 @@ footer {
       width: 100%; }
     .hero .hero-copy {
       max-width: 100%;
-      margin-top: 40px; }
+      margin-top: 50px; }
       .hero .hero-copy h1 {
         font-size: 35px;
         line-height: 35px;
@@ -442,7 +442,8 @@ footer {
         line-height: 25px;
         margin-top: 10px; }
       .hero .hero-copy .btn_primary {
-        margin-top: 20px; }
+        margin-top: 20px;
+        max-width: 400px; }
 
     /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
