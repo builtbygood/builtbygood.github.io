@@ -431,10 +431,11 @@ footer {
       float: none;
       width: 100%; }
     .hero .hero-copy {
-      max-width: 480px; }
+      max-width: 100%;
+      margin-top: 40px; }
       .hero .hero-copy h1 {
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 35px;
+        line-height: 35px;
         color: white; }
       .hero .hero-copy h2 {
         font-size: 20px;
