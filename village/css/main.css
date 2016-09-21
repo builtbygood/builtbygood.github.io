@@ -271,7 +271,6 @@ FAQs
   height: 100%;
   padding: 200px 0; }
 .faqs .section-image {
-  height: 100%;
   background: url(../img/faq-hero.jpg) no-repeat center;
   background-size: cover; }
 
@@ -484,7 +483,6 @@ footer {
   .faqs {
     border-bottom: 1px solid #ddd; }
     .faqs .col-1-2 {
-      height: auto;
       padding: 60px 0;
       float: right;
       width: 100%; }

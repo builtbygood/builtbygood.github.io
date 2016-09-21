@@ -1,6 +1,7 @@
 $(function(){
 
-    var $window = $(window);
+    var $window = $(window),
+        $faqs   = $('.faqs .section-questions');
 
  
     $window.on('resize', function(){ 
@@ -15,12 +16,16 @@ $(function(){
 
     function resizeStuff(){
 
+        var $faq_height = $faqs.outerHeight();
+
         if( $window.width() >= 600 ){
 
-            $('.faqs .section-image').css('height', $('.faqs').height());
+            $('.faqs .section-image').css('height', $faq_height + 'px');
 
         } else{
+
             $('.faqs .section-image').css('height','480px');
+
         }
        
     };
