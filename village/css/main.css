@@ -430,7 +430,7 @@ footer {
   .hero {
     position: relative;
     width: 100%;
-    height: 480px;
+    height: 100%;
     background: url(../img/hero-mobile.jpg) no-repeat center;
     background-size: cover;
     padding: 0 20px; }
@@ -462,7 +462,7 @@ footer {
     .about-us .col-1-2 {
       width: 100%;
       height: auto;
-      padding: 60px 0; }
+      padding: 90px 0; }
     .about-us .section-image {
       height: 480px; }
     .about-us .section-copy {
@@ -476,7 +476,7 @@ footer {
   .faqs {
     border-bottom: 1px solid #ddd; }
     .faqs .col-1-2 {
-      padding: 60px 0;
+      padding: 90px 0;
       float: right;
       width: 100%; }
     .faqs .section-image {
@@ -508,11 +508,11 @@ footer {
       height: auto; }
     .pre-register .section-copy {
       position: relative;
-      padding: 60px 20px 20px 20px;
+      padding: 90px 20px 20px 20px;
       max-width: 100%; }
     .pre-register .section-form {
       height: auto;
-      padding: 15px 20px 60px 20px; }
+      padding: 15px 20px 90px 20px; }
       .pre-register .section-form form {
         max-width: 100%;
         padding-left: 0; }
