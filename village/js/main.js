@@ -7,7 +7,7 @@ $(function(){
     $window.on('resize', function(){ 
                         
         resizeStuff();
-        scrollStuff();      
+       
                         
     });
 
@@ -30,33 +30,7 @@ $(function(){
     resizeStuff();
 
 
-    $window.on('scroll', scrollStuff);
-
-    function scrollStuff(){
-
-        var $scrollTop = $window.scrollTop();
-
-        $('section').each(function(){
-
-            var $offset = $(this).offset().top - $scrollTop;
-
-            if( $offset <= 0){
-
-                var $target = $(this).attr('id');
-
-                $('nav li[data-id="' + $target + '"').addClass('active').siblings().removeClass('active');
-
-                if( $target == 'hero' ){
-
-                    $('nav li').removeClass('active');
-
-                }
-            }
-
-        });
-          
-    };
-    scrollStuff();
+    
 
 
     var scrollTime = 1.2;
