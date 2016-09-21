@@ -433,7 +433,7 @@ footer{
         float:right;
         height:50px;
         font-size:14px;
-        color:#999;
+        color:#bbb;
     }
 }
 
@@ -441,6 +441,10 @@ footer{
 
 
 @media (max-width:600px){
+    body{
+        overflow-y: scroll; /* has to be scroll, not auto */
+        -webkit-overflow-scrolling: touch;
+    }
     /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
     Header
@@ -624,22 +628,20 @@ footer{
             width:100%;
             li{
                 display:inline;
-                margin:0 10px;
+                margin:0;
+                padding:0 10px;
                 text-transform:uppercase;
                 img{
                     vertical-align:middle;
                 }
                 &:first-child{
-                    display:block;
+                    display:inline-block;
                     width:100%;
                 }
             }
         }
         .copyright{
             float:none;
-            height:50px;
-            font-size:14px;
-            color:#999;
         }
     }
 
