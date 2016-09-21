@@ -7,11 +7,9 @@ $(function(){
     $window.on('resize', function(){ 
                         
         resizeStuff();
-        scrollStuff();
-        
+        scrollStuff();      
                         
     });
-
 
 
     function resizeStuff(){
@@ -30,7 +28,6 @@ $(function(){
        
     };
     resizeStuff();
-
 
 
     $window.on('scroll', scrollStuff);
@@ -62,7 +59,6 @@ $(function(){
     scrollStuff();
 
 
-
     var scrollTime = 1.2;
     var scrollDistance = 100
 
@@ -83,8 +79,7 @@ $(function(){
     });
 
 
-
-    $('.scroll-to-link').on('click', function(e){
+    $('.scroll-to-link').on('click touchstart', function(e){
 
         var $target        = $(this).attr('data-id');
         var $target_offset = $('#' + $target).offset().top;

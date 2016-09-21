@@ -241,13 +241,6 @@ Hero
     .hero .hero-copy .btn_primary {
       margin-top: 30px; }
 
-.img-fs {
-  display: block;
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden; }
-
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 About Us
