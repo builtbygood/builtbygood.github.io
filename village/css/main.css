@@ -241,6 +241,10 @@ Hero
     .hero .hero-copy .btn_primary {
       margin-top: 30px; }
 
+#about-hero {
+  background: url(../img/thanks-hero.jpg) no-repeat center;
+  background-size: cover; }
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 About Us
