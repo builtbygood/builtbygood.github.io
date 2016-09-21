@@ -32,6 +32,7 @@ $(function(){
     if( $window.width() >= 600 ){
 
         $window.on('scroll', scrollStuff);
+        scrollStuff();
 
     } 
 
@@ -59,7 +60,7 @@ $(function(){
         });
           
     };
-    scrollStuff();
+    
 
 
     var scrollTime = 1.2;
