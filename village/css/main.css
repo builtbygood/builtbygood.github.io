@@ -152,7 +152,7 @@ p {
     color: #197bd6; }
   .section-copy h3 {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 45px;
     margin-bottom: 40px; }
   .section-copy p {
     font-size: 18px;
@@ -174,7 +174,7 @@ Header
 header {
   position: fixed;
   z-index: 999;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   height: 100px;
   top: 0;
@@ -184,11 +184,11 @@ header {
     height: 100%; }
   header .logo {
     padding-top: 15px;
-    margin-left: 60px; }
+    margin-left: 0; }
   header nav {
     position: absolute;
     top: 0;
-    right: 60px; }
+    right: 0; }
     header nav li {
       display: inline;
       height: 100px;
@@ -230,7 +230,7 @@ Hero
     max-width: 480px; }
     .hero .hero-copy h1 {
       font-size: 70px;
-      line-height: 70px;
+      line-height: 75px;
       color: white; }
     .hero .hero-copy h2 {
       font-size: 28px;
@@ -254,7 +254,8 @@ About Us
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .about-us {
-  height: 100%; }
+  height: 100%;
+  min-height: 850px; }
   .about-us .col-1-2 {
     height: 100%; }
   .about-us .section-image {
@@ -284,10 +285,10 @@ FAQs
   .faq-questions .question h4 {
     font-size: 20px;
     line-height: 28px;
-    margin-bottom: 15px; }
+    margin-bottom: 3px; }
   .faq-questions .question p {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 28px;
     color: #999; }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -305,14 +306,16 @@ Pre-Register
     right: 0;
     padding: 0 60px 0 0;
     max-width: 550px; }
+    .pre-register .section-copy h3 {
+      text-indent: -2px; }
   .pre-register .section-form {
     height: 100%;
     float: right;
-    background: #197bd6; }
+    background: #197bd6;
+    padding-left: 60px; }
     .pre-register .section-form form {
       width: 100%;
       max-width: 550px;
-      padding-left: 60px;
       margin-top: 5px; }
       .pre-register .section-form form .field {
         margin-top: 15px; }
@@ -321,6 +324,7 @@ Pre-Register
         height: 50px;
         padding: 0 20px;
         font-size: 18px;
+        font-family: 'Lato', sans-serif;
         color: white;
         border: 2px solid rgba(255, 255, 255, 0.5);
         background: transparent;
@@ -363,7 +367,7 @@ Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
   padding: 60px 0;
-  background: #f6f6f6;
+  border-top: 1px solid #ddd;
   font-size: 12px;
   line-height: 50px; }
   footer .logo-mark {
@@ -375,6 +379,16 @@ footer {
       text-transform: uppercase; }
       footer .logo-mark li img {
         vertical-align: middle; }
+      footer .logo-mark li a {
+        color: #999;
+        text-decoration: none;
+        -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+        footer .logo-mark li a:hover {
+          color: #555; }
   footer .copyright {
     float: right;
     height: 50px;
@@ -486,7 +500,7 @@ footer {
     .faq-questions .question h4 {
       font-size: 18px;
       line-height: 26px;
-      margin-bottom: 10px; }
+      margin-bottom: 3px; }
     .faq-questions .question p {
       font-size: 16px;
       line-height: 26px; }

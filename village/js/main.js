@@ -32,7 +32,7 @@ $(function(){
 
     function scrollStuff(){
 
-        var $scrollTop = $window.scrollTop()+100;
+        var $scrollTop = $window.scrollTop();
 
         $('section').each(function(){
 
@@ -54,11 +54,12 @@ $(function(){
         });
           
     };
+    scrollStuff();
 
 
 
     var scrollTime = 1.2;
-    var scrollDistance = 100;
+    var scrollDistance = 100
 
     $window.on("mousewheel", function(event){
 
@@ -81,7 +82,7 @@ $(function(){
     $('.scroll-to-link').on('click', function(e){
 
         var $target        = $(this).attr('data-id');
-        var $target_offset = $('#' + $target).offset().top -100;
+        var $target_offset = $('#' + $target).offset().top;
 
         TweenMax.to($window, 0.6, {
             scrollTo : { y: $target_offset},
