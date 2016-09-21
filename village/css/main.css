@@ -540,8 +540,7 @@ footer {
     background: #f6f6f6;
     font-size: 12px;
     line-height: auto;
-    text-align: center;
-    overflow: hidden; }
+    text-align: center; }
     footer .logo-mark {
       float: none;
       height: auto;
