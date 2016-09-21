@@ -97,17 +97,31 @@
 				</div>
 			</div>
 			<div class="col-1-2 flex-center-v section-form">
-				<form>
-					<div class="field">
-						<input type="text" placeholder="Your Name">
+
+				<form
+				    id="subscribe-form"
+				    action="http://builtbygood.us14.list-manage.com/subscribe/post-json?u=da477645b36040dd64cc554ca&amp;id=3219cfd95a"
+				    method="get"
+				    autocomplete="off">
+
+				    <div class="field">
+						<input type="text" value="" name="NAME" class="required" id="mce-NAME" placeholder="Your Name" required>
 					</div>
 					<div class="field">
-						<input type="email" placeholder="Your Email">
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email" required>
 					</div>
 					<div class="field">
-						<button type="submit" class="btn_primary">Pre-Register</button>
+						<button type="submit" class="btn_primary">
+							<img src="img/oval.svg" class="loader"> Pre-Register
+						</button>
 					</div>
+
+				    <div id="subscribe-result">
+				    	
+				    </div>
+
 				</form>
+
 			</div>
 		</section>
 

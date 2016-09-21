@@ -340,9 +340,10 @@ Pre-Register
         background:$blue; 
         padding-left:60px;
         form{
+            position:relative;
             width:100%;
             max-width:550px;
-            margin-top:5px;
+            margin-top:9px;
             .field{
                 margin-top:15px; 
             }
@@ -366,6 +367,8 @@ Pre-Register
                 max-width:100%;
                 background:rgba(255,255,255,0.75);
                 color:$blue;
+                line-height:50px;
+                text-indent:-40px;
                 margin-top:10px;
                 @include transition(all 0.8s $easeOutExpo);
                 &:hover{
@@ -390,6 +393,25 @@ Pre-Register
         }
     }
 }
+
+#subscribe-result{
+    display:none;
+    position:absolute;
+    bottom:-50px;
+    height:30px;
+    width:100%;
+    text-align:center;
+    color:white;
+}
+
+.loader{
+    display:inline;
+    @include opacity(0);
+    vertical-align:-9px;
+    padding-right:10px;
+    @include transition(opacity 0.8s $easeOutExpo);
+}
+
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 

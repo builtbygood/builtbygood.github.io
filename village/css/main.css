@@ -306,9 +306,10 @@ Pre-Register
     background: #197bd6;
     padding-left: 60px; }
     .pre-register .section-form form {
+      position: relative;
       width: 100%;
       max-width: 550px;
-      margin-top: 5px; }
+      margin-top: 9px; }
       .pre-register .section-form form .field {
         margin-top: 15px; }
       .pre-register .section-form form input {
@@ -333,6 +334,8 @@ Pre-Register
         max-width: 100%;
         background: rgba(255, 255, 255, 0.75);
         color: #197bd6;
+        line-height: 50px;
+        text-indent: -40px;
         margin-top: 10px;
         -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
         -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
@@ -351,6 +354,27 @@ Pre-Register
         color: rgba(255, 255, 255, 0.6); }
       .pre-register .section-form form :-moz-placeholder {
         color: rgba(255, 255, 255, 0.6); }
+
+#subscribe-result {
+  display: none;
+  position: absolute;
+  bottom: -50px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  color: white; }
+
+.loader {
+  display: inline;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  vertical-align: -9px;
+  padding-right: 10px;
+  -webkit-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
