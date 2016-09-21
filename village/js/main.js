@@ -61,8 +61,6 @@ $(function(){
     var scrollTime = 1.2;
     var scrollDistance = 100
 
-    if( $window.width() >= 600 )
-
     $window.on("mousewheel", function(event){
 
         event.preventDefault();
