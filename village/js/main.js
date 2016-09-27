@@ -144,7 +144,7 @@ $(function(){
 
                     $('.loader').css('opacity', '0');
                     $('#subscribe-result').fadeIn();
-                    $("#subscribe-form input").val('');
+                    $("#subscribe-form input, #subscribe-form textarea").val('');
                   
                 }
             });

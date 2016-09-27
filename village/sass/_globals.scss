@@ -356,7 +356,7 @@ Pre-Register
             .field{
                 margin-top:15px; 
             }
-            input{
+            input, textarea{
                 width:100%;
                 height:50px;
                 padding:0 20px;
@@ -371,6 +371,13 @@ Pre-Register
                     outline:none;
                     border-color:rgba(255,255,255,1);
                 }
+            }
+            textarea{
+                resize:none;
+                min-width:100%;
+                max-width:100%;
+                padding-top:12px;
+                height:150px;
             }
             .btn_primary{
                 max-width:100%;
