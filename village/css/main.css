@@ -64,7 +64,8 @@ Helpers
 .flex-center {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-justify-content: center; }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -157,7 +158,10 @@ p {
   .section-copy p {
     font-size: 18px;
     line-height: 30px;
-    color: #999; }
+    color: #999;
+    margin-top: 15px; }
+    .section-copy p:first-child {
+      margin-top: 0; }
 
 .col-1-2 .section-copy {
   max-width: 550px;
