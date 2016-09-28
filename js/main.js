@@ -36,7 +36,7 @@ $(function(){
 
     } 
 
-    function scrollStuff(){
+   function scrollStuff(){
 
         var $scrollTop = $window.scrollTop();
 
@@ -48,7 +48,15 @@ $(function(){
 
                 var $target = $(this).attr('id');
 
-                $('nav li[data-id="' + $target + '"').addClass('active').siblings().removeClass('active');
+                $('nav li').each(function(){
+
+                    if( $(this).attr('data-id') == $target ){
+
+                        $(this).addClass('active').siblings().removeClass('active');
+
+                    }
+
+                });
 
                 if( $target == 'hero' ){
 
