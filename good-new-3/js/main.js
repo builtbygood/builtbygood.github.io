@@ -1,64 +1,8 @@
 $(function(){
-    
 
-     var $window = $(window);
-         fsImg = $('.img-fs'),
-         startwidth= 2500, 
-         startheight= 1750,
-         ratio = startheight/startwidth,
-         imagewidth = $(this).width(),
-         imageheight = $(this).height(),
-         browserwidth = $('.project-hero').width(),
-         browserheight = $('.project-hero').height();
+    var $window = $(window);
 
-    $window.on('resize', function(){ 
-        
-            imagewidth = $(this).width();
-            imageheight = $(this).height();
-            browserwidth = $('.project-hero').width();
-            browserheight = $('.project-hero').height();
-                        
-            fsImage();
-            scrollStuff();          
-            
-                        
-    }); 
-
-    function fsImage(){
-     
-        if ((browserheight/browserwidth) > ratio){
-            fsImg.height(browserheight);
-            fsImg.width(browserheight / ratio);
-        } else {
-            fsImg.width(browserwidth);
-            fsImg.height(browserwidth * ratio);
-        };
-        fsImg.css('left', (browserwidth - fsImg.width())/2);
-        fsImg.css('top', (browserheight - fsImg.height())/2);
-       
-    };
-    fsImage();
-
-
-    var scrollTime = 1.6;
-    var scrollDistance = 200;
-
-    $window.on("mousewheel", function(event){
-
-        event.preventDefault();
-
-        var delta       = event.originalEvent.wheelDelta/120;
-        var scrollTop   = $window.scrollTop();
-        var finalScroll = scrollTop - parseInt(delta*scrollDistance) * 3;  
-
-        TweenMax.to($window, scrollTime, {
-            scrollTo : { y: finalScroll, autoKill:true },
-            ease: Power3.easeOut,
-            overwrite: 5                            
-        });
-
-    });
-
+    // On scroll – reveal project images, set nav links to active, animate header
     $window.on('scroll', scrollStuff);
 
     function scrollStuff(){
@@ -117,7 +61,27 @@ $(function(){
     }
     scrollStuff();
 
+    // Ease scrolling on mouse scroll
+    var scrollTime = 1.6;
+    var scrollDistance = 200;
 
+    $window.on("mousewheel", function(event){
+
+        event.preventDefault();
+
+        var delta       = event.originalEvent.wheelDelta/120;
+        var scrollTop   = $window.scrollTop();
+        var finalScroll = scrollTop - parseInt(delta*scrollDistance) * 3;  
+
+        TweenMax.to($window, scrollTime, {
+            scrollTo : { y: finalScroll, autoKill:true },
+            ease: Power3.easeOut,
+            overwrite: 5                            
+        });
+
+    });
+
+    // scroll to sections on click
     $('.scroll-to-link').on('click', function(e){
 
         var $target        = $(this).attr('data-id');
@@ -133,8 +97,7 @@ $(function(){
 
     });
 
-
-
+    // animate phrases in hero
     var make = [
       'really awesome apps.',
       'equally awesome websites.', 
@@ -156,8 +119,7 @@ $(function(){
         });
 
     }, 2500);
-    
-    
+      
 	
 });
 

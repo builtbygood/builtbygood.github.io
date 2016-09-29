@@ -196,24 +196,25 @@ p{
   cursor:pointer;
   box-shadow:-4px 4px 0 0 rgba(0,0,0,0.2);
   @include transition(all 0.8s $easeOutExpo);
+  span:before {
+    background: none;
+    border-left: 1px solid #222;
+    border-bottom: 1px solid #222;
+    border-radius:5px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: -4px;
+    right: 1px;
+    bottom: -4px;
+    box-shadow:-4px 4px 0 0 rgba(0,0,0,0.2);
+  }
   &:hover{
     background:white;
   }
 }
-.btn_primary span:before {
-  background: none;
-  border-left: 1px solid #222;
-  border-bottom: 1px solid #222;
-  border-radius:5px;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 1px;
-  left: -4px;
-  right: 1px;
-  bottom: -4px;
-  box-shadow:-4px 4px 0 0 rgba(0,0,0,0.2);
-}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 HEADER
@@ -251,7 +252,7 @@ header{
     height:100%;
     li{
       display:inline;
-      line-height:85px;
+      line-height:90px;
       font-size:15px;
       font-weight:500;
       margin:0 0 0 30px;
