@@ -11,11 +11,11 @@
   }
   .st0 {
     fill:#222;
-    animation: ufo-building-float 4s linear infinite;
+    animation: ufo-building-float 3.98s linear infinite;
   }
   .st1 {
     fill:#222;
-    animation: ufo-building-float 3.95s linear infinite;
+    animation: ufo-building-float 4s linear infinite;
   }
 </style>
 <image style="overflow:visible;" width="1280" height="708" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAALECAYAAABXOp3bAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ

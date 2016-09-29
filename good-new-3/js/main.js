@@ -40,8 +40,8 @@ $(function(){
     fsImage();
 
 
-    var scrollTime = 1.5;
-    var scrollDistance = 100;
+    var scrollTime = 1.6;
+    var scrollDistance = 200;
 
     $window.on("mousewheel", function(event){
 
@@ -53,7 +53,7 @@ $(function(){
 
         TweenMax.to($window, scrollTime, {
             scrollTo : { y: finalScroll, autoKill:true },
-            ease: Expo.easeOut,
+            ease: Power3.easeOut,
             overwrite: 5                            
         });
 
@@ -63,9 +63,9 @@ $(function(){
 
     function scrollStuff(){
 
-        var scrollTop   = $window.scrollTop();
-        $('.project-hero img').css({ transform:'translateY('+ scrollTop*0.2 +'px)' });
+        var scrollTop = $window.scrollTop();
 
+        $('.project-hero img').css({ transform:'translateY('+ scrollTop*0.2 +'px)' });
       
         $('.project-thumb').each(function(){
 
@@ -78,10 +78,41 @@ $(function(){
         });
 
         if( scrollTop > 0 ){
+
           $('header').addClass('active');
+
         } else{
+
           $('header').removeClass('active');
+
         }
+
+        $('section').each(function(){
+
+            var $offset = Math.round($(this).offset().top - scrollTop) -250;
+
+            if( $offset <= 0){
+
+                var $target = $(this).attr('id');
+
+                $('nav li a').each(function(){
+
+                    if( $(this).attr('data-id') == $target ){
+
+                        $(this).addClass('active').parent().siblings().find('a').removeClass('active');
+
+                    }
+
+                });
+
+                if( $target == 'home' ){
+
+                    $('nav li a').removeClass('active');
+
+                }
+            }
+
+        });
 
     }
     scrollStuff();
@@ -92,9 +123,9 @@ $(function(){
         var $target        = $(this).attr('data-id');
         var $target_offset = $('#' + $target).offset().top;
 
-        TweenMax.to($window, 1.2, {
+        TweenMax.to($window, 1.6, {
             scrollTo : { y: $target_offset},
-            ease: Expo.easeOut                         
+            ease:Power3.easeInOut                   
         });
 
         e.preventDefault();
