@@ -18,8 +18,9 @@ $(function(){
             browserwidth = $('.project-hero').width();
             browserheight = $('.project-hero').height();
                         
-            fsImage();          
-            scrollStuff();
+            fsImage();
+            scrollStuff();          
+            
                         
     }); 
 
@@ -58,12 +59,50 @@ $(function(){
 
     });
 
-    $window.on('scroll', function(){
+    $window.on('scroll', scrollStuff);
+
+    function scrollStuff(){
 
         var scrollTop   = $window.scrollTop();
         $('.project-hero img').css({ transform:'translateY('+ scrollTop*0.2 +'px)' });
 
-    })
+      
+        $('.project-thumb').each(function(){
+
+          var project_top = Math.round($(this).offset().top - $(window).scrollTop()) - $(window).height()/1.5;
+
+          if( project_top <= 0 ){
+            $(this).find('img').addClass('active');
+          }
+
+        });
+
+        if( scrollTop > 0 ){
+          $('header').addClass('active');
+        } else{
+          $('header').removeClass('active');
+        }
+
+    }
+    scrollStuff();
+
+
+    $('.scroll-to-link').on('click', function(e){
+
+        var $target        = $(this).attr('data-id');
+        var $target_offset = $('#' + $target).offset().top;
+
+        TweenMax.to($window, 1.2, {
+            scrollTo : { y: $target_offset},
+            ease: Expo.easeOut                         
+        });
+
+        e.preventDefault();
+        return false;
+
+    });
+
+
 
     var make = [
       'really awesome apps.',

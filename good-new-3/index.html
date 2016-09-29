@@ -8,8 +8,8 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
@@ -22,15 +22,13 @@
 	<header>
 		<div class="container">	
 			<div class="logo-wrap">
-				<div class="logo"><a href="#"><img src="img/logo.png" height="90"></a></div>
+				<div class="logo"><a href="#" class="scroll-to-link" data-id="home"><img src="img/logo.png" height="90"></a></div>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#">Work</a></li> 
-					<li><a href="#">About</a></li>            
-					<li><a href="#">Notes</a></li>
-					<li><a href="#">Contact</a></li>              
-					<li><a href="#" class="btn_primary">Hire Us</a></li>
+					<li><a href="#" class="scroll-to-link" data-id="our-work">Our work.</a></li> 
+					<li><a href="#" class="scroll-to-link" data-id="who-we-are">Who we are.</a></li>                    
+					<li><a href="#" class="btn_primary"><span>Hire us!</span></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -38,23 +36,53 @@
 	
 	<div id="main" class="home">
 
-		<section class="hero flex-center">
+		<section id="home" class="hero flex-center">
 			<div class="hero-copy align-center">
 				<h1>
 					<span>We're Good. We make</span><br><span class="sliding_text">stuff for screens.</span>				
 				</h1>
+				<img src="img/blinking_phones.svg">
 			</div>
 		</section>
 
 
-		<section id="work" class="work">
-			<h2 class="section-heading align-center">We help companies of all sizes with their digital needs. Here a few of our favorite projects.</h2>
+		<section id="our-work" class="work">
+			<div class="section-heading">
+				<div class="container">
+					<h2>We work with clients of all shapes and sizes. Here are some of our favorite projects.</h2>
+					<span></span>
+				</div>
+			</div>
+			
 			<div class="container">
+
+
 
 				<div class="project-thumb clearfix flex-center-v">
 					<div class="col-1-25">
 						<div class="project-description">
-							<h2>Recruiting Board</h2>
+							<h2>Recruiting Board</h2>					
+							<p>
+								Recruiting Board is a new 
+								recruitment service that levels the playing field for high 
+								school athletes by giving them 
+								access to DII and DIII schools.
+							</p>
+							<a href="rb.html" class="btn_primary"><span>View project.</span></a>
+						</div>
+					</div>
+					<div class="col-1-75">			
+						<img src="img/rb_ipad.png">				
+					</div>
+				</div>
+
+				<div class="project-thumb clearfix flex-center-v">
+					<div class="col-1-75">			
+						<img src="img/village_ipad.png">				
+					</div>
+					<div class="col-1-25">
+						<div class="project-description">
+							<h2>Village Healthcare</h2>
 							
 							<p>
 								Recruiting Board is a new 
@@ -62,26 +90,7 @@
 								school athletes by giving them 
 								access to DII and DIII schools.
 							</p>
-							<a href="rb.html" class="btn_primary">View Project</a>
-						</div>
-					</div>
-					<div class="col-1-75">			
-						<img src="img/rb_ipad.jpg">				
-					</div>
-				</div>
-
-				<div class="project-thumb clearfix flex-center-v">
-					<div class="col-1-75">			
-						<img src="img/rafl_phones.jpg">				
-					</div>
-					<div class="col-1-25">
-						<div class="project-description">
-							<h2>Rafl</h2>
-							
-							<p>
-								Rafl partners with local businesses to conduct massive giveaways via Instagram.
-							</p>
-							<a href="#" class="btn_primary">View Project</a>
+							<a href="rb.html" class="btn_primary"><span>View project.</span></a>
 						</div>
 					</div>
 				</div>
@@ -94,17 +103,49 @@
 							<p>
 								Wirki is a new kind of online resume. Invite your peers to help write your work story.
 							</p>
-							<a href="#" class="btn_primary">View Project</a>
+							<a href="#" class="btn_primary"><span>View project.</span></a>
 						</div>
 					</div>
 					<div class="col-1-75">			
-						<img src="img/wirki_ipad.jpg">				
+						<img src="img/wirki_ipad.png">				
 					</div>
 				</div>
 
 				<div class="project-thumb clearfix flex-center-v">
 					<div class="col-1-75">			
-						<img src="img/hopps_ipad.jpg">				
+						<img src="img/rafl_phones.png">				
+					</div>
+					<div class="col-1-25">
+						<div class="project-description">
+							<h2>Rafl</h2>
+							
+							<p>
+								Rafl partners with local businesses to conduct massive giveaways via Instagram.
+							</p>
+							<a href="#" class="btn_primary"><span>View project.</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-thumb clearfix flex-center-v">
+					<div class="col-1-25">
+						<div class="project-description">
+							<h2>Satchel</h2>
+							
+							<p>
+								Rafl partners with local businesses to conduct massive giveaways via Instagram.
+							</p>
+							<a href="#" class="btn_primary"><span>View project.</span></a>
+						</div>
+					</div>
+					<div class="col-1-75">			
+						<img src="img/satchel_ipad.png">				
+					</div>
+				</div>
+
+				<div class="project-thumb clearfix flex-center-v">
+					<div class="col-1-75">			
+						<img src="img/hopps_ipad.png">				
 					</div>
 					<div class="col-1-25">
 						<div class="project-description">
@@ -113,7 +154,7 @@
 							<p>
 								New York company founded by legendary skater Jahmal Williams.
 							</p>
-							<a href="#" class="btn_primary">View Project</a>
+							<a href="#" class="btn_primary"><span>View project.</span></a>
 						</div>
 					</div>
 				</div>	
@@ -122,19 +163,73 @@
 		</section>
 
 
-		<section class="about clearfix">
+		<section id="who-we-are" class="about clearfix">
 			<div class="container">
-			<h2 class="section-heading">We're the good guys.</h2>
-			
-				
-					<p>
-						We started as two dudes in Mississippi and have grown into a team of designers, developers and strategists from all over. 
-						We bring together the right people for the right job. Working this way makes for better work, happier clients and lots of high-fives.
-					</p>
-				
-				
+         		<div class="section-heading">	
+					<h2>We're the good guys.</h2>
+					<span></span>		
+				</div>
+
+				<div class="container capabilities clearfix">
+
+						<div class="col-1-3 flex-center">
+							<ul>
+								<li><span></span>UI/UX Design</li>
+								<li><span></span>Wireframing</li>
+								<li><span></span>Prototyping</li>
+							</ul>
+						</div>
+						<div class="col-1-3 flex-center">
+							<ul>
+								<li><span></span>Front-End Development</li>
+								<li><span></span>Back-End Development</li>
+								<li><span></span>Database Design</li>
+							</ul>
+						</div>
+						<div class="col-1-3 flex-center">
+							<ul>
+								<li><span></span>User Testing</li>
+							    <li><span></span>Deployment</li>
+							</ul>
+						</div>
+						
+					</div>
+
+
+				<p class="align-center">
+					We started as two dudes in Mississippi and have grown into a team of designers, developers and strategists from across the land. 
+					We love collaborating with the right people for the right project. We've found that working this way makes for better work, happier partners and lots of high-fives.
+				</p>
+				<p class="align-center">
+					At Good, we use cutting-edge technology and hold ourselves to ridiculously high standards in design while crafting digital awesomeness for our clients.
+					Think we might be a good fit for your next project?
+				</p>
+				<span class="btn_primary"><span>Hire us!</span></span>	
+				<div class="or"><p>or</p><span></span></div>
+				<div class="contact">
+					<a href="mailto:info@builybygood.co" class="btn_primary"><span><i class="fa fa-envelope"></i> Send an email.</span></a>	
+					<a href="tel:601-919-5555" class="btn_primary"><span><i class="fa fa-phone"></i> 601-919-5555.</span></a>	
+				</div>
 			</div>
+
 		</section>
+
+
+		<footer>
+			<div class="container">
+				
+				<span class="copyright">
+					&copy; 2016 Good Design &amp; Code
+				</span>
+				
+				<ul class="social">
+					<li><a href="http://medium.com/@builtbygood" alt="Check out Good on Medium!" target="_new" class="btn_primary"><span><i class="fa fa-medium"></i></span></a></li>
+					<li><a href="http://twitter.com/builtbygood" alt="Follow Good on Twitter!" target="_new" class="btn_primary"><span><i class="fa fa-twitter"></i></span></a></li>
+					<li><a href="http://github.com/builtbygood" alt="See what we're doing on Github!" target="_new" class="btn_primary"><span><i class="fa fa-github"></i></span></a></li>
+					<li><a href="https://www.linkedin.com/company/good-design-&-code" alt="Check us out on LinkedIn!" target="_new" class="btn_primary"><span><i class="fa fa-linkedin"></i></span></a></li>
+				</ul>
+			</div>
+		</footer>
  
 	</div><!-- #main -->	
 
