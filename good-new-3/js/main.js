@@ -180,11 +180,13 @@ $(function(){
     });
 
 
+
     $('.notes-slider').slick({
         slidesToShow: 2,
       dots: true,
       speed: 500
     });
+
 
     $(document).keyup(function(e) {
       if (e.keyCode === 27) $('.modal-close-btn').trigger("click"); // esc
