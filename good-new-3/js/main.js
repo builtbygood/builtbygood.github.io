@@ -156,7 +156,7 @@ $(function(){
 
     });
 
-    $('.hire-us-btn').on('click', function(){
+    $('.hire-us-btn').on('click', function(e){
         /*
         $('#main').fadeOut('fast');
         $('.modal').fadeIn('fast', function(){
@@ -171,9 +171,19 @@ $(function(){
         $('#main, header, .modal').addClass('hide');
         $('.dropdown').each(function(){
 
-                $(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
+            $(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
 
-            });
+        });
+
+        e.preventDefault();
+        return false;
+    });
+
+
+    $('.notes-slider').slick({
+        slidesToShow: 2,
+      dots: true,
+      speed: 500
     });
 
       
