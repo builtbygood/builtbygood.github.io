@@ -70,7 +70,7 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   color: #202020;
-  background: #fdfce3; }
+  background: #fbfce5; }
 
 #main {
   width: 100%;
@@ -147,7 +147,7 @@ h3 {
 p {
   font-size: 16px;
   line-height: 26px;
-  margin-top: 20px; }
+  margin-top: 25px; }
   p:first-child {
     margin-top: 0; }
 
@@ -163,7 +163,7 @@ p {
     font-weight: 400;
     max-width: 600px;
     padding: 25px;
-    background: #fdfce3;
+    background: #fbfce5;
     margin: 0 auto; }
   .section-heading span {
     display: block;
@@ -180,7 +180,7 @@ p {
   .section-sub-heading h3 {
     max-width: 650px;
     padding: 0 0 15px 0;
-    background: #fdfce3;
+    background: #fbfce5;
     margin: 0 auto; }
 
 .btn_primary {
@@ -228,7 +228,7 @@ header {
   left: 0;
   width: 100%;
   height: 90px;
-  background: #fdfce3;
+  background: #fbfce5;
   border-bottom: 1px solid transparent;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
   z-index: 999;
@@ -386,6 +386,32 @@ SECTIONS
       width: 120%;
       margin-left: -30%; }
 
+.notes {
+  padding: 90px 0 200px 0; }
+  .notes .notes-slider {
+    padding: 25px 50px; }
+  .notes h3 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500; }
+  .notes .date {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 15px; }
+  .notes .col-1-2 {
+    padding: 0 60px;
+    height: 300px;
+    text-align: center;
+    width: 48%;
+    margin: 1%; }
+  .notes .section-heading {
+    position: relative;
+    margin-bottom: 0; }
+    .notes .section-heading h2 {
+      display: inline-block;
+      max-width: auto; }
+
 .about {
   padding: 90px 0 300px 0; }
   .about .section-heading {
@@ -427,7 +453,7 @@ SECTIONS
       max-width: 160px;
       padding: 0 15px 0 15px;
       text-indent: 1px;
-      background: #fdfce3;
+      background: #fbfce5;
       margin: 0 auto; }
     .about .or span {
       display: block;
@@ -456,7 +482,6 @@ footer {
   border-top: 1px solid #202020; }
   footer .copyright {
     font-size: 15px;
-    color: rgba(32, 32, 32, 0.5);
     float: left; }
   footer .social {
     float: right;
