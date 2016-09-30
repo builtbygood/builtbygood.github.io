@@ -27,7 +27,7 @@
 					<li><a href="#" class="scroll-to-link" data-id="our-work">Our work.</a><span class="underline"></span></li>    
 					<li><a href="#" class="scroll-to-link" data-id="notes">Notes.</a><span class="underline"></span></li> 
 					<li><a href="#" class="scroll-to-link" data-id="who-we-are">Who we are.</a><span class="underline"></span></li>                     
-					<li><a href="#" class="btn_primary"><span>Hire our team!</span></a></li>
+					<li><a href="#" class="btn_primary hire-us-btn"><span>Hire our team!</span></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -218,7 +218,7 @@
 				</p>
 				<div class="or"><p>Say hello.</p><span></span></div>
 				<div class="contact">
-					<span class="btn_primary"><span>Hire our team!</span></span>
+					<span class="btn_primary hire-us-btn"><span>Hire our team!</span></span>
 					<a href="mailto:info@builybygood.co" class="btn_primary"><span>Email us.</span></a>
 					<a href="tel:601-919-5555" class="btn_primary"><span>601-919-5555</span></a>			
 				</div>
@@ -239,7 +239,56 @@
 			</div>
 		</footer>
  
-	</div><!-- #main -->	
+	</div><!-- #main -->
+
+	<div class="modal">
+		<div class="container">
+			<div class="modal-close-btn"><i class="fa fa-close"></i></div>
+		</div>
+		<div class="flex-center-v">
+			<div class="container">
+				<div class="section-heading">	
+					<h2>We'd love to work together! Tell us about your project.</h2>
+					<span></span>		
+				</div>
+				<form id="contact">							
+					I’d like Good to build a 
+					<span class="input">
+						<span class="display">Website</span>
+						<div class="dropdown" id="product-list">
+							<ul>
+								<li class="active">Website <i class="fa fa-check"></i></li>
+								<li>Web app <i class="fa fa-check"></i></li>
+								<li>Mobile app <i class="fa fa-check"></i></li>
+								<li>Not sure <i class="fa fa-check"></i></li>
+							</ul>
+						</div>
+					</span>
+					.<br>
+					I need it by 
+					<span class="input">
+						<span class="display">August</span>
+						<div class="dropdown" id="date-list">
+							<ul>
+								<li class="active">August <i class="fa fa-check"></i></li>
+								<li>September <i class="fa fa-check"></i></li>
+								<li>October <i class="fa fa-check"></i></li>
+								<li>November <i class="fa fa-check"></i></li>
+								<li>December <i class="fa fa-check"></i></li>
+								<li>Next year <i class="fa fa-check"></i></li>	
+								<li>Whenever <i class="fa fa-check"></i></li>							
+							</ul>
+						</div>
+				    </span>
+					and I’m willing to spend at least $<span class="input" contenteditable="true" data-placeholder="2,500" data-focused="2,500"></span>.
+		            <br>
+					<button class="btn_primary"><span>Submit</span></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+			
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>

@@ -87,7 +87,7 @@ $(function(){
         var $target        = $(this).attr('data-id');
         var $target_offset = $('#' + $target).offset().top -90;
 
-        TweenMax.to($window, 1.6, {
+        TweenMax.to($window, 1.2, {
             scrollTo : { y: $target_offset},
             ease:Power3.easeInOut                   
         });
@@ -119,6 +119,63 @@ $(function(){
         });
 
     }, 2500);
+
+
+    $('.input').on('click', function(){
+
+        if( !$(this).find('.dropdown').is(':visible') ){
+
+            $(this).find('.dropdown').fadeIn('fast');
+
+        }
+
+    });
+
+    $('.dropdown li').on('click', function(){
+
+        $(this).parent().parent().parent().find('.display').html($(this).text());
+        $(this).parent().parent().parent().find('.dropdown').delay(250).fadeOut('fast');
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+    });
+
+    $(document).on("mousedown", function(e) {
+
+        var clicked = $(e.target);  
+        if (  $('.dropdown').is(':visible') && !clicked.is('.dropdown li') ) {
+            $('.dropdown').hide();
+        }
+
+
+    });
+
+    $('.modal-close-btn').on('click', function(){
+
+        $('#main, header, .modal').removeClass('hide');
+
+    });
+
+    $('.hire-us-btn').on('click', function(){
+        /*
+        $('#main').fadeOut('fast');
+        $('.modal').fadeIn('fast', function(){
+             $('.dropdown').each(function(){
+
+                $(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
+
+            });
+        });
+        */
+
+        $('#main, header, .modal').addClass('hide');
+        $('.dropdown').each(function(){
+
+                $(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
+
+            });
+    });
+
       
 	
 });

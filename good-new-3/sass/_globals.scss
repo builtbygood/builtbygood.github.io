@@ -71,9 +71,13 @@ body{
   background:$bg_color;
 }
 #main{
+  position:absolute;
   width:100%;
-  margin:0 auto;
-  height:100%;
+  @include transform(translateX(0));
+  @include transition(all 0.8s $easeOutExpo);
+  &.hide{
+    @include transform(translateX(-100%));
+  }
 }
 .container{
   position:relative;
@@ -237,8 +241,11 @@ header{
   box-shadow:0 0 0 0 rgba(0,0,0,0.2);
   z-index:999;
   -webkit-backface-visibility:hidden; 
-  -webkit-transform: translateZ(0);
-  @include transition(all 1.6s $easeOutExpo);
+  @include transform(translateX(0));
+  @include transition(all 0.8s $easeOutExpo);
+  &.hide{
+    @include transform(translateX(-100%));
+  }
   &.active{
     border-color:#222;
     box-shadow:0 4px 0 0 rgba(0,0,0,0.2);
@@ -310,7 +317,7 @@ HERO
 .hero{
   position:relative;
   width:100%;
-  height:100%;
+  height:100vh;
   min-height:900px;
   overflow:hidden;
   .hero-copy{
@@ -548,6 +555,137 @@ footer{
       padding:6px 15px 4px;
     }
   }
+}
+
+
+.modal{
+    position:fixed;
+    @include transform(translateX(100%));
+    @include transition(all 0.8s $easeOutExpo);
+    top:0;
+    width:100%;
+    height:100%;
+    background:#bbe9fb;
+    z-index:222;
+    &.hide{
+      @include transform(translateX(0));
+    }
+    .flex-center-v{
+      height:100%;
+    }
+    .modal-close-btn{
+        position:absolute;
+        top:15px;
+        right:60px;
+        font-size:40px;
+        cursor:pointer;
+        @include transition(transform 1s $easeOutExpo);
+        img{
+            display:block;
+            width:100%;
+            height:auto;
+        }
+        &:hover{
+            @include transform(scale(1.2));
+        }
+    }
+    .section-heading{
+      h2{
+        max-width:auto;
+        display:inline-block;
+        background:#bbe9fb;
+      }
+    }
+}
+
+// ––––––––––––––––– Hire Us Modal ––––––––––––––––– //
+#contact{
+    font-size:40px;
+    line-height:50px;
+    font-weight:300;
+    max-width:750px;
+    margin:40px auto 0 auto;
+    text-align:center;
+    .input{
+      font-family:'Rubik One';
+      font-size:45px;
+      letter-spacing:-1px;
+        position:relative;
+        display:inline-block;
+        min-width:100px;
+        text-align:left;
+        border-bottom:1px solid $primary;
+        color:$primary;
+        &:empty::before {
+            content: attr(data-placeholder);
+        }
+        &:empty:focus::before {
+            content: attr(data-focused);
+        }
+        &:focus{
+            outline:none;
+        }
+    }
+    .btn_primary{
+        margin-top:40px;
+        display:inline-block;
+        padding:15px 30px 14px 30px;
+        text-align:center;
+        font-size:18px;
+    }
+    .dropdown{
+        position:absolute;
+        display:none;
+        top:50%;
+        margin-top:-100px;
+        left:50%;
+        &#product-list{
+            margin-left:-200px;
+            width:400px;
+        }
+        &#date-list{
+            margin-left:-200px;
+            width:400px;
+        }
+        background:white;
+        color:#222;
+        z-index:999;
+        padding:30px;
+        box-shadow:-10px 30px 30px 0 rgba(0,0,0,0.3);
+        ul{
+            width:100%;
+            margin-top:0;
+        }
+        li{
+            display:block;
+            width:420px;
+            height:60px;
+            line-height:40px;
+            font-size:40px;
+            font-family:'Rubik One';
+            letter-spacing:-2px;
+            color:#999;
+            padding:20px 20px;
+            cursor:pointer;
+            @include transition(all 0.6s $easeOutExpo);
+            
+                i{
+                    display:none;
+                    font-size:40px;
+                    margin-left:10px;
+                }
+            
+            &.active{
+                color:#222;
+                i{
+                    display:inline;
+                }
+            }
+            &:hover{
+                color:#222;
+            }
+        }
+    }
 }
 
 
