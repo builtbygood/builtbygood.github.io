@@ -79,7 +79,7 @@ body{
   position:relative;
 	padding:0;
   width:100%;
-  max-width:960px;
+  max-width:1024px;
   margin:0 auto;
 }
 section{
@@ -118,6 +118,10 @@ section{
 .align-center{
   text-align:center;
 }
+.xtra-pad{
+  padding-left:50px;
+  padding-right:50px;
+}
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -126,17 +130,23 @@ TYPE
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1,h2{
   font-size:50px;
-  line-height:55px;
-  font-family:'Alfa Slab One','Montserrat', sans-serif;
+  line-height:50px;
+  font-family:'Rubik One','Montserrat', sans-serif;
+}
+h1{
+  letter-spacing:-2px;
+}
+h2{
+  letter-spacing:-1px;
 }
 h3{
-  font-family:'Alfa Slab One','Montserrat', sans-serif;
+  font-family:'Rubik One','Montserrat', sans-serif;
+  letter-spacing:-1px;
   font-size:25px;
-  line-height:30px;
 }
 p{
   font-size:16px;
-  line-height:30px;
+  line-height:26px;
   margin-top:20px;
   &:first-child{
     margin-top:0;
@@ -147,10 +157,10 @@ p{
   text-align:center;
   h2{
     font-size:35px;
-    line-height:40px;
+    line-height:35px;
     font-weight:400;
-    max-width:650px;
-    padding:25px 40px;
+    max-width:600px;
+    padding:25px;
     background:$bg_color;
     margin:0 auto;
   }
@@ -177,10 +187,6 @@ p{
     background:$bg_color;
     margin:0 auto;
   }
-  p{
-    font-size:16px;
-    line-height:25px;
-  }
 }
 .btn_primary{
   position:relative;
@@ -189,7 +195,7 @@ p{
   color:$primary;
   border-radius:5px;
   font-size:15px;
-  font-weight:500;
+  font-weight:400;
   text-decoration:uppercase;
   background:transparent;
   text-decoration:none;
@@ -251,13 +257,25 @@ header{
     right:0;
     height:100%;
     li{
+      position:relative;
       display:inline;
       line-height:90px;
       font-size:15px;
-      font-weight:500;
+      font-weight:400;
       margin:0 0 0 30px;
+      .underline{
+        position:absolute;
+        bottom:-1px;
+        left:50%;
+        margin-left:0;
+        height:1px;
+        width:0;
+        background:$primary;
+        @include opacity(0);
+        @include transition(all 0.8s $easeOutExpo);
+      }
       a{
-        color:$secondary;
+        color:$primary;
         text-decoration: none;
         @include transition(color 0.8s $easeOutExpo);
         &.btn_primary{
@@ -265,13 +283,19 @@ header{
           padding:8px 15px 6px 15px;
           font-size:15px;
         }
-        &.active{     
-          color:$primary;        
-        }
+      }
+      &.active{     
+        .underline{
+          width:100%;
+          margin-left:-50%;
+          @include opacity(1);
+        }   
       }
       &:hover{
-        a{
-          color:$primary;
+        .underline{
+          width:100%;
+          margin-left:-50%;
+          @include opacity(1);
         }
       }
     }
@@ -290,6 +314,7 @@ HERO
   min-height:900px;
   overflow:hidden;
   .hero-copy{
+    margin-top:60px;
     h1{    
       text-align:center;
       max-width:960px;
@@ -319,14 +344,16 @@ SECTIONS
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .work{
-  padding:160px 0 120px 0;
+  padding:90px 0 120px 0;
   overflow:hidden;
   .project-thumb{
     padding:120px 0;
     .col-1-75{
       img{
         display:block;
-        width:140%;
+        width:120%;
+        margin-left:10%;
+        max-width:1045px;
         @include opacity(0);
         @include transform(scale(0.7));
         @include transition(all 1.2s $easeOutExpo);
@@ -337,8 +364,8 @@ SECTIONS
       }
     }
     h2{
-      font-size:40px;
-      line-height:40px;
+      font-size:30px;
+      line-height:30px;
     }
     .role{
       display:inline-block;
@@ -348,6 +375,8 @@ SECTIONS
       color:#999;
     }
     p{
+      font-size:16px;
+      line-height:26px;
       margin-top:25px;
     }
     .btn_primary{
@@ -358,8 +387,8 @@ SECTIONS
       .col-1-75{
         img{
           display:block;
-          width:140%;
-          margin-left:-54%;
+          width:120%;
+          margin-left:-30%;
         }
       }
     }
@@ -367,27 +396,14 @@ SECTIONS
 }
 
 .about{
-  padding:160px 0 200px 0;
+  padding:90px 0 300px 0;
  .section-heading{
     position:relative;
     h2{
       display:inline-block;
-      position:relative;
       max-width:auto;
-      z-index:2;
-    }
-    span{
-      z-index:0;
     }
     margin-bottom:0;
-  }
-  .btn_primary{
-    display:block;
-    padding:15px 0 14px 0;
-    text-align:center;
-    margin:50px auto 0 auto;
-    font-size:20px;
-    width:250px;
   }
   .capabilities{
     max-width:850px;
@@ -397,6 +413,7 @@ SECTIONS
       display:block;
       font-size:16px;
       line-height:25px;
+      font-weight:400;
       margin-top:5px;
       text-indent:45px;
       span{
@@ -415,11 +432,12 @@ SECTIONS
     position:relative;
     text-align:center;
     max-width:320px;
-    margin:30px auto 27px auto;
+    margin:30px auto 25px auto;
     p{
       font-size:18px;
       line-height:18px;
-      font-family:'Alfa Slab One','Montserrat', sans-serif;
+      font-family:'Rubik One','Montserrat', sans-serif;
+      letter-spacing:-1px;
       max-width:160px;
       padding:0 15px 0 15px;
       text-indent:1px;
@@ -441,9 +459,9 @@ SECTIONS
     text-align:center;
     .btn_primary{
       display:inline-block;
-      padding:8px 15px 6px 15px;
-      font-size:15px;
-      width:auto;
+      padding:15px 30px 14px 30px;
+      text-align:center;
+      font-size:18px;
       margin:0 5px;
     }
   }
@@ -457,7 +475,8 @@ SECTIONS
 
 
 footer{
-  padding:80px 0;
+  padding:60px 0 80px 0;
+  border-top:1px solid $primary;
   .copyright{
     font-size:15px;
     color:$secondary;
@@ -473,6 +492,9 @@ footer{
     a{
       color:$primary;
       font-size:18px;
+    }
+    .btn_primary{
+      padding:6px 15px 4px;
     }
   }
 }

@@ -5,8 +5,8 @@
 <style type="text/css">
 	@keyframes ufo-building-float {
     0%   {transform: translateY(0) translateX(0px)}
-    2.5%  {transform: translateY(50px) translateX(22px)}
-    5%  {transform: translateY(0) translateX(0px)}
+    3.5%  {transform: translateY(50px) translateX(22px)}
+    7%  {transform: translateY(0) translateX(0px)}
     100% {transform: translateY(0) translateX(0px)}
   }
   .st0 {

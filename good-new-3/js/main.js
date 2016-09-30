@@ -33,7 +33,7 @@ $(function(){
 
         $('section').each(function(){
 
-            var $offset = Math.round($(this).offset().top - scrollTop) -250;
+            var $offset = Math.round($(this).offset().top - scrollTop) -300;
 
             if( $offset <= 0){
 
@@ -43,7 +43,7 @@ $(function(){
 
                     if( $(this).attr('data-id') == $target ){
 
-                        $(this).addClass('active').parent().siblings().find('a').removeClass('active');
+                        $(this).parent().addClass('active').siblings().removeClass('active');
 
                     }
 
@@ -51,7 +51,7 @@ $(function(){
 
                 if( $target == 'home' ){
 
-                    $('nav li a').removeClass('active');
+                    $('nav li').removeClass('active');
 
                 }
             }
@@ -85,7 +85,7 @@ $(function(){
     $('.scroll-to-link').on('click', function(e){
 
         var $target        = $(this).attr('data-id');
-        var $target_offset = $('#' + $target).offset().top;
+        var $target_offset = $('#' + $target).offset().top -90;
 
         TweenMax.to($window, 1.6, {
             scrollTo : { y: $target_offset},

@@ -70,7 +70,7 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   color: #202020;
-  background: #f6f6f6; }
+  background: #fdfce3; }
 
 #main {
   width: 100%;
@@ -81,7 +81,7 @@ body {
   position: relative;
   padding: 0;
   width: 100%;
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0 auto; }
 
 section {
@@ -119,6 +119,10 @@ section {
 .align-center {
   text-align: center; }
 
+.xtra-pad {
+  padding-left: 50px;
+  padding-right: 50px; }
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 TYPE
@@ -126,17 +130,23 @@ TYPE
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2 {
   font-size: 50px;
-  line-height: 55px;
-  font-family: 'Alfa Slab One','Montserrat', sans-serif; }
+  line-height: 50px;
+  font-family: 'Rubik One','Montserrat', sans-serif; }
+
+h1 {
+  letter-spacing: -2px; }
+
+h2 {
+  letter-spacing: -1px; }
 
 h3 {
-  font-family: 'Alfa Slab One','Montserrat', sans-serif;
-  font-size: 25px;
-  line-height: 30px; }
+  font-family: 'Rubik One','Montserrat', sans-serif;
+  letter-spacing: -1px;
+  font-size: 25px; }
 
 p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 26px;
   margin-top: 20px; }
   p:first-child {
     margin-top: 0; }
@@ -149,11 +159,11 @@ p {
   margin: 0 auto; }
   .section-heading h2 {
     font-size: 35px;
-    line-height: 40px;
+    line-height: 35px;
     font-weight: 400;
-    max-width: 650px;
-    padding: 25px 40px;
-    background: #f6f6f6;
+    max-width: 600px;
+    padding: 25px;
+    background: #fdfce3;
     margin: 0 auto; }
   .section-heading span {
     display: block;
@@ -170,11 +180,8 @@ p {
   .section-sub-heading h3 {
     max-width: 650px;
     padding: 0 0 15px 0;
-    background: #f6f6f6;
+    background: #fdfce3;
     margin: 0 auto; }
-  .section-sub-heading p {
-    font-size: 16px;
-    line-height: 25px; }
 
 .btn_primary {
   position: relative;
@@ -183,7 +190,7 @@ p {
   color: #202020;
   border-radius: 5px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: uppercase;
   background: transparent;
   text-decoration: none;
@@ -221,7 +228,7 @@ header {
   left: 0;
   width: 100%;
   height: 90px;
-  background: #f6f6f6;
+  background: #fdfce3;
   border-bottom: 1px solid transparent;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
   z-index: 999;
@@ -250,13 +257,29 @@ header {
     right: 0;
     height: 100%; }
     header nav li {
+      position: relative;
       display: inline;
       line-height: 90px;
       font-size: 15px;
-      font-weight: 500;
+      font-weight: 400;
       margin: 0 0 0 30px; }
+      header nav li .underline {
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        margin-left: 0;
+        height: 1px;
+        width: 0;
+        background: #202020;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
       header nav li a {
-        color: rgba(32, 32, 32, 0.5);
+        color: #202020;
         text-decoration: none;
         -webkit-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
         -moz-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
@@ -267,10 +290,16 @@ header {
           vertical-align: 0px;
           padding: 8px 15px 6px 15px;
           font-size: 15px; }
-        header nav li a.active {
-          color: #202020; }
-      header nav li:hover a {
-        color: #202020; }
+      header nav li.active .underline {
+        width: 100%;
+        margin-left: -50%;
+        opacity: 1;
+        filter: alpha(opacity=100); }
+      header nav li:hover .underline {
+        width: 100%;
+        margin-left: -50%;
+        opacity: 1;
+        filter: alpha(opacity=100); }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -283,21 +312,23 @@ HERO
   height: 100%;
   min-height: 900px;
   overflow: hidden; }
-  .hero .hero-copy h1 {
-    text-align: center;
-    max-width: 960px;
-    margin: 80px auto 0 auto; }
-  .hero .hero-copy img {
-    margin-top: 100px;
-    max-width: 1024px; }
-  @media (max-height: 1100px) {
+  .hero .hero-copy {
+    margin-top: 60px; }
+    .hero .hero-copy h1 {
+      text-align: center;
+      max-width: 960px;
+      margin: 80px auto 0 auto; }
     .hero .hero-copy img {
-      margin-top: 80px;
-      max-width: 900px; } }
-  @media (max-height: 900px) {
-    .hero .hero-copy img {
-      margin-top: 60px;
-      max-width: 800px; } }
+      margin-top: 100px;
+      max-width: 1024px; }
+    @media (max-height: 1100px) {
+      .hero .hero-copy img {
+        margin-top: 80px;
+        max-width: 900px; } }
+    @media (max-height: 900px) {
+      .hero .hero-copy img {
+        margin-top: 60px;
+        max-width: 800px; } }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -305,13 +336,15 @@ SECTIONS
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .work {
-  padding: 160px 0 120px 0;
+  padding: 90px 0 120px 0;
   overflow: hidden; }
   .work .project-thumb {
     padding: 120px 0; }
     .work .project-thumb .col-1-75 img {
       display: block;
-      width: 140%;
+      width: 120%;
+      margin-left: 10%;
+      max-width: 1045px;
       opacity: 0;
       filter: alpha(opacity=0);
       -moz-transform: scale(0.7);
@@ -333,8 +366,8 @@ SECTIONS
         -webkit-transform: scale(1);
         transform: scale(1); }
     .work .project-thumb h2 {
-      font-size: 40px;
-      line-height: 40px; }
+      font-size: 30px;
+      line-height: 30px; }
     .work .project-thumb .role {
       display: inline-block;
       font-size: 13px;
@@ -342,34 +375,25 @@ SECTIONS
       margin-top: 10px;
       color: #999; }
     .work .project-thumb p {
+      font-size: 16px;
+      line-height: 26px;
       margin-top: 25px; }
     .work .project-thumb .btn_primary {
       display: inline-block;
       margin-top: 35px; }
     .work .project-thumb:nth-child(even) .col-1-75 img {
       display: block;
-      width: 140%;
-      margin-left: -54%; }
+      width: 120%;
+      margin-left: -30%; }
 
 .about {
-  padding: 160px 0 200px 0; }
+  padding: 90px 0 300px 0; }
   .about .section-heading {
     position: relative;
     margin-bottom: 0; }
     .about .section-heading h2 {
       display: inline-block;
-      position: relative;
-      max-width: auto;
-      z-index: 2; }
-    .about .section-heading span {
-      z-index: 0; }
-  .about .btn_primary {
-    display: block;
-    padding: 15px 0 14px 0;
-    text-align: center;
-    margin: 50px auto 0 auto;
-    font-size: 20px;
-    width: 250px; }
+      max-width: auto; }
   .about .capabilities {
     max-width: 850px;
     margin: 30px auto 60px auto; }
@@ -378,6 +402,7 @@ SECTIONS
       display: block;
       font-size: 16px;
       line-height: 25px;
+      font-weight: 400;
       margin-top: 5px;
       text-indent: 45px; }
       .about .capabilities li span {
@@ -393,15 +418,16 @@ SECTIONS
     position: relative;
     text-align: center;
     max-width: 320px;
-    margin: 30px auto 27px auto; }
+    margin: 30px auto 25px auto; }
     .about .or p {
       font-size: 18px;
       line-height: 18px;
-      font-family: 'Alfa Slab One','Montserrat', sans-serif;
+      font-family: 'Rubik One','Montserrat', sans-serif;
+      letter-spacing: -1px;
       max-width: 160px;
       padding: 0 15px 0 15px;
       text-indent: 1px;
-      background: #f6f6f6;
+      background: #fdfce3;
       margin: 0 auto; }
     .about .or span {
       display: block;
@@ -415,9 +441,9 @@ SECTIONS
     text-align: center; }
     .about .contact .btn_primary {
       display: inline-block;
-      padding: 8px 15px 6px 15px;
-      font-size: 15px;
-      width: auto;
+      padding: 15px 30px 14px 30px;
+      text-align: center;
+      font-size: 18px;
       margin: 0 5px; }
   .about .divider {
     display: inline-block;
@@ -426,7 +452,8 @@ SECTIONS
     background: #202020; }
 
 footer {
-  padding: 80px 0; }
+  padding: 60px 0 80px 0;
+  border-top: 1px solid #202020; }
   footer .copyright {
     font-size: 15px;
     color: rgba(32, 32, 32, 0.5);
@@ -440,5 +467,7 @@ footer {
     footer .social a {
       color: #202020;
       font-size: 18px; }
+    footer .social .btn_primary {
+      padding: 6px 15px 4px; }
 
 /*# sourceMappingURL=main.css.map */
