@@ -176,7 +176,9 @@ $(function(){
             });
     });
 
-      
+    $(document).keyup(function(e) {
+      if (e.keyCode === 27) $('.modal-close-btn').trigger("click"); // esc
+    });
 	
 });
 
