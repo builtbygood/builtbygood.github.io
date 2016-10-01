@@ -152,7 +152,7 @@ $(function(){
 
     $('.modal-close-btn').on('click', function(){
 
-        $('#main, header, .modal').removeClass('hide');
+        $('#main, header, .modal, nav').removeClass('hide');
 
     });
 
@@ -168,7 +168,7 @@ $(function(){
         });
         */
 
-        $('#main, header, .modal').addClass('hide');
+        $('#main, header, .modal, nav').addClass('hide');
         $('.dropdown').each(function(){
 
             $(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
