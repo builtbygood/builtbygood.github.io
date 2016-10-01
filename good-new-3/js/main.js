@@ -179,6 +179,19 @@ $(function(){
         return false;
     });
 
+    $('.step01 .btn_next').on('click', function(e){
+
+        e.preventDefault();
+
+        $('.step01, .step02').addClass('hide');
+
+    });
+    $('.step02 .btn_back').on('click', function(e){
+
+        $('.step01, .step02').removeClass('hide');
+
+    });
+
 
 
     $('.notes-slider').slick({

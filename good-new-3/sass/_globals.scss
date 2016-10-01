@@ -470,6 +470,9 @@ button.slick-prev, button.slick-next{
     h2{
       display:inline-block;
       max-width:auto;
+      font-size:45px;
+      line-height:45px;
+      letter-spacing:-2px;
     }
     margin-bottom:0;
   }
@@ -479,9 +482,9 @@ button.slick-prev, button.slick-next{
     li{
       position:relative;
       display:block;
-      font-size:16px;
-      line-height:25px;
-      font-weight:400;
+      font-size:20px;
+      line-height:30px;
+      font-weight:300;
       margin-top:5px;
       text-indent:45px;
       span{
@@ -496,14 +499,18 @@ button.slick-prev, button.slick-next{
       }
     }
   }
+  p{
+    font-size:20px;
+    line-height:30px;
+  }
   .or{
     position:relative;
     text-align:center;
     max-width:320px;
     margin:30px auto 25px auto;
     p{
-      font-size:18px;
-      line-height:18px;
+      font-size:24px;
+      line-height:24px;
       font-family:'Rubik One','Montserrat', sans-serif;
       letter-spacing:-1px;
       max-width:160px;
@@ -566,7 +573,9 @@ footer{
   }
 }
 
-
+.hide_overflow{
+  overflow:hidden;
+}
 .modal{
     position:fixed;
     @include transform(translateX(100%));
@@ -576,6 +585,7 @@ footer{
     height:100%;
     background:#bbe9fb;
     z-index:222;
+    overflow:hidden;
     &.hide{
       @include transform(translateX(0));
     }
@@ -589,11 +599,6 @@ footer{
         font-size:40px;
         cursor:pointer;
         @include transition(transform 1s $easeOutExpo);
-        img{
-            display:block;
-            width:100%;
-            height:auto;
-        }
         &:hover{
             @include transform(scale(1.2));
         }
@@ -603,22 +608,25 @@ footer{
         max-width:auto;
         display:inline-block;
         background:#bbe9fb;
+        padding:60px 30px;
       }
     }
 }
 
 // ––––––––––––––––– Hire Us Modal ––––––––––––––––– //
 #contact{
-    font-size:40px;
-    line-height:50px;
-    font-weight:300;
-    max-width:750px;
-    margin:40px auto 0 auto;
-    text-align:center;
+    padding:0 80px;
+      font-size:40px;
+      line-height:55px;
+      font-weight:300;
+      margin:0 auto 0 auto;
+      text-align:center;
+    //overflow:hidden;
     .input{
       font-family:'Rubik One';
       font-size:45px;
-      letter-spacing:-1px;
+      line-height:50px;
+      letter-spacing:-2px;
         position:relative;
         display:inline-block;
         min-width:100px;
@@ -642,6 +650,20 @@ footer{
         text-align:center;
         font-size:18px;
     }
+    .next-btn{
+      display:inline-block;
+    }
+    .btn_back{
+      display:inline-block;
+      font-size:15px;
+      margin-top:8px;
+      font-weight:500;
+      cursor:pointer;
+      i{
+        font-size:12px;
+        vertical-align:1px;
+      }
+    }
     .dropdown{
         position:absolute;
         display:none;
@@ -649,12 +671,12 @@ footer{
         margin-top:-100px;
         left:50%;
         &#product-list{
-            margin-left:-200px;
-            width:400px;
+            margin-left:-175px;
+            width:350px;
         }
         &#date-list{
-            margin-left:-200px;
-            width:400px;
+            margin-left:-175px;
+            width:350px;
         }
         background:#bbe9fb;
         color:#222;
@@ -702,6 +724,38 @@ footer{
                 }
             }
         }
+    }
+}
+
+
+.steps{
+  width:200%;
+}
+
+.inputs-text{
+  padding:0 80px;
+}
+
+.step01{
+  width:50%;
+  float:left;
+    @include opacity(1);
+    @include transform(translateX(0));
+    @include transition(all 0.8s $easeOutExpo);
+    &.hide{
+      @include transform(translateX(-200%));
+      @include opacity(0);
+    }
+}
+.step02{
+  width:50%;
+  float:left;
+    @include opacity(0);
+    @include transform(translateX(200%));
+    @include transition(all 0.8s $easeOutExpo);
+    &.hide{
+      @include transform(translateX(-100%));
+      @include opacity(1);
     }
 }
 

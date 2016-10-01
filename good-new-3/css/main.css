@@ -70,7 +70,7 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   color: #202020;
-  background: #fbfce5; }
+  background: #eee; }
 
 #main {
   position: absolute;
@@ -178,7 +178,7 @@ p {
     font-weight: 400;
     max-width: 600px;
     padding: 25px;
-    background: #fbfce5;
+    background: #eee;
     margin: 0 auto; }
   .section-heading span {
     display: block;
@@ -195,7 +195,7 @@ p {
   .section-sub-heading h3 {
     max-width: 650px;
     padding: 0 0 15px 0;
-    background: #fbfce5;
+    background: #eee;
     margin: 0 auto; }
 
 .btn_primary {
@@ -243,7 +243,7 @@ header {
   left: 0;
   width: 100%;
   height: 90px;
-  background: #fbfce5;
+  background: #eee;
   border-bottom: 1px solid transparent;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
   z-index: 999;
@@ -469,16 +469,19 @@ button.slick-prev, button.slick-next {
     margin-bottom: 0; }
     .about .section-heading h2 {
       display: inline-block;
-      max-width: auto; }
+      max-width: auto;
+      font-size: 45px;
+      line-height: 45px;
+      letter-spacing: -2px; }
   .about .capabilities {
     max-width: 850px;
     margin: 30px auto 60px auto; }
     .about .capabilities li {
       position: relative;
       display: block;
-      font-size: 16px;
-      line-height: 25px;
-      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 300;
       margin-top: 5px;
       text-indent: 45px; }
       .about .capabilities li span {
@@ -490,20 +493,23 @@ button.slick-prev, button.slick-next {
         width: 25px;
         height: 1px;
         background: rgba(0, 0, 0, 0.5); }
+  .about p {
+    font-size: 20px;
+    line-height: 30px; }
   .about .or {
     position: relative;
     text-align: center;
     max-width: 320px;
     margin: 30px auto 25px auto; }
     .about .or p {
-      font-size: 18px;
-      line-height: 18px;
+      font-size: 24px;
+      line-height: 24px;
       font-family: 'Rubik One','Montserrat', sans-serif;
       letter-spacing: -1px;
       max-width: 160px;
       padding: 0 15px 0 15px;
       text-indent: 1px;
-      background: #fbfce5;
+      background: #eee;
       margin: 0 auto; }
     .about .or span {
       display: block;
@@ -545,6 +551,9 @@ footer {
     footer .social .btn_primary {
       padding: 6px 15px 4px; }
 
+.hide_overflow {
+  overflow: hidden; }
+
 .modal {
   position: fixed;
   -moz-transform: translateX(100%);
@@ -561,7 +570,8 @@ footer {
   width: 100%;
   height: 100%;
   background: #bbe9fb;
-  z-index: 222; }
+  z-index: 222;
+  overflow: hidden; }
   .modal.hide {
     -moz-transform: translateX(0);
     -o-transform: translateX(0);
@@ -581,10 +591,6 @@ footer {
     -ms-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
     -o-transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
     transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1); }
-    .modal .modal-close-btn img {
-      display: block;
-      width: 100%;
-      height: auto; }
     .modal .modal-close-btn:hover {
       -moz-transform: scale(1.2);
       -o-transform: scale(1.2);
@@ -594,19 +600,21 @@ footer {
   .modal .section-heading h2 {
     max-width: auto;
     display: inline-block;
-    background: #bbe9fb; }
+    background: #bbe9fb;
+    padding: 60px 30px; }
 
 #contact {
+  padding: 0 80px;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 55px;
   font-weight: 300;
-  max-width: 750px;
-  margin: 40px auto 0 auto;
+  margin: 0 auto 0 auto;
   text-align: center; }
   #contact .input {
     font-family: 'Rubik One';
     font-size: 45px;
-    letter-spacing: -1px;
+    line-height: 50px;
+    letter-spacing: -2px;
     position: relative;
     display: inline-block;
     min-width: 100px;
@@ -625,6 +633,17 @@ footer {
     padding: 15px 30px 14px 30px;
     text-align: center;
     font-size: 18px; }
+  #contact .next-btn {
+    display: inline-block; }
+  #contact .btn_back {
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 8px;
+    font-weight: 500;
+    cursor: pointer; }
+    #contact .btn_back i {
+      font-size: 12px;
+      vertical-align: 1px; }
   #contact .dropdown {
     position: absolute;
     display: none;
@@ -639,11 +658,11 @@ footer {
     border-radius: 5px;
     box-shadow: -4px 4px 0 0 rgba(0, 0, 0, 0.25); }
     #contact .dropdown#product-list {
-      margin-left: -200px;
-      width: 400px; }
+      margin-left: -175px;
+      width: 350px; }
     #contact .dropdown#date-list {
-      margin-left: -200px;
-      width: 400px; }
+      margin-left: -175px;
+      width: 350px; }
     #contact .dropdown ul {
       width: 100%;
       margin-top: 0;
@@ -680,5 +699,59 @@ footer {
         width: 100%;
         opacity: 1;
         filter: alpha(opacity=100); }
+
+.steps {
+  width: 200%; }
+
+.inputs-text {
+  padding: 0 80px; }
+
+.step01 {
+  width: 50%;
+  float: left;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+  .step01.hide {
+    -moz-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+    opacity: 0;
+    filter: alpha(opacity=0); }
+
+.step02 {
+  width: 50%;
+  float: left;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-transform: translateX(200%);
+  -o-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
+  -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+  .step02.hide {
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 1;
+    filter: alpha(opacity=100); }
 
 /*# sourceMappingURL=main.css.map */
