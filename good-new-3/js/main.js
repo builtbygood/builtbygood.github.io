@@ -221,6 +221,27 @@ $(function(){
     } );
 
 
+    // 1.
+    History.Adapter.bind( window, "statechange", function() {
+         
+        // 2.
+        var state = History.getState();
+         
+        // 3.
+        $.get( state.url, function( res ) {
+     
+            // 4.
+            $.each( $( res ), function( index, elem ) {
+                if ( $wrap.selector !== "#" + elem.id ) {
+                    return;
+                }
+                $wrap.html( $( elem ).html() );
+            } );
+     
+        } );
+    } );
+
+
 
 
 	
