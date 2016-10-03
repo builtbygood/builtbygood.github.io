@@ -76,7 +76,7 @@ body{
   @include transform(translateX(0));
   @include transition(all 0.5s $easeOutExpo);
   &.hide{
-    @include transform(translateX(-100%));
+    @include transform(translateX(-80%));
   }
 }
 .container{
@@ -370,12 +370,12 @@ SECTIONS
         width:120%;
         margin-left:10%;
         max-width:1045px;
-        @include opacity(0);
-        @include transform(scale(0.7));
-        @include transition(all 1.2s $easeOutExpo);
+        //@include opacity(0);
+        //@include transform(scale(0.7));
+        //@include transition(all 1.2s $easeOutExpo);
         &.active{
-            @include opacity(1);
-            @include transform(scale(1));
+            //@include opacity(1);
+            //@include transform(scale(1));
         }
       }
     }
@@ -630,7 +630,7 @@ footer{
     .section-heading{
       h2{
         font-size:40px;
-        line-height:40px;
+        line-height:45px;
         max-width:auto;
         display:inline-block;
         background:#bbe9fb;
@@ -657,7 +657,7 @@ footer{
         display:inline-block;
         min-width:100px;
         text-align:left;
-        border-bottom:1px solid $primary;
+        border-bottom:2px solid $primary;
         color:$primary;
         &:empty::before {
             content: attr(data-placeholder);
@@ -697,8 +697,8 @@ footer{
         margin-top:-100px;
         left:50%;
         &#product-list{
-            margin-left:-175px;
-            width:350px;
+            margin-left:-210px;
+            width:420px;
         }
         &#date-list{
             margin-left:-175px;
@@ -731,7 +731,7 @@ footer{
               position:absolute;
               bottom:-6px;
               left:0;
-              height:3px;
+              height:2px;
               width:0;
               background:$primary;
               @include opacity(0);

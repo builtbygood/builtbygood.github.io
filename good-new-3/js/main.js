@@ -153,20 +153,11 @@ $(function(){
     $('.modal-close-btn').on('click', function(){
 
         $('#main, header, .modal, nav').removeClass('hide');
+        
 
     });
 
     $('.hire-us-btn').on('click', function(e){
-        /*
-        $('#main').fadeOut('fast');
-        $('.modal').fadeIn('fast', function(){
-             $('.dropdown').each(function(){
-
-                $(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
-
-            });
-        });
-        */
 
         $('#main, header, .modal, nav').addClass('hide');
         $('.dropdown').each(function(){
@@ -204,6 +195,8 @@ $(function(){
     $(document).keyup(function(e) {
       if (e.keyCode === 27) $('.modal-close-btn').trigger("click"); // esc
     });
+
+
 	
 });
 
