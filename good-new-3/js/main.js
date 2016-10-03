@@ -199,7 +199,7 @@ $(function(){
 
 
     // 1.
-    var $wrap = $( "#main" );
+    var $wrap = $( "#project" );
      
     // 2.
     $wrap.on( "click", ".page-link", function( event ) {
@@ -214,7 +214,7 @@ $(function(){
          
         // 5.
         var pageTitle = ( this.title ) ? this.title : this.textContent;
-            pageTitle = ( this.getAttribute( "rel" ) === "home" ) ? pageTitle : pageTitle + " â€” Acme";
+            pageTitle = ( this.getAttribute( "rel" ) === "home" ) ? pageTitle : pageTitle + "| Good Design & Code";
          
         // 6.
         History.pushState( null, pageTitle, this.href );
