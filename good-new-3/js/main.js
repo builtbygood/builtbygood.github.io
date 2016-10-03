@@ -153,7 +153,7 @@ $(function(){
     $('.modal-close-btn').on('click', function(){
 
         $('#main, header, .modal, nav').removeClass('hide');
-        
+
 
     });
 
@@ -195,6 +195,32 @@ $(function(){
     $(document).keyup(function(e) {
       if (e.keyCode === 27) $('.modal-close-btn').trigger("click"); // esc
     });
+
+
+
+    // 1.
+    var $wrap = $( "#main" );
+     
+    // 2.
+    $wrap.on( "click", ".page-link", function( event ) {
+         
+        // 3.
+        event.preventDefault();
+         
+        // 4.
+        if ( window.location === this.href ) {
+            return;
+        }
+         
+        // 5.
+        var pageTitle = ( this.title ) ? this.title : this.textContent;
+            pageTitle = ( this.getAttribute( "rel" ) === "home" ) ? pageTitle : pageTitle + " â€” Acme";
+         
+        // 6.
+        History.pushState( null, pageTitle, this.href );
+    } );
+
+
 
 
 	
