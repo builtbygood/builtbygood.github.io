@@ -150,13 +150,7 @@ $(function(){
 
     });
 
-    $('.modal-close-btn').on('click', function(){
-
-        $('#main, header, .modal, nav').removeClass('hide');
-
-
-    });
-
+    
     $('.hire-us-btn').on('click', function(e){
 
         $('#main, header, .modal, nav').addClass('hide');
@@ -169,6 +163,13 @@ $(function(){
         e.preventDefault();
         return false;
     });
+
+     $(document).on('click', '.modal-close-btn', function(){
+
+        $('.modal, header, #main, nav').removeClass('hide');
+
+    });
+
 
     $('.step01 .btn_next').on('click', function(e){
 
@@ -197,50 +198,93 @@ $(function(){
     });
 
 
+/*
+    $('.project-link').on('click', function(e) {
 
-    // 1.
-    var $wrap = $( "#project" );
-     
-    // 2.
-    $wrap.on( "click", ".page-link", function( event ) {
-         
-        // 3.
-        event.preventDefault();
-         
-        // 4.
-        if ( window.location === this.href ) {
-            return;
-        }
-         
-        // 5.
-        var pageTitle = ( this.title ) ? this.title : this.textContent;
-            pageTitle = ( this.getAttribute( "rel" ) === "home" ) ? pageTitle : pageTitle + "| Good Design & Code";
-         
-        // 6.
-        History.pushState( null, pageTitle, this.href );
-    } );
+        e.preventDefault();
+
+        var $href = $(this).attr("href");
+
+        history.pushState(null, null, $href);
+
+        showProject($href);
+
+    });
+
+   
+
+    $(window).bind("popstate", function(e) {
+
+        link = location.pathname.replace(/^.*[\\/]/, "");
 
 
-    // 1.
-    History.Adapter.bind( window, "statechange", function() {
-         
-        // 2.
-        var state = History.getState();
-         
-        // 3.
-        $.get( state.url, function( res ) {
-     
-            // 4.
-            $.each( $( res ), function( index, elem ) {
-                if ( $wrap.selector !== "#" + elem.id ) {
-                    return;
-                }
-                $wrap.html( $( elem ).html() );
-            } );
-     
-        } );
-    } );
+        if( link != "" ){
 
+                showProject(link);
+
+            } else{
+
+                hideProject();
+
+            }
+        
+    });
+
+    function showProject(href){
+
+        $('#project').load(href + '.html' + ' .project').addClass('hide');
+        $('header, #main').addClass('hide-right');
+        
+    }
+    function hideProject(){
+
+        $('#project').removeClass('hide');
+        $('header, #main').removeClass('hide-right');
+
+    }
+
+    $(document).on('click', '.project-close-btn', function(){
+
+        hideProject();
+        history.back();
+
+    });
+*/
+
+
+/*
+
+       $(document).pjax('a[data-pjax]', '#main', { 
+
+        fragment: '#main',
+        timeout: 5000 
+
+       });
+
+
+        $('#main').on('pjax:start', function() {
+
+          $(this).hide();
+          
+        });
+
+        $('#main').on('pjax:end', function() {
+
+            setTimeout(function(){
+
+                $('#main').fadeIn('fast');
+
+            },1000);      
+          
+        });
+
+*/
+
+
+
+
+
+    
 
 
 

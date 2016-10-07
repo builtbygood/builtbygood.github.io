@@ -10,11 +10,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rubik+One" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.css">
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/libs/jquery.pjax.js"></script>
 
 </head>
 
@@ -22,17 +24,15 @@
 
 	<div class="logo"><a href="#" class="scroll-to-link" data-id="home"><img src="img/logo.png" height="70"></a></div>		
 
-	<header>
-	    
-			<nav>
-				<ul>
-					<li><a href="#" class="scroll-to-link" data-id="our-work">Work.</a><span class="underline"></span></li>    
-					<li><a href="#" class="scroll-to-link" data-id="notes">Notes.</a><span class="underline"></span></li> 
-					<li><a href="#" class="scroll-to-link" data-id="who-we-are">About.</a><span class="underline"></span></li>                     
-					<li><a href="#" class="btn_primary hire-us-btn"><span>Hire us!</span></a></li>
-				</ul>
-			</nav>
-		
+	<header>    
+		<nav>
+			<ul>
+				<li><a href="#" class="scroll-to-link" data-id="our-work">Work.</a><span class="underline"></span></li>    
+				<li><a href="#" class="scroll-to-link" data-id="notes">Notes.</a><span class="underline"></span></li> 
+				<li><a href="#" class="scroll-to-link" data-id="who-we-are">About.</a><span class="underline"></span></li>                     
+				<li><a href="#" class="btn_primary hire-us-btn"><span>Hire us!</span></a></li>
+			</ul>
+		</nav>	
 	</header>
 	
 	<div id="main" class="home">
@@ -64,7 +64,7 @@
 								school athletes by giving them 
 								access to DII and DIII schools.
 							</p>
-							<a href="./rb.html" class="btn_primary page-link" title="Recruiting Board"><span>View project.</span></a>
+							<a href="./recruiting-board" class="btn_primary project-link"><span>View project.</span></a>
 						</div>
 					</div>
 					<div class="col-1-75">			
@@ -81,7 +81,7 @@
 							<p>
 								Village Healthcare is a smart and affordable medical benefit offering members a better way to wellness. 
 							</p>
-							<a href="rb.html" class="btn_primary"><span>View project.</span></a>
+							<a href="village-healthcare" data-pjax="true" class="btn_primary"><span>View project.</span></a>
 						</div>
 					</div>
 				</div>
@@ -147,6 +147,7 @@
 				</div>	
 			</div>
 		</section><!-- End .work -->
+
 
 		<section id="notes" class="notes">
 			<div class="container">
@@ -236,9 +237,6 @@
  
 	</div><!-- #main -->
 
-
-	<div id="project"></div>
-
 	<div class="modal">
 		
 	    <div class="modal-header"><div class="modal-close-btn"><i class="fa fa-close"></i></div></div>
@@ -317,9 +315,8 @@
 			</div>
 		</div>
 	</div>
-
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/bundled/html4+html5/native.history.js"></script>	
+	
+		
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 <script type="text/javascript" src="js/libs/slick.min.js"></script>

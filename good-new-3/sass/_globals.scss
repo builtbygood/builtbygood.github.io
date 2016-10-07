@@ -78,7 +78,11 @@ body{
   &.hide{
     @include transform(translateX(-80%));
   }
+  &.hide-right{
+    @include transform(translateX(80%));
+  }
 }
+
 .container{
   position:relative;
 	padding:0;
@@ -257,6 +261,9 @@ header{
   @include transition(all 0.5s $easeOutExpo);
   &.hide{
     @include transform(translateX(-100%));
+  }
+  &.hide-right{
+    @include transform(translateX(100%));
   }
   &.active{
     border-color:#222;
@@ -597,9 +604,39 @@ footer{
   border-bottom:1px solid transparent;
   border-color:#222;
   box-shadow:0 4px 0 0 rgba(0,0,0,0.2);
-  z-index:999;
+  z-index:9999;
   -webkit-backface-visibility:hidden; 
 }
+
+#project{
+  position:fixed;
+  padding:200px 0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:9999;
+  @include transform(translateX(-100%));
+    @include transition(all 0.5s $easeOutExpo);
+     &.hide{
+      @include transform(translateX(0));
+    }
+}
+
+ .modal-close-btn, .project-close-btn{
+    position:absolute;
+    top:5px;
+    right:60px;
+    font-size:40px;
+    cursor:pointer;
+    @include transition(transform 1s $easeOutExpo);
+    &:hover{
+        @include transform(scale(1.2));
+    }
+}
+
+
+
 .modal{
     position:fixed;
     @include transform(translateX(100%));
@@ -615,17 +652,6 @@ footer{
     }
     .flex-center-v{
       height:100%;
-    }
-    .modal-close-btn{
-        position:absolute;
-        top:5px;
-        right:60px;
-        font-size:40px;
-        cursor:pointer;
-        @include transition(transform 1s $easeOutExpo);
-        &:hover{
-            @include transform(scale(1.2));
-        }
     }
     .section-heading{
       h2{
