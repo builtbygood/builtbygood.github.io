@@ -109,6 +109,14 @@ section {
   width: 25%;
   float: left; }
 
+.col-1-30 {
+  width: 40%;
+  float: left; }
+
+.col-1-70 {
+  width: 60%;
+  float: left; }
+
 .border-bottom {
   border-bottom: 1px solid #ddd; }
 
@@ -124,6 +132,7 @@ section {
   width: 100%;
   max-width: 250px;
   font-size: 18px;
+  line-height: 50px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   cursor: pointer;
@@ -132,6 +141,8 @@ section {
   -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+  .btn_primary a {
+    color: white; }
   .btn_primary:hover {
     background: #3a94e8; }
   .btn_primary:focus {
@@ -141,6 +152,9 @@ section {
   margin-top: 50px; }
   .btns_container .btn_primary {
     margin: 5px; }
+
+a {
+  text-decoration: none; }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -169,7 +183,7 @@ p {
     .section-copy p:first-child {
       margin-top: 0; }
 
-.col-1-2 .section-copy {
+.col-1-2 .section-copy, .col-1-30 .section-copy, .col-1-70 .section-copy {
   max-width: 550px;
   padding-left: 60px; }
 
@@ -278,6 +292,8 @@ Hero
       margin-top: 50px;
       background: white;
       color: #197bd6; }
+  .hero.page-hero {
+    height: 450px; }
 
 .hero-footer {
   position: relative;
@@ -308,13 +324,13 @@ FAQs
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .faqs .col-1-2 {
   height: 100%;
-  padding: 200px 0; }
+  padding: 240px 0 120px 0; }
 .faqs .section-image {
   background: url(../img/faq-hero.jpg) no-repeat center;
   background-size: cover; }
 
 .faq-questions .question {
-  padding: 20px 0; }
+  padding: 30px 0; }
   .faq-questions .question:last-child {
     border: none;
     padding-bottom: 0; }
@@ -322,12 +338,12 @@ FAQs
     padding-top: 0; }
   .faq-questions .question h4 {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 25px;
     margin-bottom: 3px; }
   .faq-questions .question p {
     font-size: 18px;
     line-height: 28px;
-    color: #999; }
+    color: #888; }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -449,7 +465,7 @@ footer {
       footer .logo-mark li img {
         vertical-align: middle; }
       footer .logo-mark li a {
-        color: #999;
+        color: #333;
         text-decoration: none;
         -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
         -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
@@ -457,7 +473,7 @@ footer {
         -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
         transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
         footer .logo-mark li a:hover {
-          color: #555; }
+          color: #888; }
   footer .copyright {
     float: right;
     height: 50px;

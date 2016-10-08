@@ -115,6 +115,14 @@ section{
 	width:25%;
 	float:left;
 }
+.col-1-30{
+    width:40%;
+    float:left;
+}
+.col-1-70{
+    width:60%;
+    float:left;
+}
 .border-bottom{
     border-bottom:1px solid #ddd;
 }
@@ -130,10 +138,14 @@ section{
     width:100%;
     max-width:250px;
     font-size:18px;
+    line-height:50px;
     font-family:'Montserrat', sans-serif;
     text-transform:uppercase;
     cursor:pointer;
     @include transition(all 0.8s $easeOutExpo);
+    a{
+        color:white;
+    }
     &:hover{
        background: lighten($blue, 10%);
     }
@@ -146,6 +158,9 @@ section{
     .btn_primary{
         margin:5px;
     }
+}
+a{
+    text-decoration:none;
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -179,7 +194,7 @@ p{
         }
     }
 }
-.col-1-2 .section-copy{
+.col-1-2 .section-copy, .col-1-30 .section-copy, .col-1-70 .section-copy{
     max-width:550px;
     padding-left:60px;
 }
@@ -296,6 +311,9 @@ Hero
             color:$blue;
         }
     }
+    &.page-hero{
+        height:450px;
+    }
 }
 .hero-footer{
     position:relative;
@@ -333,7 +351,7 @@ FAQs
 .faqs{
     .col-1-2{
         height:100%;
-        padding:200px 0;
+        padding:240px 0 120px 0;
     }
     .section-image{
         background:url(../img/faq-hero.jpg) no-repeat center;
@@ -342,7 +360,7 @@ FAQs
 }
 .faq-questions{
     .question{
-        padding:20px 0;
+        padding:30px 0;
         &:last-child{
             border:none;
             padding-bottom:0;
@@ -352,13 +370,13 @@ FAQs
         }
         h4{
             font-size:20px;
-            line-height:28px;
+            line-height:25px;
             margin-bottom:3px;
         }
         p{
             font-size:18px;
             line-height:28px;
-            color:#999;
+            color:#888;
         }
     }
 }
@@ -491,11 +509,11 @@ footer{
                 vertical-align:middle;
             }
             a{
-                color:#999;
+                color:#333;
                 text-decoration:none;
                 @include transition(all 0.8s $easeOutExpo);
                 &:hover{
-                    color:#555;
+                    color:#888;
                 }
             }
         }
