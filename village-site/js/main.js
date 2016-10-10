@@ -7,8 +7,13 @@ $(function(){
     $window.on('resize', function(){ 
                         
         resizeStuff();
-        scrollStuff();      
                         
+    });
+
+    $window.on('load', function(){
+
+        $('#main').addClass('show');
+
     });
 
 
@@ -29,12 +34,17 @@ $(function(){
     };
     resizeStuff();
 
-    if( $window.width() >= 600 ){
+   
+    $('nav li a').each(function(){
 
-        $window.on('scroll', scrollStuff);
-        scrollStuff();
+        var pageName = $('body').attr('class');
 
-    } 
+        if( $(this).text() == pageName ){
+            $(this).addClass('active');
+        }
+
+    });
+
 
     ajaxMailChimpForm($("#subscribe-form"), $("#subscribe-result"));
         
