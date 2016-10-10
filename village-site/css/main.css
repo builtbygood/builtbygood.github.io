@@ -383,11 +383,11 @@ Sign Up
       margin-top: 5px; }
 
 form#sign-up {
-  padding: 30px;
+  padding: 50px 30px;
   border-radius: 10px;
   background: #fff;
   max-width: 650px;
-  margin: 40px auto 0 auto;
+  margin: 30px auto 0 auto;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
   form#sign-up .field {
     padding: 10px; }
@@ -419,7 +419,7 @@ form#sign-up {
     font-size: 18px;
     display: inline-block;
     color: #197bd6;
-    padding: 20px 0 10px 0; }
+    padding: 30px 0 10px 0; }
     form#sign-up label:first-child {
       padding-top: 0; }
     form#sign-up label.checkbox {
