@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Resets
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+=======
 $blue:#5c5ce1;
 $yellow:#d7431c;
 
@@ -6,6 +13,7 @@ $yellow:#d7431c;
 RESETS
 
 ---------------------------- */
+>>>>>>> a7ea594ebbbcead86f32b9a3bfdbc4b5c1a79688
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,11 +38,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+<<<<<<< HEAD
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Helpers
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+=======
 /* ----------------------------
 
 HELPERS
 
 ---------------------------- */
+>>>>>>> a7ea594ebbbcead86f32b9a3bfdbc4b5c1a79688
 .clearfix {
   *zoom: 1;
 }
@@ -60,6 +77,657 @@ HELPERS
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+.flex-center-v{
+    display: flex;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Globals
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+html,body{
+	height:100%;
+	-webkit-font-smoothing:antialiased;
+    font-family:'Montserrat', sans-serif;
+    font-weight:400;
+    color:#555;
+}
+#main{
+	width:100%;
+    height:100%;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Grid
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container{
+	position:relative;
+	width:100%;
+	max-width:1100px;
+	margin:0 auto;
+}
+section{
+	padding:0;
+}
+.row{
+	
+}
+.col-1-2{
+	width:50%;
+	float:left;
+}
+.col-1-3{
+	width:33.33333%;
+	float:left;
+}
+.col-1-4{
+	width:25%;
+	float:left;
+}
+.border-bottom{
+    border-bottom:1px solid #ddd;
+}
+.btn_primary{
+    display:inline-block;
+    border:none;
+    background:$blue;
+    color:white;
+    border-radius:10px;
+    height:50px;
+    padding:0 20px;
+    width:100%;
+    max-width:250px;
+    font-size:18px;
+    font-family:'Montserrat', sans-serif;
+    text-transform:uppercase;
+    cursor:pointer;
+    @include transition(all 0.8s $easeOutExpo);
+    &:hover{
+       background: lighten($blue, 10%);
+    }
+    &:focus{
+        outline:none;
+    }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Type
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+p{
+    font-family:'Lato', sans-serif;
+}
+.section-copy{
+    width:100%;
+    .section-label{
+        display:block;
+        font-size:14px;
+        margin-bottom:5px;
+        color:$blue;
+    }
+    h3{
+        font-size:40px;
+        line-height:45px;
+        margin-bottom:40px;
+    }
+    p{
+        font-size:18px;
+        line-height:30px;
+        color:#999;
+        margin-top:15px;
+        &:first-child{
+            margin-top:0;
+        }
+    }
+}
+.col-1-2 .section-copy{
+    max-width:550px;
+    padding-left:60px;
+}
+.scroll-to-link{
+    cursor:pointer;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Header
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+header{
+    position:fixed;
+    z-index:999;
+    background:rgba(255,255,255,0.9);
+    width:100%;
+    height:100px;
+	top:0;
+    left:0;
+    border-bottom:1px solid #ddd;
+    .container{
+        height:100%;
+    }
+    .logo{
+        padding-top:15px;
+        margin-left:0;
+    }
+    nav{
+        position:absolute;
+        top:0;
+        right:0;
+        li{
+            display:inline;
+            height:100px;
+            font-size:14px;
+            line-height:100px;
+            text-transform:uppercase;
+            margin-left:30px;
+            @include opacity(0.5);
+            @include transition(opacity 0.8s $easeOutExpo);
+            &:hover{
+                @include opacity(1);
+            }
+            &.active{
+                @include opacity(1);
+            }
+        }
+     
+    }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Hero
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero{
+    position:relative;
+    width:100%;
+    height:100%;
+    background:url(../img/village-hero-girl.jpg) no-repeat center;
+    background-size:cover;
+    .container{
+        height:100%;
+    }
+    .col-1-2{
+        float:right;
+        height:100%;
+    }
+    .hero-copy{
+        max-width:480px;
+        h1{
+            font-size:70px;
+            line-height:75px;
+            color:white;
+        }
+        h2{
+            font-size:28px;
+            line-height:38px;
+            font-family:'Lato', sans-serif;
+            color:rgba(255,255,255,0.7);
+            margin-top:10px;
+        }
+        .btn_primary{
+            margin-top:30px;
+        }
+    }
+}
+#about-hero{
+    background:url(../img/thanks-hero.jpg) no-repeat center;
+    background-size:cover;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+About Us
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.about-us{
+    height:100%;
+    min-height:850px;
+    .col-1-2{
+        height:100%;
+    }
+    .section-image{
+        background:url(../img/about-hero.jpg) no-repeat center;
+        background-size:cover;
+        //border-right:70px white solid;
+    }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+FAQs
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.faqs{
+    .col-1-2{
+        height:100%;
+        padding:200px 0;
+    }
+    .section-image{
+        background:url(../img/faq-hero.jpg) no-repeat center;
+        background-size:cover;
+    }
+}
+.faq-questions{
+    .question{
+        padding:20px 0;
+        &:last-child{
+            border:none;
+            padding-bottom:0;
+        }
+        &:first-child{
+            padding-top:0;
+        }
+        h4{
+            font-size:20px;
+            line-height:28px;
+            margin-bottom:3px;
+        }
+        p{
+            font-size:18px;
+            line-height:28px;
+            color:#999;
+        }
+    }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Pre-Register
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.pre-register{
+    height:100%;
+    .col-1-2{
+        position:relative;
+        height:100%;
+    }
+    .section-copy{
+        position:absolute;
+        right:0;
+        height:100%;
+        padding:0 60px 0 0;
+        max-width:550px;
+        h3{
+            text-indent:-2px;
+        }
+    }
+    .section-form{
+        height:100%;
+        float:right;
+        background:$blue; 
+        padding-left:60px;
+        form{
+            position:relative;
+            width:100%;
+            max-width:550px;
+            margin-top:9px;
+            .field{
+                margin-top:15px; 
+            }
+            label{
+                display:inline-block;
+                margin-bottom:10px;
+                color: rgba(255,255,255,0.6);
+
+            }
+            input, textarea{
+                width:100%;
+                height:50px;
+                padding:0 20px;
+                font-size:18px;
+                font-family:'Lato', sans-serif;
+                color:white;
+                border:2px solid rgba(255,255,255,0.5);
+                background:transparent;
+                border-radius:10px;
+                @include transition(border-color 0.8s $easeOutExpo);
+                &:focus{
+                    outline:none;
+                    border-color:rgba(255,255,255,1);
+                }
+            }
+            textarea{
+                resize:none;
+                min-width:100%;
+                max-width:100%;
+                padding-top:12px;
+                height:150px;
+            }
+            .btn_primary{
+                max-width:100%;
+                background:rgba(255,255,255,0.75);
+                color:$blue;
+                line-height:50px;
+                text-indent:-40px;
+                margin-top:10px;
+                @include transition(all 0.8s $easeOutExpo);
+                &:hover{
+                   background:rgba(255,255,255,1);
+                }
+                &:focus{
+                    outline:none;
+                }
+            }
+            ::-webkit-input-placeholder { 
+              color: rgba(255,255,255,0.6);
+            }
+            ::-moz-placeholder {
+              color: rgba(255,255,255,0.6);
+            }
+            :-ms-input-placeholder { 
+              color: rgba(255,255,255,0.6);
+            }
+            :-moz-placeholder { 
+              color: rgba(255,255,255,0.6);
+            }
+        }
+    }
+}
+.business-name{
+    display:none;
+}
+
+.select-style {
+    width:100%;
+    padding:8px 20px;
+    font-size:18px;
+    font-family:'Lato', sans-serif;
+    color:white;
+    border:2px solid rgba(255,255,255,0.5);
+    background:transparent url(../img/select-arrow.png) no-repeat 96% 54%;
+    border-radius:10px;
+}
+
+.select-style select {
+    padding: 5px 0;
+    width: 110%;
+    font-size:18px;
+    color:white;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+#subscribe-result{
+    display:none;
+    position:absolute;
+    bottom:-50px;
+    height:30px;
+    width:100%;
+    text-align:center;
+    color:white;
+}
+
+.loader{
+    display:inline;
+    @include opacity(0);
+    vertical-align:-9px;
+    padding-right:10px;
+    @include transition(opacity 0.8s $easeOutExpo);
+}
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Footer
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer{
+	padding:60px 0;
+    border-top:1px solid #ddd;
+    font-size:12px;
+    line-height:50px;
+    .logo-mark{
+        float:left;
+        height:50px;
+        li{
+            display:inline;
+            margin:0 30px 0 0;
+            text-transform:uppercase;
+            img{
+                vertical-align:middle;
+            }
+            a{
+                color:#999;
+                text-decoration:none;
+                @include transition(all 0.8s $easeOutExpo);
+                &:hover{
+                    color:#555;
+                }
+            }
+        }
+    }
+    .copyright{
+        float:right;
+        height:50px;
+        font-size:14px;
+        color:#bbb;
+    }
+}
+
+
+
+
+@media (max-width:600px){
+    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    Header
+
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+    header{
+        height:80px;
+        text-align:center;
+        .container{
+            height:100%;
+        }
+        .logo{
+            padding-top:10px;
+            height:60px;
+            img{
+                height:60px;
+            }
+        }
+        nav{
+           display:none;       
+        }
+    }
+
+    .section-copy{
+        width:100%;
+        .section-label{
+            display:block;
+            font-size:14px;
+            margin-bottom:5px;
+            color:$blue;
+        }
+        h3{
+            font-size:25px;
+            line-height:25px;
+            margin-bottom:20px;
+        }
+        p{
+            font-size:16px;
+            line-height:26px;
+            color:#999;
+        }
+    }
+   /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    Hero
+
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .hero{
+        position:relative;
+        width:100%;
+        height:100%;
+        background:url(../img/hero-mobile.jpg) no-repeat center;
+        background-size:cover;
+        padding:0 20px;
+        .col-1-2{
+            float:none;
+            width:100%;
+        }
+        .hero-copy{
+            max-width:100%;
+            margin-top:50px;
+            h1{
+                font-size:35px;
+                line-height:35px;
+                color:white;
+            }
+            h2{
+                font-size:20px;
+                line-height:25px;
+                margin-top:10px;
+            }
+            .btn_primary{
+                margin-top:20px;
+                max-width:400px;
+            }
+        }
+    }
+    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    About Us
+
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .about-us{
+        height:auto;
+        .col-1-2{
+            width:100%;
+            height:auto;
+            padding:90px 0;
+        }
+        .section-image{
+
+            height:480px;
+
+        }
+        .section-copy{
+            padding:0 20px;
+        }
+    }
+    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    FAQs
+
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .faqs{
+        border-bottom:1px solid #ddd;
+        .col-1-2{
+            padding:90px 0;
+            float:right;
+            width:100%;
+        }
+        .section-image{
+            height:480px;
+            background:url(../img/faq-hero.jpg) no-repeat center;
+            background-size:cover;
+        }
+        .section-copy{
+            padding:0 20px;
+        }
+    }
+    .faq-questions{
+        .question{
+            padding:15px 0;
+            h4{
+                font-size:18px;
+                line-height:26px;
+                margin-bottom:3px;
+            }
+            p{
+                font-size:16px;
+                line-height:26px;
+            }
+        }
+    }
+    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    Pre-Register
+
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .pre-register{
+        height:auto;
+        .col-1-2{
+            width:100%;
+            height:auto;
+        }
+        .section-copy{
+            position:relative;
+            padding:90px 20px 20px 20px;
+            max-width:100%;
+        }
+        .section-form{
+            height:auto;
+            padding:15px 20px 90px 20px; 
+            form{
+                max-width:100%;
+                padding-left:0;
+                .field{
+                    margin-top:15px; 
+                }
+                input{
+                    font-size:16px;
+                }
+            }
+        }
+    }
+    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    Footer
+
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+    footer{
+        padding:60px 0;
+        background:#f6f6f6;
+        font-size:12px;
+        line-height:auto;
+        text-align:center;
+        .logo-mark{
+            float:none;
+            height:auto;
+            width:100%;
+            li{
+                display:inline;
+                margin:0;
+                padding:0 10px;
+                text-transform:uppercase;
+                img{
+                    vertical-align:middle;
+                }
+                &:first-child{
+                    display:inline-block;
+                    width:100%;
+                }
+            }
+        }
+        .copyright{
+            float:none;
+        }
+    }
+
+
+=======
 .loader {
   position:fixed;
   top:50%;left:50%;
@@ -1122,10 +1790,13 @@ a{
 			@include opacity(0.5);
 		}
 	}
+>>>>>>> a7ea594ebbbcead86f32b9a3bfdbc4b5c1a79688
 
 }
 
 
+<<<<<<< HEAD
+=======
 #contact{
 	font-size:50px;
 	line-height:70px;
@@ -1205,3 +1876,4 @@ a{
 		}
 	}
 }
+>>>>>>> a7ea594ebbbcead86f32b9a3bfdbc4b5c1a79688

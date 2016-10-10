@@ -1,139 +1,187 @@
 $(function(){
-	
-	var $window = $(window);
 
-	jQuery.fn.reverse = [].reverse;
-	
-	$('#menu-sandwich').on('click', function(){	
-		
-		if( !$(this).hasClass('active') ){
+    var $window = $(window),
+        $faqs   = $('.faqs .section-questions');
 
-			$(this).addClass('active');
-			menuUp();
-			
-		} else{
-	
-			$(this).removeClass('active');
-      menuDown();   
-			
-		}		
-		
-	});
-  $window.on('load', function(){
-  	  
-     $('.loader').delay(1000).fadeOut(function(){
-       thumbsUp(); 
-     });   
-  	            
-	});
-	$window.on('resize', function(){
-		 
-		thumbsUp();	
-		$('.dropdown').each(function(){
-	    	$(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
-	    });
-							
-	});	
-	$window.on('scroll', function(){
-		
-		thumbsUp();
-		
-	});
-	function thumbsUp(){
-
-		if($('.loader').is(':hidden')) {
-		
-			$('.lifter').each(function(){
-
-				var _top = $(this).offset().top;
-				var _vp  = $window.scrollTop() + $window.height()-100;
-				
-				if( _vp > _top ){
-
-					$(this).find('.lift').each(function(i){
-									
-						$(this).delay(72*i).queue( function(next){ 
-							$(this).addClass('active');
-							next(); 
-						});
-
-					});
-
-				}
-			
-		  });
-
-		}
-		
-	}
-	function menuUp(){
-
-		$('nav').fadeIn();
-		$('nav li').reverse().each(function(i){
-								
-			$(this).delay(72*i).queue( function(next){ 
-				$(this).addClass('active');
-				next(); 
-			});
-			
-		});
-		
-	}	
-	function menuDown(){
-
-		$('nav').fadeOut('fast');
-    $('nav li').reverse().each(function(i){
-							
-			$(this).delay(72*i).queue( function(next){ 
-				$(this).removeClass('active');
-				next(); 
-			});
-			
-		});
-		
-	}
-
-    $('.input').on('click', function(){
-
-    	if( !$(this).find('.dropdown').is(':visible') ){
-
-    		$(this).find('.dropdown').fadeIn('fast');
-
-    	}
-
+ 
+    $window.on('resize', function(){ 
+                        
+        resizeStuff();
+        scrollStuff();      
+                        
     });
 
-    $('.dropdown').each(function(){
 
-    	$(this).css({ marginTop: - $(this).outerHeight()/2 + 'px' });
+    function resizeStuff(){
 
-    });
+        var $faq_height = $faqs.outerHeight();
 
-    $('.dropdown li').on('click', function(){
+        if( $window.width() >= 600 ){
 
-        $(this).parent().parent().parent().find('.display').html($(this).text());
-        $(this).parent().parent().parent().find('.dropdown').delay(250).fadeOut('fast');
+            $('.faqs .section-image').css('height', $faq_height + 'px');
 
-        $(this).addClass('active').siblings().removeClass('active');
+        } else{
+
+            $('.faqs .section-image').css('height','480px');
+
+        }
+       
+    };
+    resizeStuff();
+
+    if( $window.width() >= 600 ){
+
+        $window.on('scroll', scrollStuff);
+        scrollStuff();
+
+    } 
+
+   function scrollStuff(){
+
+        var $scrollTop = $window.scrollTop();
+
+        $('section').each(function(){
+
+            var $offset = $(this).offset().top - $scrollTop;
+
+            if( $offset <= 0){
+
+                var $target = $(this).attr('id');
+
+                $('nav li').each(function(){
+
+                    if( $(this).attr('data-id') == $target ){
+
+                        $(this).addClass('active').siblings().removeClass('active');
+
+                    }
+
+                });
+
+                if( $target == 'hero' ){
+
+                    $('nav li').removeClass('active');
+
+                }
+            }
+
+        });
+          
+    };
+    
+
+    var scrollTime = 1.2;
+    var scrollDistance = 100
+
+    $window.on("mousewheel", function(event){
+
+        event.preventDefault();
+
+        var delta       = event.originalEvent.wheelDelta/120;
+        var scrollTop   = $window.scrollTop();
+        var finalScroll = scrollTop - parseInt(delta*scrollDistance) * 3;  
+
+        TweenMax.to($window, scrollTime, {
+            scrollTo : { y: finalScroll, autoKill:true },
+            ease: Expo.easeOut,
+            overwrite: 5                            
+        });
 
     });
 
 
-    $(document).on("mousedown", function(e) {
+    $('.scroll-to-link').on('click', function(e){
 
-	    var clicked = $(e.target);  
-	    if (  $('.dropdown').is(':visible') && !clicked.is('.dropdown li') ) {
-	        $('.dropdown').hide();
-	    }
+        var $target        = $(this).attr('data-id');
+        var $target_offset = $('#' + $target).offset().top;
+
+        TweenMax.to($window, 0.6, {
+            scrollTo : { y: $target_offset},
+            ease: Expo.easeOut                         
+        });
+
+    ajaxMailChimpForm($("#subscribe-form"), $("#subscribe-result"));
+        
+        function ajaxMailChimpForm($form, $resultElement){
+            
+            $form.submit(function(e) {
+
+                e.preventDefault();
+
+                 submitSubscribeForm($form, $resultElement);
+
+                $('.loader').css('opacity', '1');
+    
+            });
+
+        }
+       
+        function submitSubscribeForm($form, $resultElement) {
+
+            $.ajax({
+                type: "GET",
+                url: $form.attr("action"),
+                data: $form.serialize(),
+                cache: false,
+                dataType: "jsonp",
+                jsonp: "c", 
+                contentType: "application/json; charset=utf-8",
+                error: function(error){
+                    
+                },
+                success: function(data){
+                    if (data.result != "success") {
+
+                        var message = data.msg || "Oops! Unable to pre-register. Please try again later.";
+                        
+                        if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
+
+                            message = "Hey! You're already pre-registered.";
+
+                        }
+                        $resultElement.html(message);              
+
+                    } else {
+
+                        $resultElement.html("Thank You! Check your email for confirmation.");
+
+                    }
+
+                    $('.loader').css('opacity', '0');
+                    $('#subscribe-result').fadeIn();
+                    $("#subscribe-form input, #subscribe-form textarea").val('');
+                  
+                }
+            });
+
+        }
+
+        $("#subscribe-form input").on('focus', function(){
+
+            $('#subscribe-result').fadeOut();
+
+        });
 
 
-    });
+        $('#subscribe-form select').on('change', function(){
 
+            console.log($(this).val())
 
+            if( $(this).val() == 'Business' ){
 
+                $('.business-name').show();
+
+            } else{
+
+                $('.business-name').hide();
+
+            }
+
+            
+
+        });
 
 	
 });
-
 
 

@@ -1,7 +1,10 @@
+<<<<<<< HEAD
+=======
 $easeOutExpo:cubic-bezier(0.19, 1, 0.22, 1); /* easeOutExpo */
 $easeInOutExpo:cubic-bezier(1.000, 0.000, 0.000, 1.000); /* easeInOutExpo */
 
 
+>>>>>>> a7ea594ebbbcead86f32b9a3bfdbc4b5c1a79688
 @mixin transition($args...) {
 	-webkit-transition: $args;
 	-moz-transition: $args;
