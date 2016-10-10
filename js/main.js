@@ -23,7 +23,8 @@ $(function(){
 
   $(window).on('load', function(){
              
-     thumbsUp();      
+      thumbsUp();  
+      $('.loader').fadeOut();   
 
 	});
 		
