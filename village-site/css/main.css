@@ -416,6 +416,7 @@ form#sign-up {
     height: 200px; }
   form#sign-up label {
     width: 100%;
+    font-size: 20px;
     display: inline-block;
     color: #197bd6;
     padding: 15px 0 5px 0; }
