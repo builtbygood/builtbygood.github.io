@@ -165,6 +165,25 @@ $(function(){
 
         });
 
+
+        $('#subscribe-form select').on('change', function(){
+
+            console.log($(this).val())
+
+            if( $(this).val() == 'Business' ){
+
+                $('.business-name').show();
+
+            } else{
+
+                $('.business-name').hide();
+
+            }
+
+            
+
+        });
+
 	
 });
 

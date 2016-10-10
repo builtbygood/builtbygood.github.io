@@ -107,6 +107,10 @@ Grid
 section {
   padding: 0; }
 
+.col-1 {
+  width: 100%;
+  float: left; }
+
 .col-1-2 {
   width: 50%;
   float: left; }
@@ -358,6 +362,37 @@ About Us
   text-align: center; }
   .about-us .container {
     max-width: 850px; }
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+About Us
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.sign-up {
+  background: #197bd6;
+  padding: 240px 0 120px 0;
+  text-align: center; }
+  .sign-up .container {
+    max-width: 850px; }
+  .sign-up .section-copy {
+    color: white; }
+
+form#sign-up {
+  padding: 30px;
+  border-radius: 10px;
+  background: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
+  form#sign-up .field {
+    padding: 10px; }
+  form#sign-up input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white; }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
