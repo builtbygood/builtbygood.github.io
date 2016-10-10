@@ -390,7 +390,7 @@ About Us
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
-About Us
+Sign Up
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .sign-up{
@@ -422,6 +422,33 @@ form#sign-up{
         border-radius:10px;
         background:white;
     }
+}
+.business-name{
+    display:none;
+}
+
+.select-style {
+    width:100%;
+    padding:12px 20px;
+    font-size:16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:white url(../img/select-arrow.png) no-repeat 96% 54%;
+}
+
+.select-style select {
+    padding: 5px 0;
+    width: 110%;
+    font-size:16px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
