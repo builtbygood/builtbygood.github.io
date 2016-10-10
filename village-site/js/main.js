@@ -115,10 +115,13 @@ $(function(){
             if( $(this).val() == "I'm a business" ){
 
                 $('.business-name').show();
+                $('.who-are-you-enrolling').hide();
 
             } else{
 
                 $('.business-name').hide();
+                $('.who-are-you-enrolling').show();
+
 
             }  
 

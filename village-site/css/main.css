@@ -407,12 +407,23 @@ form#sign-up {
     form#sign-up input:focus, form#sign-up textarea:focus {
       outline: none;
       border: 1px solid #197bd6; }
+    form#sign-up input[type="checkbox"], form#sign-up textarea[type="checkbox"] {
+      width: auto;
+      max-width: auto;
+      padding: 0;
+      vertical-align: 1px; }
   form#sign-up textarea {
     height: 200px; }
   form#sign-up label {
+    width: 100%;
     display: inline-block;
     color: #197bd6;
     padding: 15px 0 5px 0; }
+    form#sign-up label.checkbox {
+      text-align: left;
+      color: #888;
+      font-size: 14px;
+      display: inline; }
   form#sign-up .col-1-3 {
     width: 35%; }
   form#sign-up .col-1-4 {
@@ -420,7 +431,7 @@ form#sign-up {
   form#sign-up .btn_primary {
     margin-top: 30px; }
 
-.business-name {
+.business-name, .who-are-you-enrolling {
   display: none; }
 
 .select-style {
