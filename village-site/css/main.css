@@ -391,13 +391,24 @@ form#sign-up {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
   form#sign-up .field {
     padding: 10px; }
-  form#sign-up input {
+  form#sign-up input, form#sign-up textarea {
     width: 100%;
+    max-width: 100%;
     padding: 12px 20px;
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    background: white; }
+    background: white;
+    -webkit-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: border 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+    form#sign-up input:focus, form#sign-up textarea:focus {
+      outline: none;
+      border: 1px solid #197bd6; }
+  form#sign-up textarea {
+    height: 200px; }
   form#sign-up label {
     display: inline-block;
     color: #197bd6;

@@ -421,13 +421,22 @@ form#sign-up{
     .field{
         padding:10px;
     }
-    input{
+    input, textarea{
         width:100%;
+        max-width:100%;
         padding:12px 20px;
         font-size:16px;
         border:1px solid #ddd;
         border-radius:10px;
         background:white;
+        @include transition(border 0.8s $easeOutExpo);
+        &:focus{
+            outline:none;
+            border:1px solid $blue;
+        }
+    }
+    textarea{
+        height:200px;
     }
     label{
         display:inline-block;
