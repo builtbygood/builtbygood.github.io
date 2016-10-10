@@ -100,9 +100,6 @@ $(function(){
             ease: Expo.easeOut                         
         });
 
-    });
-
-
     ajaxMailChimpForm($("#subscribe-form"), $("#subscribe-result"));
         
         function ajaxMailChimpForm($form, $resultElement){
