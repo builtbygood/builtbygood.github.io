@@ -376,13 +376,18 @@ Sign Up
     max-width: 850px; }
   .sign-up .section-copy {
     color: white; }
+    .sign-up .section-copy h3 {
+      margin-bottom: 0px; }
+    .sign-up .section-copy p {
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 5px; }
 
 form#sign-up {
   padding: 30px;
   border-radius: 10px;
   background: #fff;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 650px;
+  margin: 30px auto 0 auto;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
   form#sign-up .field {
     padding: 10px; }
@@ -393,27 +398,40 @@ form#sign-up {
     border: 1px solid #ddd;
     border-radius: 10px;
     background: white; }
+  form#sign-up label {
+    display: inline-block;
+    color: #197bd6;
+    padding: 15px 0; }
+  form#sign-up .col-1-3 {
+    width: 35%; }
+  form#sign-up .col-1-4 {
+    width: 30%; }
+  form#sign-up .btn_primary {
+    margin-top: 30px; }
 
 .business-name {
   display: none; }
 
 .select-style {
   width: 100%;
-  padding: 12px 20px;
+  padding: 7px 20px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  background: white url(../img/select-arrow.png) no-repeat 96% 54%; }
+  background: white url(../img/select-arrow.png) no-repeat center right 20px; }
 
 .select-style select {
   padding: 5px 0;
   width: 110%;
   font-size: 16px;
+  color: #888;
   border: none;
   box-shadow: none;
   background: transparent;
   background-image: none;
   -webkit-appearance: none; }
+  .select-style select option.placeholder {
+    color: #888; }
 
 .select-style select:focus {
   outline: none; }
@@ -450,98 +468,6 @@ FAQs
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
-Pre-Register
-
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.pre-register {
-  height: 100%; }
-  .pre-register .col-1-2 {
-    position: relative;
-    height: 100%; }
-  .pre-register .section-copy {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    padding: 0 60px 0 0;
-    max-width: 550px; }
-    .pre-register .section-copy h3 {
-      text-indent: -2px; }
-  .pre-register .section-form {
-    height: 100%;
-    float: right;
-    background: #197bd6;
-    padding-left: 60px; }
-    .pre-register .section-form form {
-      position: relative;
-      width: 100%;
-      max-width: 550px;
-      margin-top: 9px; }
-      .pre-register .section-form form .field {
-        margin-top: 15px; }
-      .pre-register .section-form form input, .pre-register .section-form form textarea {
-        width: 100%;
-        height: 50px;
-        padding: 0 20px;
-        font-size: 18px;
-        font-family: 'Lato', sans-serif;
-        color: white;
-        border: 2px solid rgba(255, 255, 255, 0.5);
-        background: transparent;
-        border-radius: 10px;
-        -webkit-transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -moz-transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -ms-transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -o-transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
-        .pre-register .section-form form input:focus, .pre-register .section-form form textarea:focus {
-          outline: none;
-          border-color: white; }
-      .pre-register .section-form form textarea {
-        resize: none;
-        min-width: 100%;
-        max-width: 100%;
-        padding-top: 12px;
-        height: 150px; }
-      .pre-register .section-form form .btn_primary {
-        max-width: 100%;
-        background: rgba(255, 255, 255, 0.75);
-        color: #197bd6;
-        line-height: 50px;
-        text-indent: -40px;
-        margin-top: 10px;
-        -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
-        .pre-register .section-form form .btn_primary:hover {
-          background: white; }
-        .pre-register .section-form form .btn_primary:focus {
-          outline: none; }
-
-#subscribe-result {
-  display: none;
-  position: absolute;
-  bottom: -50px;
-  height: 30px;
-  width: 100%;
-  text-align: center;
-  color: white; }
-
-.loader {
-  display: inline;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  vertical-align: -9px;
-  padding-right: 10px;
-  -webkit-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  -moz-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  -ms-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
 Footer
 
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -574,167 +500,5 @@ footer {
     height: 50px;
     font-size: 14px;
     color: #bbb; }
-
-@media (max-width: 600px) {
-    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    Header
-
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-  header {
-    height: 80px;
-    text-align: center; }
-    header .container {
-      height: 100%; }
-    header .logo {
-      padding-top: 10px;
-      height: 60px; }
-      header .logo img {
-        height: 60px; }
-    header nav {
-      display: none; }
-
-  .section-copy {
-    width: 100%; }
-    .section-copy .section-label {
-      display: block;
-      font-size: 14px;
-      margin-bottom: 5px;
-      color: #197bd6; }
-    .section-copy h3 {
-      font-size: 25px;
-      line-height: 25px;
-      margin-bottom: 20px; }
-    .section-copy p {
-      font-size: 16px;
-      line-height: 26px;
-      color: #999; }
-
-   /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    Hero
-
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .hero {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url(../img/hero-mobile.jpg) no-repeat center;
-    background-size: cover;
-    padding: 0 20px; }
-    .hero .col-1-2 {
-      float: none;
-      width: 100%; }
-    .hero .hero-copy {
-      max-width: 100%;
-      margin-top: 50px; }
-      .hero .hero-copy h1 {
-        font-size: 35px;
-        line-height: 35px;
-        color: white; }
-      .hero .hero-copy h2 {
-        font-size: 20px;
-        line-height: 25px;
-        margin-top: 10px; }
-      .hero .hero-copy .btn_primary {
-        margin-top: 20px;
-        max-width: 400px; }
-
-    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    About Us
-
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .about-us {
-    height: auto; }
-    .about-us .col-1-2 {
-      width: 100%;
-      height: auto;
-      padding: 90px 0; }
-    .about-us .section-image {
-      height: 480px; }
-    .about-us .section-copy {
-      padding: 0 20px; }
-
-    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    FAQs
-
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .faqs {
-    border-bottom: 1px solid #ddd; }
-    .faqs .col-1-2 {
-      padding: 90px 0;
-      float: right;
-      width: 100%; }
-    .faqs .section-image {
-      height: 480px;
-      background: url(../img/faq-hero.jpg) no-repeat center;
-      background-size: cover; }
-    .faqs .section-copy {
-      padding: 0 20px; }
-
-  .faq-questions .question {
-    padding: 15px 0; }
-    .faq-questions .question h4 {
-      font-size: 18px;
-      line-height: 26px;
-      margin-bottom: 3px; }
-    .faq-questions .question p {
-      font-size: 16px;
-      line-height: 26px; }
-
-    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    Pre-Register
-
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .pre-register {
-    height: auto; }
-    .pre-register .col-1-2 {
-      width: 100%;
-      height: auto; }
-    .pre-register .section-copy {
-      position: relative;
-      padding: 90px 20px 20px 20px;
-      max-width: 100%; }
-    .pre-register .section-form {
-      height: auto;
-      padding: 15px 20px 90px 20px; }
-      .pre-register .section-form form {
-        max-width: 100%;
-        padding-left: 0; }
-        .pre-register .section-form form .field {
-          margin-top: 15px; }
-        .pre-register .section-form form input {
-          font-size: 16px; }
-
-    /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    Footer
-
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-  footer {
-    padding: 60px 0;
-    background: #f6f6f6;
-    font-size: 12px;
-    line-height: auto;
-    text-align: center; }
-    footer .logo-mark {
-      float: none;
-      height: auto;
-      width: 100%; }
-      footer .logo-mark li {
-        display: inline;
-        margin: 0;
-        padding: 0 10px;
-        text-transform: uppercase; }
-        footer .logo-mark li img {
-          vertical-align: middle; }
-        footer .logo-mark li:first-child {
-          display: inline-block;
-          width: 100%; }
-    footer .copyright {
-      float: none; } }
 
 /*# sourceMappingURL=main.css.map */
