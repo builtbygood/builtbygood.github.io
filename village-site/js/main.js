@@ -110,7 +110,7 @@ $(function(){
 
         $('#sign-up select').on('change', function(){
 
-            console.log($(this).val())
+            $(this).css({color:'#333'});
 
             if( $(this).val() == "I'm a business" ){
 
