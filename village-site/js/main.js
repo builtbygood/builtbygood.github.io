@@ -112,7 +112,7 @@ $(function(){
 
             console.log($(this).val())
 
-            if( $(this).val() == 'Business' ){
+            if( $(this).val() == "I'm a business" ){
 
                 $('.business-name').show();
 
