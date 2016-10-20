@@ -159,10 +159,6 @@ header{
     position:relative;
     width:100%;
     padding-top:135px;
-    margin-bottom:-50px;
-    -webkit-clip-path: inset(0 0 50px 0);
-    clip-path: inset(0 0 50px 0);
-    overflow:hidden;
     //height:750px;
     &:hover{
         #play-btn{
