@@ -117,6 +117,12 @@ header {
     width: 100%;
     padding-left: 40px;
     background: #111; }
+    header nav .nav-shadow {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 888; }
     header nav li {
       display: block;
       float: left;
@@ -276,13 +282,12 @@ header {
     width: 100%; }
 
 footer {
-  height: 135px;
+  padding: 60px 20px;
   background: #222 url(../img/footer-bg.jpg) no-repeat center top;
   text-align: center; }
   footer .copyright {
     font-size: 14px;
     font-weight: bold;
-    line-height: 135px;
     color: white; }
 
 @media (max-width: 800px) {
@@ -290,6 +295,8 @@ footer {
     padding-left: 0;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch; }
+    header nav .nav-shadow {
+      display: block; }
     header nav ul {
       width: 600px; }
   header .logo {

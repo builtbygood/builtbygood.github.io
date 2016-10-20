@@ -129,6 +129,12 @@ header{
         width:100%;
         padding-left:40px;
         background:#111;
+        .nav-shadow{
+            display:none;
+            position:fixed;
+            top:0;right:0;
+            z-index:888;
+        }
         li{
             display:block;
             float:left;
@@ -290,13 +296,12 @@ header{
     }
 }
 footer{
-	height:135px;
+	padding:60px 20px;
     background:#222 url(../img/footer-bg.jpg) no-repeat center top;
     text-align:center;
     .copyright{
         font-size:14px;
         font-weight:bold;
-        line-height:135px;
         color:white;
     }
 }
@@ -308,6 +313,9 @@ footer{
             padding-left:0;
             overflow-x: scroll;
             -webkit-overflow-scrolling: touch;
+            .nav-shadow{
+                display:block;
+            }
             ul{
                 width:600px;
             }
