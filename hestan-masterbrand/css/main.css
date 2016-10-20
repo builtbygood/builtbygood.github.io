@@ -297,7 +297,7 @@ footer {
     margin: 0 auto; }
 
   .hero {
-    background: url(../img/hero.jpg) no-repeat center 135px;
+    background: url(../img/hero-mobile.jpg) no-repeat center 135px;
     background-size: cover;
     padding-top: 170px; }
     .hero .hero-copy {
