@@ -288,7 +288,8 @@ footer {
 @media (max-width: 800px) {
   header nav {
     padding-left: 0;
-    overflow: scroll; }
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; }
     header nav ul {
       width: 600px; }
   header .logo {
@@ -298,8 +299,7 @@ footer {
 
   .hero {
     background: url(../img/hero-mobile.jpg) no-repeat center 135px;
-    background-size: cover;
-    padding-top: 170px; }
+    background-size: cover; }
     .hero .hero-copy {
       padding: 0 20px; }
       .hero .hero-copy p {
@@ -311,5 +311,9 @@ footer {
 
   .col-1-2 {
     width: 100%; } }
+@media (max-width: 600px) {
+  .hero .hero-copy p {
+    font-size: 16px;
+    line-height: 26px; } }
 
 /*# sourceMappingURL=main.css.map */
