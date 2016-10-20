@@ -143,7 +143,11 @@ header {
 .video-hero {
   position: relative;
   width: 100%;
-  padding-top: 135px; }
+  padding-top: 135px;
+  margin-bottom: -50px;
+  -webkit-clip-path: inset(0 0 50px 0);
+  clip-path: inset(0 0 50px 0);
+  overflow: hidden; }
   .video-hero:hover #play-btn {
     opacity: 0.5;
     filter: alpha(opacity=50); }
@@ -168,7 +172,7 @@ header {
   z-index: 888;
   top: 50%;
   left: 50%;
-  margin: -20px 0 0 -80px;
+  margin: -30px 0 0 -80px;
   width: 140px;
   height: 140px;
   background: url(../img/play-btn.png) no-repeat center;
@@ -284,5 +288,32 @@ footer {
     font-weight: bold;
     line-height: 135px;
     color: white; }
+
+@media (max-width: 800px) {
+  header nav {
+    padding-left: 0;
+    overflow: scroll; }
+    header nav ul {
+      width: 600px; }
+  header .logo {
+    width: 266px;
+    padding-top: 52px;
+    margin: 0 auto; }
+
+  .hero {
+    background: url(../img/hero.jpg) no-repeat center 135px;
+    background-size: cover;
+    padding-top: 170px; }
+    .hero .hero-copy {
+      padding: 0 20px; }
+      .hero .hero-copy p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: bold; }
+    .hero .read-more {
+      display: none; }
+
+  .col-1-2 {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
