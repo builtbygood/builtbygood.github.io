@@ -290,6 +290,11 @@ footer {
     font-weight: bold;
     color: white; }
 
+.post-content img.show {
+  display: none; }
+.post-content img.hide {
+  display: block; }
+
 @media (max-width: 800px) {
   header nav {
     padding-left: 0;
@@ -340,6 +345,11 @@ footer {
     width: 120px;
     height: 120px; } }
 @media (max-width: 600px) {
+  .post-content img.show {
+    display: block; }
+  .post-content img.hide {
+    display: none; }
+
   .hero .hero-copy p {
     font-size: 16px;
     line-height: 26px; }
