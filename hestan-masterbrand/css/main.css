@@ -315,8 +315,8 @@ footer {
     .hero .hero-copy {
       padding: 0 20px; }
       .hero .hero-copy p {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 26px;
         font-weight: bold; }
     .hero .read-more {
       bottom: 10px; }
@@ -363,8 +363,8 @@ footer {
     display: none; }
 
   .hero .hero-copy p {
-    font-size: 16px;
-    line-height: 26px; }
+    font-size: 14px;
+    line-height: 22px; }
 
   .post-title {
     padding: 20px; }
