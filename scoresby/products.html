@@ -5,331 +5,390 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Scoresby Interactive | Products</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="header-content">
       <div class="logo">
-        <img src="#" alt="Scoresby Interactive logo">
+        <a href="/">
+          <img src="#" alt="Logo">
+        </a>
       </div>
-    </div>
 
-    <div class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-    <div class="nav-container">
-      <nav>
-        <ul>
-          <li><a href="#" title="Scoresby Interactive &mdash; Methods">Methods</a></li>
-          <li>
-            <a href="#" title="Scoresby Interactive &mdash; Products" class="current">Products</a>
-            <ul>
-              <li>
-                <span class="nav-heading">Design</span>
-              </li>
-              <li>
-                <a href="#" title="Scoresby Interactive &mdash; UX Design Spec &trade;">UX Design Spec &trade;</a>
-              </li>
-              <li>
-                <a href="#" title="Scoresby Interactive &mdash; UX Design Partner &trade;">UX Design Partner &trade;</a>
-              </li>
-              <li>
-                <span class="nav-heading">Research</span>
-              </li>
-              <li>
-                <a href="#" title="Scoresby Interactive &mdash; UX Gap Report &trade;">UX Gap Report &trade;</a>
-              </li>
-              <li>
-                <a href="#" title="Scoresby Interactive &mdash; UX User Studies &trade;">UX User Studies &trade;</a>
-              </li>
-              <li>
-                <a href="#" title="Scoresby Interactive &mdash; UX Data Miner &trade;">UX Data Miner &trade;</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="nav-button">
-          <a href="#" title="Contact Scoresby Interactive">Meet Us</a>
-        </div>
-      </nav>
-    </div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li><a href="methods.html" title="Scoresby Interactive &mdash; Methods">Methods</a></li>
+            <li>
+              <a href="products.html" title="Scoresby Interactive &mdash; Products">Products</a>
+              <ul class="sub-menu">
+                <li>
+                  <span class="nav-heading">Design</span>
+                </li>
+                <li>
+                  <a href="products.html#design-spec" title="Scoresby Interactive &mdash; UX Design Spec &trade;">UX Design Spec &trade;</a>
+                </li>
+                <li>
+                  <a href="products.html#design-partner" title="Scoresby Interactive &mdash; UX Design Partner &trade;">UX Design Partner &trade;</a>
+                </li>
+                <li>
+                  <span class="nav-heading">Research</span>
+                </li>
+                <li>
+                  <a href="products.html#ux-gap-report" title="Scoresby Interactive &mdash; UX Gap Report &trade;">UX Gap Report &trade;</a>
+                </li>
+                <li>
+                  <a href="products.html#ux-user-studies" title="Scoresby Interactive &mdash; UX User Studies &trade;">UX User Studies &trade;</a>
+                </li>
+                <li>
+                  <a href="products.html#ux-data-miner" title="Scoresby Interactive &mdash; UX Data Miner &trade;">UX Data Miner &trade;</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="cta-btn nav-btn">
+            <a href="meet-us.html" title="Contact Scoresby Interactive">Meet Us</a>
+          </div>
+        </nav>
+      </div> <!-- .nav-container -->
+
+      <div class="desktop-nav">
+        <nav>
+          <ul>
+            <li>
+              <a href="methods.html" title="Scoresby Interactive &mdash; Methods">Methods</a>
+            </li>
+            <li class="current">
+              <a href="products.html" title="Scoresby Interactive &mdash; Products">Products</a>
+            </li>
+            <li>
+              <a href="meet-us.html" class="cta-btn desktop-nav-cta" title="Contact Scoresby Interactive">Meet Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> <!-- .header-content -->
   </header>
 
-  <div class="hero u-bg-mountains2">
+  <div class="hero products-hero u-bg-mountains2 u-bg-overlay u-medium-dark-overlay">
     <div class="hero-content">
-      <h1>Our products are completely customizable.</h1>
-      <p>Let's craft a stragy that meets your needs.</p>
+        <div class="ribbon">
+            <h1>Agile-Friendly</h1>
+          </div>
+      <h1 class="title">Our products are completely customizable.</h1>
+      <p class="hero-text">Let's craft a strategy that meets your needs.</p>
     </div> <!-- .hero-content -->
+
+    <div class="products-container">
+      <div class="product-container">
+        <div class="products-container-heading">
+          <h2>Design Products</h2>
+        </div>
+
+        <div class="products">
+          <div class="product">
+            <div class="most-popular">Most Popular</div>
+            <img src="images/dist/design.png" class="product-icon" alt="UX Design Assist &trade; logo">
+            <h3 class="u-green">UX Design Assist &trade;</h3>
+            <p>We assist your team in various capacities to infuse UX principles into your deisgn effort.</p>
+            <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+          </div> <!-- .product -->
+
+          <div class="product">
+            <img src="images/dist/business.png" class="product-icon" alt="UX Design Compass &trade; logo">
+            <h3 class="u-green">UX Design Compass &trade;</h3>
+            <p>We lead the design effort while you provide guidance and assistance throughout.</p>
+            <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+          </div> <!-- .product -->
+        </div> <!-- .products -->
+      </div> <!-- .products-container -->
+
+      <div class="product-container">
+        <div class="products-container-heading">
+          <h2>Research Products</h2>
+        </div>
+        <div class="products">
+          <div class="product">
+            <img src="images/dist/files.png" class="product-icon" alt="UX Gap Report &trade; logo">
+            <h3 class="u-orange">UX Gap Report &trade;</h3>
+            <p>We experience your product like a normal user and report on UX successes and shortfalls.</p>
+            <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+          </div> <!-- .product -->
+
+          <div class="product">
+            <img src="images/dist/gadgets.png" class="product-icon" alt="UX Design Compass &trade; logo">
+            <h3 class="u-orange">UX User Studies &trade;</h3>
+            <p>We visit, observe, and interview users to look for opportunities in their real environment.</p>
+            <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+          </div> <!-- .product -->
+
+          <div class="product">
+            <img src="images/dist/tools.png" class="product-icon" alt="UX Data Miner &trade; logo">
+            <h3 class="u-orange">UX Data Miner &trade;</h3>
+            <p>We sift through data to uncover UX gems, corroborate them with you, and discuss next steps.</p>
+            <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+          </div> <!-- .product -->
+        </div> <!-- .products -->
+      </div> <!-- .product-container -->
+    </div> <!-- .products-container -->
   </div> <!-- .hero -->
 
-  <div class="products-container">
-    <h2>Design Products</h2>
-    <div class="product">
-      <img src="#" class="product-icon" alt="UX Design Assist &trade; logo">
-      <h3 class="green">UX Design Assist &trade;</h3>
-      <p>We assist your team in various capacities to infuse UX principles into your deisgn effort.</p>
-      <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
-    </div> <!-- .product -->
-
-    <div class="product">
-      <img src="#" class="product-icon" alt="UX Design Compass &trade; logo">
-      <h3 class="green">UX Design Compass &trade;</h3>
-      <p>We lead the design effort while you provide guidance and assistance throughout.</p>
-      <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
-    </div> <!-- .product -->
-  </div> <!-- .products-container -->
-
-  <div class="products-container">
-    <h2>Research Products</h2>
-    <div class="product">
-      <img src="#" class="product-icon" alt="UX Gap Report &trade; logo">
-      <h3 class="orange">UX Gap Report &trade;</h3>
-      <p>We experience your product like a normal user and report on UX successes and shortfalls.</p>
-      <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
-    </div> <!-- .product -->
-
-    <div class="product">
-      <img src="#" class="product-icon" alt="UX Design Compass &trade; logo">
-      <h3 class="orange">UX User Studies &trade;</h3>
-      <p>We visit, observe, and interview users to look for opportunities in their real environment.</p>
-      <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
-    </div> <!-- .product -->
-
-    <div class="product">
-      <img src="#" class="product-icon" alt="UX Data Miner &trade; logo">
-      <h3 class="orange">UX Data Miner &trade;</h3>
-      <p>We sift through data to uncover UX gems, corroborate them with you, and discuss next steps.</p>
-      <a href="#" class="product-cta">Learn More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
-    </div> <!-- .product -->
-  </div> <!-- .products-container -->
-
   <div class="product-details">
-    <div class="product-label">Design</div>
-    <h3 class="green">UX Design Spec &trade;</h3>
-    <div class="product-content">
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
-      </p>
+    <div class="product-detail-heading">
+      <div class="product-label">Design</div>
+      <h3 class="u-green u-green-bottom" id="design-spec">UX Design Spec &trade;</h3>
+    </div>
+    <div class="product-contents">
+      <div class="product-content">
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
+        </p>
 
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
 
-      <p>
-        Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
-    </div> <!-- .product-content -->
+        <p>
+          Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
+      </div> <!-- .product-content -->
 
-    <div class="product-content">
-      <p>
-        Works With
-        <ul>
-          <li>Websites</li>
-          <li>Apps</li>
-          <li>Point of Sale (POS)</li>
-          <li>Kiosks</li>
-          <li>More</li>
-        </ul>
-      </p>
+      <div class="product-content">
+        <p>
+          Works With
+          <ul>
+            <li>Websites</li>
+            <li>Apps</li>
+            <li>Point of Sale (POS)</li>
+            <li>Kiosks</li>
+            <li>More</li>
+          </ul>
+        </p>
 
-      <p>
-        Benefits
-        <ul>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-        </ul>
-      </p>
-    </div> <!-- .product-content -->
+        <p>
+          Benefits
+          <ul>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+          </ul>
+        </p>
+      </div> <!-- .product-content -->
+    </div> <!-- .product-contents -->
 
-    <div class="product-cta">
-      <a href="#" class="product-btn">Inquire</a>
+    <div class="cta-btn product-cta">
+      <a href="meet-us.html" class="product-btn">Inquire</a>
     </div> <!-- .product-cta -->
   </div> <!-- .product-details -->
 
   <div class="product-details">
-    <div class="product-label">Design</div>
-    <h3 class="green">UX Design Partner &trade;</h3>
-    <div class="product-content">
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
-      </p>
+    <div class="product-detail-heading">
+      <div class="product-label">Design</div>
+      <h3 class="u-green u-green-bottom" id="design-partner">UX Design Partner &trade;</h3>
+    </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
+    <div class="product-contents">
+      <div class="product-content">
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
+        </p>
 
-      <p>
-        Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
-    </div> <!-- .product-content -->
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
 
-    <div class="product-content">
-      <p>
-        Works With
-        <ul>
-          <li>Websites</li>
-          <li>Apps</li>
-          <li>Point of Sale (POS)</li>
-          <li>Kiosks</li>
-          <li>More</li>
-        </ul>
-      </p>
+        <p>
+          Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
+      </div> <!-- .product-content -->
 
-      <p>
-        Benefits
-        <ul>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-        </ul>
-      </p>
-    </div> <!-- .product-content -->
+      <div class="product-content">
+        <p>
+          Works With
+          <ul>
+            <li>Websites</li>
+            <li>Apps</li>
+            <li>Point of Sale (POS)</li>
+            <li>Kiosks</li>
+            <li>More</li>
+          </ul>
+        </p>
 
-    <div class="product-cta">
-      <a href="#" class="product-btn">Inquire</a>
+        <p>
+          Benefits
+          <ul>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+          </ul>
+        </p>
+      </div> <!-- .product-content -->
+    </div> <!-- .product-contents -->
+
+    <div class="cta-btn product-cta">
+      <a href="meet-us.html" class="product-btn">Inquire</a>
     </div> <!-- .product-cta -->
   </div> <!-- .product-details -->
 
   <div class="product-details">
-    <div class="product-label">Research</div>
-    <h3 class="orange">UX Gap Report &trade;</h3>
-    <div class="product-content">
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
-      </p>
+    <div class="product-detail-heading">
+      <div class="product-label">Research</div>
+      <h3 class="u-orange u-orange-bottom" id="ux-gap-report">UX Gap Report &trade;</h3>
+    </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
+    <div class="product-contents">
+      <div class="product-content">
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
+        </p>
 
-      <p>
-        Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
-    </div> <!-- .product-content -->
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
 
-    <div class="product-content">
-      <p>
-        Works With
-        <ul>
-          <li>Websites</li>
-          <li>Apps</li>
-          <li>Point of Sale (POS)</li>
-          <li>Kiosks</li>
-          <li>More</li>
-        </ul>
-      </p>
+        <p>
+          Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
+      </div> <!-- .product-content -->
 
-      <p>
-        Benefits
-        <ul>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-        </ul>
-      </p>
-    </div> <!-- .product-content -->
+      <div class="product-content">
+        <p>
+          Works With
+          <ul>
+            <li>Websites</li>
+            <li>Apps</li>
+            <li>Point of Sale (POS)</li>
+            <li>Kiosks</li>
+            <li>More</li>
+          </ul>
+        </p>
 
-    <div class="product-cta">
-      <a href="#" class="product-btn">Inquire</a>
+        <p>
+          Benefits
+          <ul>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+          </ul>
+        </p>
+      </div> <!-- .product-content -->
+    </div> <!-- .product-contents -->
+
+    <div class="cta-btn product-cta">
+      <a href="meet-us.html" class="product-btn">Inquire</a>
     </div> <!-- .product-cta -->
   </div> <!-- .product-details -->
 
   <div class="product-details">
-    <div class="product-label">Research</div>
-    <h3 class="orange">UX User Studies &trade;</h3>
-    <div class="product-content">
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
-      </p>
+    <div class="product-detail-heading">
+      <div class="product-label">Research</div>
+      <h3 class="u-orange u-orange-bottom" id="ux-user-studies">UX User Studies &trade;</h3>
+    </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
+    <div class="product-contents">
+      <div class="product-content">
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
+        </p>
 
-      <p>
-        Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
-    </div> <!-- .product-content -->
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
 
-    <div class="product-content">
-      <p>
-        Works With
-        <ul>
-          <li>Websites</li>
-          <li>Apps</li>
-          <li>Point of Sale (POS)</li>
-          <li>Kiosks</li>
-          <li>More</li>
-        </ul>
-      </p>
+        <p>
+          Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
+      </div> <!-- .product-content -->
 
-      <p>
-        Benefits
-        <ul>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-        </ul>
-      </p>
-    </div> <!-- .product-content -->
+      <div class="product-content">
+        <p>
+          Works With
+          <ul>
+            <li>Websites</li>
+            <li>Apps</li>
+            <li>Point of Sale (POS)</li>
+            <li>Kiosks</li>
+            <li>More</li>
+          </ul>
+        </p>
 
-    <div class="product-cta">
-      <a href="#" class="product-btn">Inquire</a>
+        <p>
+          Benefits
+          <ul>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+          </ul>
+        </p>
+      </div> <!-- .product-content -->
+    </div> <!-- .product-contents -->
+
+    <div class="cta-btn product-cta">
+      <a href="meet-us.html" class="product-btn">Inquire</a>
     </div> <!-- .product-cta -->
   </div> <!-- .product-details -->
 
   <div class="product-details">
-    <div class="product-label">Research</div>
-    <h3 class="orange">UX Data Miner &trade;</h3>
-    <div class="product-content">
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
-      </p>
+    <div class="product-detail-heading">
+      <div class="product-label">Research</div>
+      <h3 class="u-orange u-orange-bottom" id="ux-data-miner">UX Data Miner &trade;</h3>
+    </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
+    <div class="product-contents">
+      <div class="product-content">
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam.
+        </p>
 
-      <p>
-        Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
-      </p>
-    </div> <!-- .product-content -->
+        <p>
+          Lorem ipsum dolor sit amet, ei luptatum invidunt duo. Te eam laudem labitur docendi, vix eu ipsum eleifend constituam. Per ad ceteros insolens dignissim, reque persius delectus ut usu, populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
 
-    <div class="product-content">
-      <p>
-        Works With
-        <ul>
-          <li>Websites</li>
-          <li>Apps</li>
-          <li>Point of Sale (POS)</li>
-          <li>Kiosks</li>
-          <li>More</li>
-        </ul>
-      </p>
+        <p>
+          Populo disputando vel ex. Id case saperet reprimique sed, impedit disputationi te his. Vim ut case summo molestiae.
+        </p>
+      </div> <!-- .product-content -->
 
-      <p>
-        Benefits
-        <ul>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-          <li>Lorem ipsum dolar sit amet.</li>
-        </ul>
-      </p>
-    </div> <!-- .product-content -->
+      <div class="product-content">
+        <p>
+          Works With
+          <ul>
+            <li>Websites</li>
+            <li>Apps</li>
+            <li>Point of Sale (POS)</li>
+            <li>Kiosks</li>
+            <li>More</li>
+          </ul>
+        </p>
 
-    <div class="product-cta">
-      <a href="#" class="product-btn">Inquire</a>
+        <p>
+          Benefits
+          <ul>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+            <li>Lorem ipsum dolar sit amet.</li>
+          </ul>
+        </p>
+      </div> <!-- .product-content -->
+    </div> <!-- .product-contents -->
+
+    <div class="cta-btn product-cta">
+      <a href="meet-us.html" class="product-btn">Inquire</a>
     </div> <!-- .product-cta -->
   </div> <!-- .product-details -->
 
 
-  <div class="container u-bg-gamble">
-    <div class="content">
+  <div class="gamble-container u-bg-gamble u-bg-overlay u-medium-dark-overlay">
+    <div class="gamble-content">
       <h2>What if you could stack the design deck in your favor?</h2>
       <p>UX does that.</p>
       <div class="cta-btn">
@@ -338,32 +397,27 @@
     </div> <!-- .content -->
   </div> <!-- .container -->
 
-  <footer class="u-bg-intro">
+  <footer class="u-bg-intro u-bg-overlay u-darkest-overlay">
     <div class="footer-content">
       <h2>Introduce yourself</h2>
       <p>Let's get to work</p>
 
-      <form action="#">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required placeholder="Name">
+      <form action="#" class="contact-form">
+        <input type="text" id="name" name="name" required placeholder="Name" aria-label="Name">
 
-        <label for="email">Email address</label>
-        <input type="text" id="email" name="email" required placeholder="Email address">
+        <input type="text" id="email" name="email" required placeholder="Email address" aria-label="Email address">
 
-        <label for="phone">Phone number</label>
-        <input type="text" id="phone" name="phone" required placeholder="Phone number">
+        <input type="text" id="phone" name="phone" required placeholder="Phone number" aria-label="Phone number">
 
-        <label for="company">Company name (optional)</label>
-        <input type="text" id="company" name="company" placeholder="Company name (optional)">
+        <input type="text" id="company" name="company" placeholder="Company name (optional)" aria-label="Company name (optional)">
 
-        <label for="message">A brief introduction</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="A brief introduction" aria-label="Message"></textarea>
 
         <input type="submit" value="Send Introduction">
       </form>
     </div> <!-- .footer-content -->
   </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/app.min.js"></script>
 </body>
 </html>

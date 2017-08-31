@@ -608,6 +608,9 @@ header {
         header .header-content .desktop-nav ul li {
           display: inline;
           margin-right: 30px; }
+          header .header-content .desktop-nav ul li.current {
+            background-color: rgba(153, 153, 153, 0.25);
+            padding: 25px; }
           header .header-content .desktop-nav ul li a {
             color: #fff;
             cursor: pointer; }
@@ -647,7 +650,7 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
       footer .footer-content {
         padding: 125px; } }
     footer .footer-content h2 {
@@ -666,7 +669,7 @@ footer {
       @media screen and (min-width: 768px) {
         footer .footer-content form.contact-form {
           width: 50vw; } }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         footer .footer-content form.contact-form {
           width: 30vw; } }
       footer .footer-content form.contact-form input {
@@ -706,7 +709,7 @@ footer {
 
 /* Homepage Components */
 .hero {
-  height: 70vh;
+  height: 90vh;
   padding-top: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -715,6 +718,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .hero {
+      height: 70vh; } }
   .hero .hero-content {
     max-width: 1960px;
     -webkit-box-flex: 4;
@@ -738,6 +744,7 @@ footer {
       background: -webkit-gradient(linear, left top, right top, from(#00c6d2), to(#009ff9));
       background: linear-gradient(to right, #00c6d2, #009ff9);
       text-align: center;
+      margin-top: 25px;
       margin-bottom: 15px; }
       @media screen and (min-width: 768px) {
         .hero .hero-content .ribbon {
@@ -748,6 +755,9 @@ footer {
         font-size: 16px;
         margin: 0;
         padding: 5px 10px; }
+        @media screen and (min-width: 1025px) {
+          .hero .hero-content .ribbon h1 {
+            font-size: 1.25rem; } }
     .hero .hero-content h1.title {
       color: #fff;
       font-weight: 400;
@@ -759,7 +769,7 @@ footer {
         .hero .hero-content h1.title {
           width: initial;
           font-size: 2.5rem; } }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .hero .hero-content h1.title {
           font-size: 3rem; } }
   .hero .clients-container {
@@ -779,7 +789,7 @@ footer {
         .hero .clients-container img.client {
           max-width: 200px;
           max-height: 90px; } }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .hero .clients-container img.client {
           max-width: none; } }
     .hero .clients-container .united-healthcare {
@@ -789,17 +799,17 @@ footer {
           display: block; } }
     .hero .clients-container .procter-gamble {
       display: none; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .hero .clients-container .procter-gamble {
           display: block; } }
     .hero .clients-container .subway {
       display: none; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .hero .clients-container .subway {
           display: block; } }
     .hero .clients-container .abercrombie {
       display: none; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .hero .clients-container .abercrombie {
           display: block; } }
 
@@ -845,7 +855,7 @@ footer {
         .roi-container .roi-content h2 {
           font-size: 2.25rem;
           padding: 0 10%; } }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .roi-container .roi-content h2 {
           max-width: 880px; } }
     .roi-container .roi-content p {
@@ -855,12 +865,12 @@ footer {
         .roi-container .roi-content p {
           font-size: 1.75rem;
           padding: 0 5%; } }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .roi-container .roi-content p {
           max-width: 960px; } }
 
 .customize-container {
-  height: 100vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -892,7 +902,7 @@ footer {
     @media screen and (min-width: 768px) {
       .customize-container .customize-content {
         padding: 10%; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
       .customize-container .customize-content {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -904,7 +914,7 @@ footer {
     .customize-container .customize-content img {
       max-width: 200px;
       opacity: 0.8; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .customize-container .customize-content img {
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
@@ -921,7 +931,7 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .customize-container .customize-content .customize-text {
           text-align: left;
           -webkit-box-flex: 2;
@@ -945,7 +955,7 @@ footer {
       @media screen and (min-width: 768px) {
         .customize-container .customize-content p {
           font-size: 1.75rem; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
       .customize-container .customize-content .cta-btn {
         text-align: center; } }
 
@@ -982,7 +992,7 @@ footer {
     @media screen and (min-width: 768px) {
       .gamble-container .gamble-content {
         padding: 12%; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
       .gamble-container .gamble-content {
         -webkit-box-align: start;
             -ms-flex-align: start;
@@ -998,7 +1008,7 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         .gamble-container .gamble-content .gamble-text {
           -webkit-box-align: start;
               -ms-flex-align: start;
@@ -1016,11 +1026,15 @@ footer {
     .gamble-container .gamble-content p {
       margin: 0;
       margin-bottom: 15px;
-      width: 100vw; }
+      width: 100vw;
+      color: #ccc; }
       @media screen and (min-width: 768px) {
         .gamble-container .gamble-content p {
           font-size: 1.75rem; } }
-    @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
+        .gamble-container .gamble-content p {
+          width: initial; } }
+    @media screen and (min-width: 1025px) {
       .gamble-container .gamble-content .cta-btn {
         text-align: center; } }
 
@@ -1028,11 +1042,21 @@ footer {
 .methods-hero {
   height: auto; }
   .methods-hero .hero-content {
-    min-height: 50vh;
-    padding-top: 25px; }
+    min-height: 65vh;
+    padding-top: 60px; }
+    @media screen and (min-width: 768px) {
+      .methods-hero .hero-content {
+        min-height: 40vh; } }
+    @media screen and (min-width: 1025px) {
+      .methods-hero .hero-content {
+        min-height: 25vh; } }
     .methods-hero .hero-content .hero-text {
       color: #CCC;
       max-width: 85vw; }
+      @media screen and (min-width: 768px) {
+        .methods-hero .hero-content .hero-text {
+          font-size: 1.7rem;
+          margin: 0; } }
   .methods-hero .methods-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1044,41 +1068,249 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 25px 20px; }
+    @media screen and (min-width: 768px) {
+      .methods-hero .methods-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+    @media screen and (min-width: 1025px) {
+      .methods-hero .methods-container {
+        background-color: initial;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     .methods-hero .methods-container .method {
       position: relative;
-      padding: 10px 0; }
+      padding: 25px 0; }
+      @media screen and (min-width: 768px) {
+        .methods-hero .methods-container .method {
+          width: 35vw; } }
+      @media screen and (min-width: 1025px) {
+        .methods-hero .methods-container .method {
+          width: 25vw;
+          height: 25vw;
+          margin: 25px;
+          padding: 30px;
+          background-color: rgba(0, 0, 0, 0.4);
+          font-size: .850rem; } }
+      @media screen and (min-width: 1360px) {
+        .methods-hero .methods-container .method {
+          width: 20vw;
+          height: 20vw;
+          padding: 35px;
+          font-size: 1rem; } }
       .methods-hero .methods-container .method:before {
         content: '';
         position: absolute;
         top: 5%;
         left: 50%;
-        width: 100%;
+        width: 95%;
         border-top: 1px #0099FF solid;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); }
+        @media screen and (min-width: 1025px) {
+          .methods-hero .methods-container .method:before {
+            width: 80%;
+            top: 10%; } }
       .methods-hero .methods-container .method h2 {
-        font-weight: 400; }
+        font-weight: 400;
+        font-size: 1.7rem; }
       .methods-hero .methods-container .method p {
-        color: #ccc; }
+        color: #ccc;
+        line-height: 1.3; }
       .methods-hero .methods-container .method ul {
-        color: #999; }
+        color: #999;
+        line-height: 1.3; }
+
+/* Products Components */
+.products-hero {
+  height: auto; }
+  .products-hero .hero-content {
+    min-height: 60vh;
+    padding-top: 80px; }
+    @media screen and (min-width: 1025px) {
+      .products-hero .hero-content {
+        min-height: 35vh; } }
+  .products-hero .hero-text {
+    color: #ccc;
+    max-width: 85vw;
+    text-align: center; }
+    @media screen and (min-width: 1025px) {
+      .products-hero .hero-text {
+        font-size: 1.7rem;
+        margin: 0; } }
+  .products-hero .products-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: black;
+    padding: 25px 20px; }
+    @media screen and (min-width: 1025px) {
+      .products-hero .products-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.4); } }
+    .products-hero .products-container h2 {
+      color: #999;
+      font-weight: 400;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .products-hero .products-container h2 {
+          margin: 0; } }
+    .products-hero .products-container .product-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 25px; }
+      @media screen and (min-width: 768px) {
+        .products-hero .products-container .product-container {
+          margin: 0;
+          margin-bottom: 50px; } }
+      .products-hero .products-container .product-container .products {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        @media screen and (min-width: 768px) {
+          .products-hero .products-container .product-container .products {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row; } }
+        .products-hero .products-container .product-container .products .product {
+          margin-top: 25px;
+          padding: 10px 0;
+          text-align: center; }
+          @media screen and (min-width: 768px) {
+            .products-hero .products-container .product-container .products .product {
+              width: 200px;
+              margin: 20px; } }
+          .products-hero .products-container .product-container .products .product .most-popular {
+            display: none; }
+            @media screen and (min-width: 768px) {
+              .products-hero .products-container .product-container .products .product .most-popular {
+                background-color: #999;
+                color: #000;
+                width: 80px;
+                font-size: .650rem;
+                margin: 0 auto 10px auto;
+                padding: 3px;
+                border-radius: 10px; } }
+          .products-hero .products-container .product-container .products .product h3 {
+            font-weight: 400; }
+          .products-hero .products-container .product-container .products .product p {
+            color: #ccc; }
+          .products-hero .products-container .product-container .products .product a {
+            color: #0099FF; }
+            .products-hero .products-container .product-container .products .product a:visited {
+              color: #0099FF; }
+            .products-hero .products-container .product-container .products .product a:hover {
+              color: #fff; }
+
+.product-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 20px; }
+  @media screen and (min-width: 768px) {
+    .product-details {
+      padding: 35px; } }
+  .product-details .product-detail-heading {
+    margin-top: 50px; }
+    @media screen and (min-width: 1025px) {
+      .product-details .product-detail-heading {
+        font-size: 1.5rem; } }
+    .product-details .product-detail-heading h3 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      padding-bottom: 10px; }
+      @media screen and (min-width: 768px) {
+        .product-details .product-detail-heading h3 {
+          font-size: 1.7rem;
+          margin: 5px 0; } }
+      @media screen and (min-width: 1025px) {
+        .product-details .product-detail-heading h3 {
+          font-size: 1.5rem; } }
+  @media screen and (min-width: 768px) {
+    .product-details .product-contents {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .product-details .product-contents .product-content {
+        width: 50vw;
+        font-size: 1.2rem;
+        line-height: 1.4; }
+        .product-details .product-contents .product-content:nth-of-type(2) {
+          margin-left: 25px; } }
+  @media screen and (min-width: 1025px) {
+    .product-details .product-contents .product-content {
+      width: 40vw;
+      font-size: 1.5rem; } }
+  .product-details .product-cta {
+    margin-top: 50px;
+    text-align: center;
+    width: 130px; }
+  .product-details:nth-of-type(odd) {
+    background-color: rgba(228, 228, 228, 0.5); }
 
 /* Meet Us Components */
 .meet-us-hero {
   height: auto; }
   .meet-us-hero .hero-content {
-    min-height: 50vh;
+    min-height: 80vh;
     padding-top: 25px; }
     @media screen and (min-width: 768px) {
       .meet-us-hero .hero-content {
-        min-height: 65vh; } }
+        min-height: 60vh; } }
+    @media screen and (min-width: 1025px) {
+      .meet-us-hero .hero-content {
+        min-height: 60vh; } }
     @media screen and (min-width: 1360px) {
       .meet-us-hero .hero-content {
-        min-height: 45vh; } }
+        min-height: 30vh; } }
     .meet-us-hero .hero-content .hero-text {
-      color: #fff;
+      color: #ccc;
       max-width: 85vw;
       text-align: center; }
+      @media screen and (min-width: 1025px) {
+        .meet-us-hero .hero-content .hero-text {
+          font-size: 1.7rem; } }
   .meet-us-hero .stats-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1094,16 +1326,21 @@ footer {
     @media screen and (min-width: 768px) {
       .meet-us-hero .stats-container {
         padding: 5% 15%; } }
-    @media screen and (min-width: 1360px) {
+    @media screen and (min-width: 1025px) {
       .meet-us-hero .stats-container {
         background-color: initial;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row; } }
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 0;
+        margin-bottom: 50px; } }
     .meet-us-hero .stats-container .stat {
       position: relative;
-      padding: 10px; }
+      padding: 20px 10px; }
       .meet-us-hero .stats-container .stat:before {
         content: '';
         position: absolute;
@@ -1113,12 +1350,12 @@ footer {
         border-top: 1px #0099FF solid;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); }
-      @media screen and (min-width: 1360px) {
+      @media screen and (min-width: 1025px) {
         .meet-us-hero .stats-container .stat {
-          background-color: rgba(0, 0, 0, 0.5);
+          background-color: rgba(0, 0, 0, 0.7);
           margin: 10px;
-          height: 250px;
-          width: 250px;
+          height: 20vw;
+          width: 20vw;
           border-radius: 100%;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1135,13 +1372,23 @@ footer {
       .meet-us-hero .stats-container .stat h2 {
         font-weight: 400;
         font-size: 1.5rem; }
+        @media screen and (min-width: 1025px) {
+          .meet-us-hero .stats-container .stat h2 {
+            font-size: 1.25rem; } }
         @media screen and (min-width: 1360px) {
           .meet-us-hero .stats-container .stat h2 {
-            margin: 0; } }
+            margin: 0;
+            font-size: 1.5rem; } }
       .meet-us-hero .stats-container .stat p {
         margin: 0;
         padding: 10px;
         color: #CCC; }
+        @media screen and (min-width: 1025px) {
+          .meet-us-hero .stats-container .stat p {
+            font-size: .950rem; } }
+        @media screen and (min-width: 1360px) {
+          .meet-us-hero .stats-container .stat p {
+            font-size: 1.25rem; } }
 
 /*
 07. Trumps
@@ -1166,7 +1413,7 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
     .u-bg-home {
       background-position: 45% 50%;
       background-size: 175%; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .u-bg-home {
       background-size: 100%; } }
 
@@ -1179,7 +1426,7 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
     .u-bg-roi {
       background-position: 100% 0%;
       background-size: 200%; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .u-bg-roi {
       background-size: 100%; } }
 
@@ -1192,7 +1439,7 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
     .u-bg-customize {
       background-position: 60% 50%;
       background-size: 175%; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .u-bg-customize {
       background-size: 100%; } }
 
@@ -1204,7 +1451,7 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
   @media screen and (min-width: 768px) {
     .u-bg-gamble {
       background-size: 175%; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .u-bg-gamble {
       background-size: 100%; } }
 
@@ -1223,21 +1470,22 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
 .u-bg-mountains2 {
   background-image: url("images/dist/mountains2.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover; }
+  background-size: 175%; }
 
 .u-bg-bridge {
   background-image: url("images/dist/bridge.jpg");
   background-repeat: no-repeat;
   background-position: 70% -5%;
-  background-size: 175%; }
-  @media screen and (min-width: 1024px) {
+  background-size: 235%; }
+  @media screen and (min-width: 768px) {
     .u-bg-bridge {
-      background-size: 150%;
+      background-size: 130%; } }
+  @media screen and (min-width: 1025px) {
+    .u-bg-bridge {
+      background-size: cover;
       background-position: 50% -50%; } }
   @media screen and (min-width: 1360px) {
     .u-bg-bridge {
-      background-size: cover;
       background-position: top; } }
 
 /* Background Overlay */
@@ -1260,3 +1508,15 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
     background-color: rgba(0, 0, 0, 0.5); }
   .u-bg-overlay.u-darkest-overlay:before {
     background-color: rgba(0, 0, 0, 0.65); }
+
+.u-green {
+  color: #00CC00; }
+
+.u-green-bottom {
+  border-bottom: 1px solid #00CC00; }
+
+.u-orange {
+  color: #FF6600; }
+
+.u-orange-bottom {
+  border-bottom: 1px solid #FF6600; }
