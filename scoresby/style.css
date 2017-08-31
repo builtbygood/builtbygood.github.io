@@ -565,8 +565,8 @@ header {
       right: 0;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.9);
-      -webkit-transition: top 0.5s ease;
-      transition: top 0.5s ease;
+      -webkit-transition: top 0.40s ease;
+      transition: top 0.40s ease;
       font-size: 1.25rem; }
       header .header-content .nav-container nav ul {
         list-style: none;
