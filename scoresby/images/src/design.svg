@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="enable-background:new 0 0 52 52;" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+
+	.st0{fill:#202020;}
+	.st1{fill:none;}
+
+</style>
+  <g transform="matrix(0.961538, 0, 0, 0.961538, 0.000013, 0.000013)">
+    <g>
+      <path d="M52,12v-2H42V0h-2v10H12V0h-2v10H0v2h10v28H0v2h10v10h2V42h28v10h2V42h10v-2H42V12H52z M40,40H12V12h28V40z" style="fill: rgb(0, 204, 0);"/>
+    </g>
+  </g>
+</svg>

@@ -912,14 +912,13 @@ footer {
             -ms-flex-pack: center;
                 justify-content: center; } }
     .customize-container .customize-content img {
-      max-width: 200px;
-      opacity: 0.8; }
+      max-width: 40%; }
       @media screen and (min-width: 1025px) {
         .customize-container .customize-content img {
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1;
-          max-width: 400px; } }
+          width: 350px; } }
     .customize-container .customize-content .customize-text {
       display: -webkit-box;
       display: -ms-flexbox;
