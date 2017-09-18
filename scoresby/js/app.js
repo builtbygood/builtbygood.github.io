@@ -4,4 +4,8 @@ $( document ).ready( function() {
     $( this ).toggleClass( 'open' );
     $('.nav-container').toggleClass( 'open' );
   });
+
+  var today = new Date();
+  var year = today.getFullYear();
+  $( '.year' ).html( year );
 });

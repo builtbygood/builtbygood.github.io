@@ -450,6 +450,20 @@ body {
   background-color: white; }
 
 /* Base Headline Styles */
+h1 {
+  font-weight: 700;
+  font-size: 2.25rem; }
+
+h2 {
+  font-weight: 400;
+  font-size: 1.75rem; }
+
+/* Base Button Styles */
+.cta-btn {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 15px; }
+
 /* Base Link Styles */
 a {
   text-decoration: none; }
@@ -504,7 +518,7 @@ header {
       z-index: 11;
       position: absolute;
       top: 50%;
-      left: 10%;
+      left: 25px;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
       color: #fff;
@@ -517,7 +531,7 @@ header {
       z-index: 11;
       position: absolute;
       top: 40%;
-      right: 10%;
+      right: 25px;
       width: 15px;
       height: 15px;
       cursor: pointer;
@@ -574,7 +588,7 @@ header {
         padding: 0;
         margin: 0; }
         header .header-content .nav-container nav ul li {
-          padding-left: 30px;
+          padding-left: 25px;
           margin-bottom: 15px; }
       header .header-content .nav-container nav .sub-menu {
         margin-top: 15px; }
@@ -599,7 +613,7 @@ header {
       header .header-content .desktop-nav ul {
         position: absolute;
         top: 50%;
-        right: 30px;
+        right: 25px;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         margin: 0;
@@ -611,6 +625,8 @@ header {
           header .header-content .desktop-nav ul li.current {
             background-color: rgba(153, 153, 153, 0.25);
             padding: 25px; }
+          header .header-content .desktop-nav ul li:last-of-type {
+            margin-right: 0; }
           header .header-content .desktop-nav ul li a {
             color: #fff;
             cursor: pointer; }
@@ -654,8 +670,6 @@ footer {
       footer .footer-content {
         padding: 125px; } }
     footer .footer-content h2 {
-      font-weight: 400;
-      font-size: 1.25rem;
       margin: 0;
       margin-bottom: 15px; }
       @media screen and (min-width: 768px) {
@@ -706,10 +720,28 @@ footer {
         border-radius: 0 0 5px 5px;
         background-color: #0099FF;
         color: #fff; }
+  footer .copyright {
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #999;
+    font-size: 0.75rem;
+    height: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 /* Homepage Components */
 .hero {
-  height: 90vh;
+  min-height: 90vh;
   padding-top: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,9 +750,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media screen and (min-width: 768px) {
-    .hero {
-      height: 70vh; } }
   .hero .hero-content {
     max-width: 1960px;
     -webkit-box-flex: 4;
@@ -738,7 +767,11 @@ footer {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin: auto 50px; }
+    @media screen and (min-width: 768px) {
+      .hero .hero-content {
+        margin: auto 100px; } }
     .hero .hero-content .ribbon {
       max-width: 65vw;
       background: -webkit-gradient(linear, left top, right top, from(#00c6d2), to(#009ff9));
@@ -759,19 +792,15 @@ footer {
           .hero .hero-content .ribbon h1 {
             font-size: 1.25rem; } }
     .hero .hero-content h1.title {
-      color: #fff;
       font-weight: 400;
       font-size: 1.75rem;
+      color: #fff;
       text-align: center;
       margin: 0 auto;
       width: 200px; }
       @media screen and (min-width: 768px) {
         .hero .hero-content h1.title {
-          width: initial;
-          font-size: 2.5rem; } }
-      @media screen and (min-width: 1025px) {
-        .hero .hero-content h1.title {
-          font-size: 3rem; } }
+          width: initial; } }
   .hero .clients-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -781,7 +810,11 @@ footer {
             justify-content: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1; }
+            flex: 1;
+    margin: auto 50px; }
+    @media screen and (min-width: 768px) {
+      .hero .clients-container {
+        margin: auto 100px; } }
     .hero .clients-container img.client {
       max-width: 100px;
       max-height: 50px; }
@@ -814,7 +847,7 @@ footer {
           display: block; } }
 
 .roi-container {
-  height: 70vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,12 +860,8 @@ footer {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center; }
-  @media screen and (min-width: 768px) {
-    .roi-container {
-      max-height: 80vh; } }
   .roi-container .roi-content {
     max-width: 1960px;
-    padding: 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -845,10 +874,12 @@ footer {
             align-items: center;
     text-align: center;
     color: #fff;
-    line-height: 1.2; }
+    line-height: 1.2;
+    margin: auto 50px; }
+    @media screen and (min-width: 768px) {
+      .roi-container .roi-content {
+        margin: auto 100px; } }
     .roi-container .roi-content h2 {
-      font-weight: 400;
-      font-size: 1.25rem;
       margin: 0;
       margin-bottom: 15px; }
       @media screen and (min-width: 768px) {
@@ -870,7 +901,7 @@ footer {
           max-width: 960px; } }
 
 .customize-container {
-  height: auto;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -881,12 +912,10 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  @media screen and (min-width: 768px) {
-    .customize-container {
-      max-height: 80vh; } }
   .customize-container .customize-content {
     max-width: 1960px;
-    padding: 30px;
+    margin: auto 50px;
+    padding: 30px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -898,10 +927,11 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    margin: auto 50px; }
     @media screen and (min-width: 768px) {
       .customize-container .customize-content {
-        padding: 10%; } }
+        margin: auto 100px; } }
     @media screen and (min-width: 1025px) {
       .customize-container .customize-content {
         -webkit-box-orient: horizontal;
@@ -912,7 +942,8 @@ footer {
             -ms-flex-pack: center;
                 justify-content: center; } }
     .customize-container .customize-content img {
-      max-width: 40%; }
+      max-width: 50%;
+      margin: 10px; }
       @media screen and (min-width: 1025px) {
         .customize-container .customize-content img {
           -webkit-box-ordinal-group: 2;
@@ -941,8 +972,6 @@ footer {
                   align-items: flex-start;
           max-width: 600px; } }
     .customize-container .customize-content h2 {
-      font-weight: 400;
-      font-size: 1.25rem;
       margin: 0;
       margin-bottom: 15px; }
       @media screen and (min-width: 768px) {
@@ -959,7 +988,7 @@ footer {
         text-align: center; } }
 
 .gamble-container {
-  height: 70vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,12 +999,10 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  @media screen and (min-width: 768px) {
-    .gamble-container {
-      max-height: 80vh; } }
   .gamble-container .gamble-content {
     max-width: 1960px;
-    padding: 30px;
+    margin: auto 50px;
+    padding: 30px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -987,10 +1014,11 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    margin: auto 50px; }
     @media screen and (min-width: 768px) {
       .gamble-container .gamble-content {
-        padding: 12%; } }
+        margin: auto 100px; } }
     @media screen and (min-width: 1025px) {
       .gamble-container .gamble-content {
         -webkit-box-align: start;
@@ -1006,17 +1034,15 @@ footer {
               flex-direction: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      max-width: 600px; }
       @media screen and (min-width: 1025px) {
         .gamble-container .gamble-content .gamble-text {
           -webkit-box-align: start;
               -ms-flex-align: start;
                   align-items: flex-start;
-          max-width: 600px;
           text-align: left; } }
     .gamble-container .gamble-content h2 {
-      font-weight: 400;
-      font-size: 1.25rem;
       margin: 0;
       margin-bottom: 15px; }
       @media screen and (min-width: 768px) {
@@ -1041,11 +1067,13 @@ footer {
 .methods-hero {
   height: auto; }
   .methods-hero .hero-content {
-    min-height: 65vh;
-    padding-top: 60px; }
+    min-height: 90vh;
+    padding-top: 60px;
+    margin: auto 50px; }
     @media screen and (min-width: 768px) {
       .methods-hero .hero-content {
-        min-height: 40vh; } }
+        min-height: 40vh;
+        margin: auto 100px; } }
     @media screen and (min-width: 1025px) {
       .methods-hero .hero-content {
         min-height: 25vh; } }
@@ -1066,7 +1094,7 @@ footer {
             flex-direction: column;
     background-color: #000;
     color: #fff;
-    padding: 25px 20px; }
+    padding: 25px; }
     @media screen and (min-width: 768px) {
       .methods-hero .methods-container {
         -webkit-box-orient: horizontal;
@@ -1076,7 +1104,8 @@ footer {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         -ms-flex-pack: distribute;
-            justify-content: space-around; } }
+            justify-content: space-around;
+        padding: 60px; } }
     @media screen and (min-width: 1025px) {
       .methods-hero .methods-container {
         background-color: initial;
@@ -1116,9 +1145,6 @@ footer {
           .methods-hero .methods-container .method:before {
             width: 80%;
             top: 10%; } }
-      .methods-hero .methods-container .method h2 {
-        font-weight: 400;
-        font-size: 1.7rem; }
       .methods-hero .methods-container .method p {
         color: #ccc;
         line-height: 1.3; }
@@ -1130,7 +1156,7 @@ footer {
 .products-hero {
   height: auto; }
   .products-hero .hero-content {
-    min-height: 60vh;
+    min-height: 90vh;
     padding-top: 80px; }
     @media screen and (min-width: 1025px) {
       .products-hero .hero-content {
@@ -1152,7 +1178,10 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: black;
-    padding: 25px 20px; }
+    padding: 25px; }
+    @media screen and (min-width: 768px) {
+      .products-hero .products-container {
+        padding: 60px; } }
     @media screen and (min-width: 1025px) {
       .products-hero .products-container {
         -webkit-box-orient: horizontal;
@@ -1164,7 +1193,6 @@ footer {
         background-color: rgba(0, 0, 0, 0.4); } }
     .products-hero .products-container h2 {
       color: #999;
-      font-weight: 400;
       text-align: center; }
       @media screen and (min-width: 768px) {
         .products-hero .products-container h2 {
@@ -1243,10 +1271,10 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 25px 20px; }
+  padding: 25px; }
   @media screen and (min-width: 768px) {
     .product-details {
-      padding: 35px; } }
+      padding: 60px; } }
   .product-details .product-detail-heading {
     margin-top: 50px; }
     @media screen and (min-width: 1025px) {
@@ -1292,7 +1320,7 @@ footer {
 .meet-us-hero {
   height: auto; }
   .meet-us-hero .hero-content {
-    min-height: 80vh;
+    min-height: 90vh;
     padding-top: 25px; }
     @media screen and (min-width: 768px) {
       .meet-us-hero .hero-content {
@@ -1321,10 +1349,10 @@ footer {
     text-align: center;
     background-color: #000;
     color: #fff;
-    padding: 25px 20px; }
+    padding: 25px; }
     @media screen and (min-width: 768px) {
       .meet-us-hero .stats-container {
-        padding: 5% 15%; } }
+        padding: 60px; } }
     @media screen and (min-width: 1025px) {
       .meet-us-hero .stats-container {
         background-color: initial;
@@ -1368,16 +1396,13 @@ footer {
                   justify-content: center; }
           .meet-us-hero .stats-container .stat:before {
             top: 20%; } }
-      .meet-us-hero .stats-container .stat h2 {
-        font-weight: 400;
-        font-size: 1.5rem; }
-        @media screen and (min-width: 1025px) {
-          .meet-us-hero .stats-container .stat h2 {
-            font-size: 1.25rem; } }
-        @media screen and (min-width: 1360px) {
-          .meet-us-hero .stats-container .stat h2 {
-            margin: 0;
-            font-size: 1.5rem; } }
+      @media screen and (min-width: 1025px) {
+        .meet-us-hero .stats-container .stat h2 {
+          font-size: 1.25rem; } }
+      @media screen and (min-width: 1360px) {
+        .meet-us-hero .stats-container .stat h2 {
+          margin: 0;
+          font-size: 1.5rem; } }
       .meet-us-hero .stats-container .stat p {
         margin: 0;
         padding: 10px;
@@ -1403,6 +1428,9 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
   display: block; }
 
 /* Backgrounds */
+.u-bg {
+  background-color: #253648; }
+
 .u-bg-home {
   background-image: url("images/dist/home.jpg");
   background-repeat: no-repeat;
@@ -1411,7 +1439,7 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
   @media screen and (min-width: 768px) {
     .u-bg-home {
       background-position: 45% 50%;
-      background-size: 175%; } }
+      background-size: 185%; } }
   @media screen and (min-width: 1025px) {
     .u-bg-home {
       background-size: 100%; } }
@@ -1437,7 +1465,7 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
   @media screen and (min-width: 768px) {
     .u-bg-customize {
       background-position: 60% 50%;
-      background-size: 175%; } }
+      background-size: 185%; } }
   @media screen and (min-width: 1025px) {
     .u-bg-customize {
       background-size: 100%; } }
@@ -1449,7 +1477,7 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
   background-size: 300%; }
   @media screen and (min-width: 768px) {
     .u-bg-gamble {
-      background-size: 175%; } }
+      background-size: 185%; } }
   @media screen and (min-width: 1025px) {
     .u-bg-gamble {
       background-size: 100%; } }
@@ -1464,18 +1492,18 @@ A lot of the declarations in this layer will carry !important (e.g. .text-center
   background-image: url("images/dist/mountains.jpg");
   background-repeat: no-repeat;
   background-position: 70% 0%;
-  background-size: 175%; }
+  background-size: 250%; }
 
 .u-bg-mountains2 {
   background-image: url("images/dist/mountains2.jpg");
   background-repeat: no-repeat;
-  background-size: 175%; }
+  background-size: 250%; }
 
 .u-bg-bridge {
   background-image: url("images/dist/bridge.jpg");
   background-repeat: no-repeat;
   background-position: 70% -5%;
-  background-size: 235%; }
+  background-size: 260%; }
   @media screen and (min-width: 768px) {
     .u-bg-bridge {
       background-size: 130%; } }
